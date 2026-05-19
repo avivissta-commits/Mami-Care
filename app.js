@@ -2420,6 +2420,17 @@ function icon(name) {
 function render() {
   const root = document.querySelector("#app");
   document.body.classList.toggle("quiet-render", Boolean(state.quietRender));
+  
+  // ✅ Partial render for carousel - just replace recommendations section
+  if (state.partialRender === 'carousel' && state.view === 'home') {
+    const recommendationsCard = document.querySelector('.recommendations-section');
+    if (recommendationsCard) {
+      const newSection = renderRecommendationsSection();
+      recommendationsCard.replaceWith(newSection);
+      return;  // Skip full render
+    }
+  }
+  
   root.innerHTML = "";
   if (state.showSplash) {
     root.append(renderSplash());
@@ -2459,7 +2470,21 @@ function renderTopbar() {
     el("header", { className: "topbar" }, [
       el("div", { className: "top-left-cluster" }, [
         el("button", { className: "icon-button favorite-top", "aria-label": "מועדפים", onClick: () => navigate("favorites"), text: icon("heart") }),
-        el("button", { className: "top-weather-trigger", "aria-label": "שעה ומזג אוויר", onClick: () => setState({ showWeatherPopover: !state.showWeatherPopover }) }, [
+        el("button", { className: "top-weather-trigger", "aria-label": "שעה ומזג אוויר", onClick: () => {
+          state.showWeatherPopover = !state.showWeatherPopover;
+          // Toggle visibility with CSS only, no render
+          const popover = document.querySelector('.weather-popover');
+          if (popover) {
+            popover.style.display = state.showWeatherPopover ? '' : 'none';
+            if (state.showWeatherPopover) {
+              popover.classList.add('visible');
+              popover.classList.remove('hidden');
+            } else {
+              popover.classList.remove('visible');
+              popover.classList.add('hidden');
+            }
+          }
+        } }, [
           el("span", { className: "top-time", text: state.clock || "--:--" }),
           el("span", { className: "top-weather-divider", "aria-hidden": "true" }),
           el("span", { className: "top-uv", text: `UV ${uv}` }),
@@ -2470,7 +2495,11 @@ function renderTopbar() {
         el("img", { className: "top-logo", src: "./assets/brand/mami-care.png", alt: "Mami Care" }),
       ]),
     ]),
-    state.showWeatherPopover ? el("div", { className: "weather-popover" }, [renderWeatherCard("weather-card-popover")]) : null,
+    // ✅ Always render popover, show/hide with CSS
+    el("div", { 
+      className: `weather-popover ${state.showWeatherPopover ? "visible" : "hidden"}`,
+      style: state.showWeatherPopover ? "" : "display: none;"
+    }, [renderWeatherCard("weather-card-popover")]),
   ]);
 }
 
@@ -2685,29 +2714,29 @@ function renderRecommendationsSection() {
   const currentRecommendation = recommendations[currentIndex] || products[0];
   const isRecommendedFavorite = state.favorites.includes(currentRecommendation.id);
   
-  // Navigation functions - use quiet render to avoid page flash
+  // Navigation functions - partial render for smooth UX
   const nextRecommendation = () => {
     state.recommendationIndex = (state.recommendationIndex + 1) % recommendations.length;
     state.carouselDirection = 'left';
-    state.quietRender = true;  // Flag for quiet render
+    state.partialRender = 'carousel';  // Only update carousel
     render();
-    state.quietRender = false;
+    state.partialRender = null;
   };
   
   const prevRecommendation = () => {
     state.recommendationIndex = (state.recommendationIndex - 1 + recommendations.length) % recommendations.length;
     state.carouselDirection = 'right';
-    state.quietRender = true;  // Flag for quiet render
+    state.partialRender = 'carousel';  // Only update carousel
     render();
-    state.quietRender = false;
+    state.partialRender = null;
   };
   
   const goToRecommendation = (index) => {
     state.recommendationIndex = index;
     state.carouselDirection = index > state.recommendationIndex ? 'left' : 'right';
-    state.quietRender = true;  // Flag for quiet render
+    state.partialRender = 'carousel';  // Only update carousel
     render();
-    state.quietRender = false;
+    state.partialRender = null;
   };
   
   return el("div", { className: "card recommendations-section" }, [
@@ -2789,7 +2818,14 @@ function renderCoupleHomeCard() {
       el("div", {}, [
         el("p", { className: "eyebrow", style: "color: #9075D7;", text: "ספא קטן לשניים" }),
         el("h2", { text: "זמן טיפוח זוגי 💕" }),
-        el("p", { text: "חוויה קצרה, מצחיקה ועדינה לשניכם. מסיכה, לחות, רגע ביחד, בלי פעילים כבדים כברירת מחדל." }),
+        el("p", { text: "הפכו את הבית לספא הפרטי שלכם, ותנו לעצמכם רגע להתנתק, להירגע ולהתפנק יחד." }),
+        // ✅ Tags with proper styling like product tags
+        el("div", { className: "tag-pills" }, [
+          el("span", { text: "✨ רומנטי" }),
+          el("span", { text: "🫶 מקרב" }),
+          el("span", { text: "🧖 מפנק" }),
+          el("span", { text: "😌 מרגיע" }),
+        ]),
       ]),
       el("button", { className: "button primary-hero", text: "יאללה, מתחילים ✨", onClick: () => startCoupleFlow(true) }),
     ]),
@@ -2871,14 +2907,14 @@ function renderRoutineScreen() {
             ? el("button", { 
                 className: "back-link inline-back", 
                 style: "flex-shrink: 0;",
-                text: `${icon("back")} חזור`, 
+                text: `חזור`, 
                 onClick: () => navigate(state.selectedProductId ? "product" : "products") 
               }) 
             : state.wizardStep > 0 
               ? el("button", { 
                   className: "back-link inline-back", 
                   style: "flex-shrink: 0;",
-                  text: `${icon("back")} חזור`, 
+                  text: `חזור`, 
                   onClick: goBack 
                 }) 
               : el("div", { style: "flex-shrink: 0; visibility: hidden; width: 60px;" }),
@@ -2957,8 +2993,7 @@ function renderProductRoutineControls() {
       value: state.routinePace,
       min: 1,
       max: 3,
-      display: (value) => ["מהירה", "מאוזנת", "מפנקת"][value - 1] || "מאוזנת",
-      hint: "מהירה: 3 שלבים בסיסיים. מאוזנת: 4 שלבים. מפנקת: 5-6 שלבים עשירים.",
+      display: (value) => ["מהיר", "מאוזן", "מפנק"][value - 1] || "מאוזן",
       onValue: (value) => {
         const oldPace = state.routinePace;
         const newPace = Math.min(3, Math.max(1, value));
@@ -2967,7 +3002,7 @@ function renderProductRoutineControls() {
         const paceToSteps = {
           1: 3,      // מהיר: 3 מוצרים
           2: 4,      // מאוזן: 4 מוצרים
-          3: 5       // מפנק: 5-6 מוצרים (יתפזר בין 5-6)
+          3: Math.random() < 0.5 ? 5 : (Math.random() < 0.5 ? 6 : 7)  // מפנק: 5-7 מוצרים
         };
         
         const oldSteps = paceToSteps[oldPace] || 4;
@@ -3922,7 +3957,7 @@ function renderProductsScreen(onlyFavorites) {
     onlyFavorites ? el("button", { 
       className: "back-link page-back", 
       style: "margin-bottom: 0.75rem;",
-      text: `${icon("back")} חזור`, 
+      text: `חזור`, 
       onClick: goBack 
     }) : null,
     
@@ -4199,7 +4234,7 @@ function renderProductPage() {
   const bad = relationProducts(product, "bad");
   const similar = similarProducts(product);
   return el("section", { className: "screen active product-page" }, [
-    el("button", { className: "back-link page-back", text: `${icon("back")} חזור`, onClick: goBack }),
+    el("button", { className: "back-link page-back", text: `חזור`, onClick: goBack }),
     el("div", { className: "card product-hero" }, [
       el("div", { className: "card-inner" }, [
         el("button", { 

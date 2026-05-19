@@ -243,6 +243,16 @@ input:focus-visible {
   pointer-events: none;
 }
 
+/* ✅ Hidden state - slide up animation when closing */
+.weather-popover.hidden .weather-card-popover {
+  animation: weather-drawer-close 260ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+/* ✅ Visible state - slide down animation when opening */
+.weather-popover.visible .weather-card-popover {
+  animation: weather-drawer-open 260ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
 .weather-card-popover {
   max-width: 480px;
   margin: 0 auto;
@@ -250,7 +260,6 @@ input:focus-visible {
   backdrop-filter: blur(18px);
   pointer-events: auto;
   transform-origin: top center;
-  animation: weather-drawer 260ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
 .back-link {
@@ -1708,6 +1717,37 @@ input[type="range"]::-moz-range-progress {
   }
 }
 
+/* ✅ Slide down when opening */
+@keyframes weather-drawer-open {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0 round 28px);
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0 round 28px);
+    transform: translateY(0);
+  }
+}
+
+/* ✅ Slide up when closing */
+@keyframes weather-drawer-close {
+  from {
+    opacity: 1;
+    clip-path: inset(0 0 0 0 round 28px);
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0 round 28px);
+    transform: translateY(-10px);
+  }
+}
+
+/* Legacy name kept for compatibility */
 @keyframes weather-drawer {
   from {
     opacity: 0;
