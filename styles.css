@@ -1608,12 +1608,18 @@ input[type="range"]::-moz-range-progress {
 }
 
 .nav-button.center {
+  /* ✅ Flex column layout - content centered inside white circle */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;  /* Small gap between icon and text */
+  
   width: 72px;
   height: 72px;
   min-height: 72px;
   margin-top: -26px;
-  padding-top: 8px;
-  gap: 0px;
+  padding: 0;  /* Remove padding, use gap instead */
   border-radius: 50%;
   background: #ffffff;
   box-shadow:
@@ -1634,6 +1640,11 @@ input[type="range"]::-moz-range-progress {
 .nav-icon {
   font-size: 22px;
   transition: color 0.2s ease;
+}
+
+/* ✅ Bigger icon for center button */
+.nav-button.center .nav-icon {
+  font-size: 26px;
 }
 
 @keyframes enter-up {
@@ -1959,6 +1970,11 @@ input[type="range"]::-moz-range-progress {
   display: none !important;
 }
 
+/* ✅ Show only first tag in carousel to prevent layout break */
+.recommendation-carousel .tag-pills span:nth-child(n+2) {
+  display: none;
+}
+
 .recommendations-section h3 {
   margin: 0 0 8px;
   font-size: 20px;
@@ -2261,6 +2277,13 @@ input[type="range"]::-moz-range-progress {
   margin-bottom: 24px;
 }
 
+/* ✅ Grid layout with equal widths */
+.replacements-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .replacements-list {
   display: flex;
   flex-direction: column;
@@ -2277,6 +2300,8 @@ input[type="range"]::-moz-range-progress {
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
+  width: 100%;  /* ✅ Equal width */
+  box-sizing: border-box;  /* ✅ Include padding in width */
 }
 
 .replacement-option:hover {
