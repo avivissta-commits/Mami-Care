@@ -1,5 +1,5 @@
 const products = [
-  product("1", "COSRX", "AHA/BHA Clarifying Treatment Toner", "Toner", ["בוקר", "ערב"], "טיפול אינטנסיבי", ["AHA", "BHA", "מי ערבה/תפוח"], ["אקנה", "נקבוביות", "החלקת טקסטורה"], "טונר חומצות עדין לניקוי נקבוביות והחלקת מרקם. מאמי, זה מוצר פעיל ולכן לא מערבבים אותו עם רטינול או עוד חומצות באותה שגרה.", ["חומצות = חובה קרם הגנה ביום."], ["acid", "exfoliant", "pore", "acne", "texture", "oily", "strong", "spfRequired"], ["18", "14", "3", "16", "31"], ["11", "12", "7", "27", "19", "15", "20", "21", "25", "28", "29", "32"], {
+  product("1", "COSRX", "AHA/BHA Clarifying Treatment Toner", "Toner", ["בוקר", "ערב"], "טיפול אינטנסיבי", ["AHA", "BHA", "מי ערבה/תפוח"], ["אקנה", "נקבוביות", "החלקת טקסטורה"], "טונר חומצות עדין לניקוי נקבוביות והחלקת מרקם. מאמי, זה מוצר פעיל ולכן לא מערבבים אותו עם רטינול או עוד חומצות באותה שגרה.", ["חומצות = חובה קרם הגנה ביום."], ["acid", "exfoliant", "pore", "acne", "texture", "oily", "strong", "spfRequired"], ["3", "13", "14", "16", "18", "19", "30", "31"], ["7", "11", "12", "15", "20", "21", "22", "25", "27", "28", "29", "32"], {
     workflowType: "active",
     routinePosition: "toner",
     requiresSPFNextDay: true,
@@ -10,7 +10,7 @@ const products = [
   product("4", "Advanced Clinicals", "Collagen Instant Plumping Serum", "Serum", ["בוקר", "ערב"], "טיפול קליל", ["Collagen", "Aloe Vera", "Soy Extract"], ["מראה מלא", "לחות", "קמטוטים"], "סרום קולגן לפלאמפ, לחות ומראה עור רך יותר. בחירה נעימה לשגרה מזינה.", [], ["collagen", "peptides", "hydration", "plump", "antiaging", "glow", "light"], ["2", "9", "18", "31", "30"], []),
   product("5", "Cetaphil", "Hydrating Eye Gel-Cream", "Eye Cream", ["בוקר", "ערב", "לילה"], "טיפול קליל", ["חומצה היאלורונית", "ויטמינים"], ["עור רגיש", "לחות לעיניים", "יובש"], "קרם-ג׳ל עיניים עדין ומלחח. מתאים כמעט תמיד, במיוחד כשאזור העיניים רגיש.", [], ["eye", "hydration", "soothing", "sensitive", "light"], ["7", "6", "8", "16"], []),
   product("6", "Advanced Clinicals", "Complete 5-in-1 Eye Serum", "Eye Cream", ["בוקר", "ערב"], "טיפול קליל", ["לחויות", "רכיבי אנטי אייג׳ינג"], ["קמטוטים", "נפיחות", "עייפות"], "סרום עיניים לעייפות, נפיחות וקמטוטים עדינים.", [], ["eye", "hydration", "puffiness", "antiaging", "light"], ["5", "8", "18"], ["7"]),
-  product("7", "Beauty of Joseon", "Revive Eye Serum (Ginseng + Retinal)", "Eye Cream", ["בוקר", "לילה"], "טיפול אינטנסיבי", ["Retinal", "Ginseng"], ["קמטוטים", "אנטי אייג׳ינג", "עיניים"], "סרום עיניים עם רטינל. מומלץ בלילה, אפשר גם בבוקר למתקדמות.", ["רטינל = חובה קרם הגנה ביום.", "מומלץ להתחיל בלילה 2-3 פעמים בשבוע.", "בבוקר רק למתקדמות + SPF חובה."], ["eye", "retinoid", "antiaging", "texture", "strong", "spfRequired"], ["5", "18", "3", "31"], ["11", "12", "1", "27", "19", "15"], {
+  product("7", "Beauty of Joseon", "Revive Eye Serum (Ginseng + Retinal)", "Eye Cream", ["בוקר", "לילה"], "טיפול אינטנסיבי", ["Retinal", "Ginseng"], ["קמטוטים", "אנטי אייג׳ינג", "עיניים"], "סרום עיניים עם רטינל. מומלץ בלילה, אפשר גם בבוקר למתקדמות.", ["רטינל = חובה קרם הגנה ביום.", "מומלץ להתחיל בלילה 2-3 פעמים בשבוע."], ["eye", "retinoid", "antiaging", "texture", "strong", "spfRequired"], ["3", "5", "16", "18", "31"], ["1", "6", "8", "11", "12", "15", "19", "20", "21", "22", "27", "28", "29", "32"], {
     workflowType: "active",
     routinePosition: "eye",
     frequencyLimit: "2-3x_week",
@@ -20,14 +20,14 @@ const products = [
   product("8", "Advanced Clinicals", "Dark Circle Eye Serum", "Eye Cream", ["בוקר", "ערב"], "טיפול קליל", ["Vitamin C", "Caffeine", "Vitamin E"], ["כהויות", "עייפות", "הבהרה"], "סרום עיניים לכהויות ולמראה עירני יותר.", [], ["eye", "vitaminC", "brightening", "puffiness", "light"], ["5", "6", "3"], ["7"]),
   product("9", "Advanced Clinicals", "Niacinamide Serum", "Serum", ["בוקר", "ערב"], "טיפול קליל", ["Niacinamide", "Ferulic Acid", "Hyaluronic Acid"], ["נקבוביות", "שומניות", "הבהרה"], "סרום ניאצינמיד לאיזון שומניות, נקבוביות ואדמומיות.", [], ["niacinamide", "pore", "oily", "brightening", "barrier", "light"], ["2", "18", "25", "13", "4"], []),
   product("10", "medicube", "PDRN Pink Peptide Serum", "Serum", ["בוקר", "ערב"], "טיפול קליל", ["PDRN/Peptides", "רכיבי לחות"], ["זוהר", "שיקום", "אנטי אייג׳ינג עדין"], "סרום ורוד לזוהר, לחות ושיקום עדין. טוב כשבא לך גלואו בלי להעמיס.", [], ["peptides", "glow", "hydration", "barrier", "antiaging", "light"], ["18", "2", "25", "31", "13"], []),
-  product("11", "RS", "Retinol 2.5 Serum", "Serum", ["לילה"], "טיפול אינטנסיבי", ["Retinol", "Hyaluronic Acid", "Vitamin E"], ["אנטי אייג׳ינג", "פצעונים", "טקסטורה"], "סרום רטינול חזק. מאמי, זה מוצר לילה שמצריך שגרה נקייה ועדינה מסביב.", ["רטינול = חובה קרם הגנה ביום.", "להתחיל 2-3 פעמים בשבוע."], ["retinoid", "antiaging", "acne", "texture", "strong", "spfRequired"], ["18", "14", "3", "16", "31"], ["12", "7", "1", "27", "19", "15", "20", "21", "22", "28", "29", "32"], {
+  product("11", "RS", "Retinol 2.5 Serum", "Serum", ["לילה"], "טיפול אינטנסיבי", ["Retinol", "Hyaluronic Acid", "Vitamin E"], ["אנטי אייג׳ינג", "פצעונים", "טקסטורה"], "סרום רטינול חזק. מאמי, זה מוצר לילה שמצריך שגרה נקייה ועדינה מסביב.", ["רטינול = חובה קרם הגנה ביום.", "להתחיל 2-3 פעמים בשבוע."], ["retinoid", "antiaging", "acne", "texture", "strong", "spfRequired"], ["3", "12", "13", "14", "16", "18", "30", "31"], ["1", "7", "8", "15", "19", "20", "21", "22", "27", "28", "29", "32"], {
     workflowType: "active",
     routinePosition: "serum",
     frequencyLimit: "2-3x_week",
     requiresSPFNextDay: true,
     avoidSameRoutineTags: ["retinoid", "acid", "vitaminC"]
   }),
-  product("12", "Advanced Clinicals", "Retinol Serum", "Serum", ["לילה"], "טיפול אינטנסיבי", ["Retinol", "Aloe Vera", "Green Tea"], ["קמטוטים", "טקסטורה", "אנטי אייג׳ינג"], "סרום רטינול עדין יותר, אבל עדיין פעיל. מתאים ללילה עם לחות ושיקום.", ["רטינול = חובה קרם הגנה ביום."], ["retinoid", "antiaging", "texture", "strong", "spfRequired"], ["18", "14", "3", "16", "13"], ["11", "7", "1", "27", "19", "15", "20", "21", "22", "32"], {
+  product("12", "Advanced Clinicals", "Retinol Serum", "Serum", ["לילה"], "טיפול אינטנסיבי", ["Retinol", "Aloe Vera", "Green Tea"], ["קמטוטים", "טקסטורה", "אנטי אייג׳ינג"], "סרום רטינול עדין יותר, אבל עדיין פעיל. מתאים ללילה עם לחות ושיקום.", ["רטינול = חובה קרם הגנה ביום."], ["retinoid", "antiaging", "texture", "strong", "spfRequired"], ["2", "3", "11", "13", "14", "16", "18", "26"], ["1", "7", "8", "15", "19", "20", "21", "22", "27", "32"], {
     workflowType: "active",
     routinePosition: "serum",
     frequencyLimit: "2-3x_week",
@@ -36,7 +36,7 @@ const products = [
   }),
   product("13", "Beauty of Joseon", "Dynasty Cream", "Cream", ["בוקר", "ערב", "לילה"], "טיפול קליל", ["Rice", "Ginseng", "Squalane"], ["לחות", "זוהר", "עור יבש"], "קרם לחות עשיר וזוהר, סוגר יפה שגרות בוקר וערב.", [], ["cream", "hydration", "barrier", "glow", "rich", "light"], ["18", "25", "15", "11", "1"], []),
   product("14", "COSRX", "Advanced Snail 92 All in One Cream", "Cream", ["בוקר", "ערב", "לילה"], "טיפול קליל", ["Snail Mucin 92%"], ["שיקום מחסום עור", "לחות", "עור מגורה"], "קרם חלזון משקם. מצוין אחרי פעילים, אדמומיות או יובש.", [], ["cream", "snail", "hydration", "barrier", "redness", "soothing", "light"], ["11", "1", "18", "16", "27"], []),
-  product("15", "Advanced Clinicals", "Vitamin C Serum", "Serum", ["בוקר", "ערב"], "טיפול קליל", ["Vitamin C", "Ferulic Acid", "לחויות"], ["כתמים", "זוהר", "אנטי אייג׳ינג"], "סרום ויטמין C להבהרה וגלואו. אפשר בוקר או ערב, חובה SPF למחרת.", ["ויטמין C + חובה קרם הגנה ביום."], ["vitaminC", "brightening", "spots", "glow", "antiaging", "spfRequired", "light"], ["9", "18", "25", "31"], ["11", "12", "7", "1", "19", "20", "21", "27", "32"], {
+  product("15", "Advanced Clinicals", "Vitamin C Serum", "Serum", ["בוקר", "ערב"], "טיפול קליל", ["Vitamin C", "Ferulic Acid", "לחויות"], ["כתמים", "זוהר", "אנטי אייג׳ינג"], "סרום ויטמין C להבהרה וגלואו. אפשר בוקר או ערב, חובה SPF למחרת.", ["ויטמין C + חובה קרם הגנה ביום."], ["vitaminC", "brightening", "spots", "glow", "antiaging", "spfRequired", "light"], ["4", "9", "13", "18", "25", "26", "31"], ["1", "7", "11", "12", "19", "20", "21", "22", "27", "32"], {
     workflowType: "active",
     routinePosition: "serum",
     requiresSPFNextDay: true,
@@ -45,32 +45,32 @@ const products = [
   product("16", "Kamedis", "Bio Balance Barrier Protect Serum", "Serum", ["בוקר", "ערב", "לילה"], "טיפול קליל", ["רכיבי הרגעה", "לחויות"], ["עור רגיש", "שיקום", "אדמומיות"], "סרום מחסום עור מרגיע. טוב כמעט עם הכל, במיוחד ליד רטינול וחומצות.", [], ["barrier", "soothing", "hydration", "sensitive", "redness", "light"], ["11", "1", "18", "31", "30"], []),
   product("17", "Jason", "Vitamin E Skin Oil", "Oil", ["ערב", "לילה"], "טיפול מזין", ["Vitamin E", "שמנים מזינים"], ["יובש קיצוני", "הזנה", "קילופים"], "שמן ויטמין E מזין. מתאים כשיבש מאוד, פחות כשיש נטייה לפצעונים.", [], ["oil", "vitaminE", "dry", "nourishing", "rich"], ["31", "30", "13", "26"], []),
   product("18", "COSRX", "Advanced Snail 96 Mucin Power Essence", "Essence", ["בוקר", "ערב", "לילה"], "טיפול קליל", ["Snail Mucin 96%"], ["שיקום עור", "לחות מוגברת", "אדמומיות"], "אסנס חלזון משקם ומלחח. אחד המוצרים הכי גמישים בארון שלך.", [], ["essence", "snail", "hydration", "barrier", "redness", "soothing", "light"], ["1", "12", "25", "10", "13"], []),
-  product("19", "SOME BY MI", "AHA BHA PHA Miracle Toner", "Toner", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA", "BHA", "PHA"], ["אקנה", "נקבוביות", "החלקת עור"], "טונר חומצות מסדרת Miracle. בוחרים אותו במקום חומצות אחרות או רטינול.", ["חומצות = חובה קרם הגנה ביום."], ["acid", "exfoliant", "acne", "pore", "texture", "miracle", "strong", "spfRequired"], ["18", "14", "16", "31"], ["11", "12", "1", "27", "32", "7", "29"], {
+  product("19", "SOME BY MI", "AHA BHA PHA Miracle Toner", "Toner", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA", "BHA", "PHA"], ["אקנה", "נקבוביות", "החלקת עור"], "טונר חומצות מסדרת Miracle. בוחרים אותו במקום חומצות אחרות או רטינול.", ["חומצות = חובה קרם הגנה ביום."], ["acid", "exfoliant", "acne", "pore", "texture", "miracle", "strong", "spfRequired"], ["1", "3", "14", "16", "18", "31"], ["7", "11", "12", "15", "20", "21", "22", "27", "29", "32"], {
     workflowType: "active",
     routinePosition: "toner",
     requiresSPFNextDay: true,
     avoidSameRoutineTags: ["retinoid", "acid", "vitaminC"]
   }),
-  product("20", "SOME BY MI", "Miracle Serum", "Serum", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA/BHA/PHA", "Tea Tree"], ["אקנה", "נקבוביות", "שומניות"], "סרום חומצות טיפולי לפצעונים ושומניות. לא לערבב עם רטינול או חומצות נוספות.", ["חובה קרם הגנה."], ["acid", "exfoliant", "acne", "oily", "texture", "miracle", "teaTree", "strong", "spfRequired"], ["18", "16", "31", "14"], ["11", "12", "1", "27", "32", "15"], {
+  product("20", "SOME BY MI", "Miracle Serum", "Serum", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA/BHA/PHA", "Tea Tree"], ["אקנה", "נקבוביות", "שומניות"], "סרום חומצות טיפולי לפצעונים ושומניות. לא לערבב עם רטינול או חומצות נוספות.", ["חובה קרם הגנה."], ["acid", "exfoliant", "acne", "oily", "texture", "miracle", "teaTree", "strong", "spfRequired"], ["14", "16", "18", "31"], ["1", "7", "11", "12", "15", "19", "21", "22", "27", "32"], {
     workflowType: "active",
     routinePosition: "serum",
     requiresSPFNextDay: true,
     avoidSameRoutineTags: ["retinoid", "acid", "vitaminC"]
   }),
-  product("21", "SOME BY MI", "Miracle Cream", "Cream", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA/BHA/PHA", "Centella", "Tea Tree"], ["פצעונים", "אדמומיות", "טקסטורה"], "קרם טיפולי מסדרת Miracle. מתאים כשבונים ערב אקנה בלי רטינול.", ["חובה קרם הגנה."], ["acid", "cream", "acne", "redness", "texture", "miracle", "centella", "strong", "spfRequired"], ["18", "16", "31"], ["11", "12", "1", "27", "15"], {
+  product("21", "SOME BY MI", "Miracle Cream", "Cream", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA/BHA/PHA", "Centella", "Tea Tree"], ["פצעונים", "אדמומיות", "טקסטורה"], "קרם טיפולי מסדרת Miracle. מתאים כשבונים ערב אקנה בלי רטינול.", ["חובה קרם הגנה."], ["acid", "cream", "acne", "redness", "texture", "miracle", "centella", "strong", "spfRequired"], ["16", "18", "31"], ["1", "7", "11", "12", "15", "19", "20", "22", "27", "32"], {
     workflowType: "active",
     routinePosition: "moisturizer",
     requiresSPFNextDay: true,
     avoidSameRoutineTags: ["retinoid", "acid", "vitaminC"]
   }),
-  product("22", "SOME BY MI", "Miracle Spot Treatment", "Spot Treatment", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA/BHA/PHA", "Tea Tree"], ["פצעון נקודתי", "אקנה", "אדמומיות"], "טיפול נקודתי לפצעון. רק על האזור, לא על כל הפנים.", ["חובה קרם הגנה."], ["acid", "spot", "acne", "redness", "miracle", "teaTree", "strong", "spfRequired"], ["16", "18", "31"], ["11", "12", "27", "32", "15"], {
+  product("22", "SOME BY MI", "Miracle Spot Treatment", "Spot Treatment", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA/BHA/PHA", "Tea Tree"], ["פצעון נקודתי", "אקנה", "אדמומיות"], "טיפול נקודתי לפצעון. רק על האזור, לא על כל הפנים.", ["חובה קרם הגנה."], ["acid", "spot", "acne", "redness", "miracle", "teaTree", "strong", "spfRequired"], ["16", "18", "31"], ["1", "7", "11", "12", "15", "19", "20", "21", "27", "32"], {
     workflowType: "active",
     routinePosition: "spot",
     frequencyLimit: "daily_or_spot",
     requiresSPFNextDay: true,
     avoidSameRoutineTags: ["retinoid", "acid"]
   }),
-  product("23", "Biodance", "Collagen Real Deep Mask", "Mask", ["ערב", "לילה"], "טיפול מזין", ["Collagen", "רכיבי לחות"], ["לחות מוגברת", "זוהר", "עור עייף"], "מסכת קולגן להזנה ולחות. מתאימה לערב רגוע, וגם אחרי פעיל אם העור לא מגורה.", [], ["mask", "collagen", "hydration", "glow", "plump", "nourishing"], ["18", "25", "4", "31"], [], {
+  product("23", "Biodance", "Collagen Real Deep Mask", "Mask", ["ערב", "לילה"], "טיפול מזין", ["Collagen", "רכיבי לחות"], ["לחות מוגברת", "זוהר", "עור עייף"], "מסכת קולגן להזנה ולחות. מתאימה לערב רגוע, וגם אחרי פעיל אם העור לא מגורה.", [], ["mask", "collagen", "hydration", "glow", "plump", "nourishing"], ["4", "18", "25", "31"], [], {
     workflowType: "overnight_mask",
     routinePosition: "last",
     requiresRinse: false,
@@ -80,14 +80,14 @@ const products = [
   product("24", "NOW Foods", "Vegetable Glycerin", "Mixer", ["בוקר", "ערב", "לילה"], "טיפול קליל", ["Glycerin"], ["לחות", "יובש", "חיזוק קרם"], "גליצרין צמחי ללחות. מערבבים טיפה עם קרם/מים/סרום, לא משתמשים נקי בכמות גדולה.", ["לא להשתמש נקי בכמות גדולה."], ["hydration", "mixer", "glycerin", "humectant", "barrier", "light"], ["31", "30", "13", "26"], []),
   product("25", "AXIS-Y", "Dark Spot Correcting Glow Serum", "Serum", ["בוקר", "ערב"], "טיפול קליל", ["Niacinamide 5%", "Squalane", "רכיבי הרגעה צמחיים"], ["כתמי פוסט אקנה", "הבהרה", "עור רגיש"], "סרום להבהרת כתמים והרגעת העור. טוב לזוהר בלי ללכת על חומצות חזקות.", [], ["niacinamide", "squalane", "brightening", "spots", "sensitive", "redness", "glow", "light"], ["18", "2", "13", "16", "31"], ["1"]),
   product("26", "Advanced Clinicals", "Collagen Skin Rescue Cream", "Cream", ["בוקר", "ערב", "לילה"], "טיפול מזין", ["Collagen", "Aloe Vera", "Green Tea"], ["לחות מוגברת", "מיצוק", "יובש"], "קרם קולגן גדול ללחות ומיצוק. מתאים כסגירה עשירה לשגרה.", [], ["cream", "collagen", "hydration", "firming", "dry", "rich"], ["4", "12", "15", "9", "31"], []),
-  product("27", "CeraVe", "Blemish Control Gel", "Spot Treatment", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA", "BHA/Salicylic Acid", "Ceramides"], ["אקנה", "שחורים", "נקבוביות"], "ג׳ל טיפולי לפצעונים, שחורים וטקסטורה. להשתמש כמו פעיל חומצות.", ["חובה קרם הגנה.", "לא לשלב עם רטינול או חומצות אחרות."], ["acid", "acne", "pore", "texture", "ceramides", "strong", "spfRequired"], ["18", "16", "31", "30"], ["11", "12", "1", "19", "32", "7", "20", "21", "22"], {
+  product("27", "CeraVe", "Blemish Control Gel", "Spot Treatment", ["ערב", "לילה"], "טיפול אינטנסיבי", ["AHA", "BHA/Salicylic Acid", "Ceramides"], ["אקנה", "שחורים", "נקבוביות"], "ג׳ל טיפולי לפצעונים, שחורים וטקסטורה. להשתמש כמו פעיל חומצות.", ["חובה קרם הגנה.", "לא לשלב עם רטינול או חומצות אחרות."], ["acid", "acne", "pore", "texture", "ceramides", "strong", "spfRequired"], ["14", "16", "18", "30", "31", "32"], ["1", "7", "11", "12", "15"], {
     workflowType: "active",
     routinePosition: "spot",
     frequencyLimit: "daily_or_spot",
     requiresSPFNextDay: true,
     avoidSameRoutineTags: ["retinoid", "acid"]
   }),
-  product("28", "Beauty of Joseon", "Red Bean Refreshing Pore Mask", "Mask", ["ערב", "לילה"], "טיפול קליל", ["Red Bean", "Kaolin Clay"], ["נקבוביות", "שומניות", "ניקוי עדין"], "מסכת נקבוביות וניקוי עדין. טובה לעור שומני כשלא רוצים חומצות חזקות.", [], ["mask", "clay", "pore", "oily", "soothing", "light"], ["18", "31", "16", "13"], ["11", "1"], {
+  product("28", "Beauty of Joseon", "Red Bean Refreshing Pore Mask", "Mask", ["ערב", "לילה"], "טיפול קליל", ["Red Bean", "Kaolin Clay"], ["נקבוביות", "שומניות", "ניקוי עדין"], "מסכת נקבוביות וניקוי עדין. טובה לעור שומני כשלא רוצים חומצות חזקות.", [], ["mask", "clay", "pore", "oily", "soothing", "light"], ["13", "16", "18", "29", "31"], [], {
     workflowType: "wash_off_mask",
     routinePosition: "after_cleanser",
     requiresRinse: true,
@@ -97,7 +97,7 @@ const products = [
   product("29", "L’Oréal", "Pure Clay Detox Mask", "Mask", ["ערב", "לילה"], "טיפול אינטנסיבי", ["Clay", "Charcoal"], ["ניקוי עמוק", "שומניות", "שחורים"], "מסכת חימר לניקוי עמוק. מאמי, לא לערבב עם ערב רטינול/חומצות אם העור רגיש.", [], ["mask", "clay", "charcoal", "oily", "pore", "strong"], ["18", "31", "30", "16"], ["11", "1", "19"]),
   product("30", "Eucerin", "Face Daily Care", "Cream", ["בוקר", "ערב", "לילה"], "טיפול קליל", ["רכיבי לחות עדינים"], ["עור רגיש", "לחות", "מחסום עור"], "קרם פנים עדין. עובד כמעט עם הכל וסוגר שגרות פעילות בצורה רגועה.", [], ["cream", "hydration", "barrier", "sensitive", "light"], ["11", "1", "16", "18", "9"], []),
   product("31", "Idealove", "Super Supple Moisturizing Cream", "Cream", ["בוקר", "ערב", "לילה"], "טיפול קליל", ["רכיבי לחות ושיקום"], ["עור רגיש", "שיקום", "לחות בסיסית"], "קרם לחות בסיסי ומרגיע. מושלם כשצריך משהו פשוט שעושה עבודה.", [], ["cream", "hydration", "barrier", "sensitive", "soothing", "light"], ["11", "1", "16", "18", "25"], []),
-  product("32", "Dermalosophy", "ACN.E Bio Triple Gel", "Spot Treatment", ["ערב", "לילה"], "טיפול אינטנסיבי", ["חומצות טיפוליות", "רכיבים אנטי בקטריאליים"], ["אקנה פעיל", "טיפול נקודתי", "שומניות"], "טיפול אקנה ממוקד וחזק. לבחור אותו במקום רטינול או חומצות אחרות.", ["חובה קרם הגנה."], ["acid", "acne", "spot", "oily", "strong", "spfRequired"], ["16", "31", "18", "30"], ["11", "12", "27", "1", "19", "20", "22"], {
+  product("32", "Dermalosophy", "ACN.E Bio Triple Gel", "Spot Treatment", ["ערב", "לילה"], "טיפול אינטנסיבי", ["חומצות טיפוליות", "רכיבים אנטי בקטריאליים"], ["אקנה פעיל", "טיפול נקודתי", "שומניות"], "טיפול אקנה ממוקד וחזק. לבחור אותו במקום רטינול או חומצות אחרות.", ["חובה קרם הגנה."], ["acid", "acne", "spot", "oily", "strong", "spfRequired"], ["16", "18", "27", "30", "31"], ["7", "11", "12", "15", "19", "20", "21"], {
     workflowType: "active",
     routinePosition: "spot",
     frequencyLimit: "daily_or_spot",
@@ -362,8 +362,22 @@ function isDayRoutine(timeOfDay = state.timeOfDay) {
 function productMatchesTime(product, timeOfDay) {
   if (!product) return false;
   if (product.time.includes(timeOfDay)) return true;
-  if (timeOfDay === "צהריים") return product.time.includes("בוקר") && !hasTag(product, "retinoid") && product.type !== "Mask";
-  if (timeOfDay === "לילה") return product.time.includes("ערב") && !isStrongAcid(product);
+  
+  // ✅ בוקר ↔ צהריים: צהריים מקבל מוצרי בוקר (ללא retinol/mask)
+  if (timeOfDay === "צהריים") {
+    return product.time.includes("בוקר") && 
+           !hasTag(product, "retinoid") && 
+           product.type !== "Mask";
+  }
+  
+  // ✅ ערב ↔ לילה: אותה משפחת מוצרים (bidirectional)
+  if (timeOfDay === "ערב") {
+    return product.time.includes("לילה");
+  }
+  if (timeOfDay === "לילה") {
+    return product.time.includes("ערב");
+  }
+  
   return false;
 }
 
@@ -461,8 +475,43 @@ function detectConflict(a, b, feelingId = state.feeling) {
   return "";
 }
 
-function isSafeAddition(product, selected, feelingId = state.feeling) {
-  return selected.every((item) => !detectConflict(item, product, feelingId));
+function isSafeAddition(product, selected, feelingId = state.feeling, context = null) {
+  // ✅ CRITICAL: מניעת כפילות של אותו מוצר (לפי ID)
+  // אותו product.id לא יכול להופיע פעמיים!
+  if (selected.some(item => item.id === product.id)) {
+    return false;  // המוצר כבר קיים בשגרה
+  }
+  
+  // ✅ מניעת כפילויות של slots בסיסיים
+  // מוצרים אלו מייצגים slots פיזיים בשגרה - רק אחד מכל סוג
+  const singleSlotTypes = ["Toner", "Cream", "Essence", "Eye Cream", "Cleanser"];
+  if (singleSlotTypes.includes(product.type)) {
+    const hasSameType = selected.some(item => item.type === product.type);
+    if (hasSameType) {
+      return false;  // כבר יש מוצר מסוג זה בשגרה
+    }
+  }
+  
+  // בדיקת conflicts רגילים
+  if (!selected.every((item) => !detectConflict(item, product, feelingId))) {
+    return false;
+  }
+  
+  // ✅ בדיקת active overload ב-"טיפול ממוקד"
+  if (context && context.isTargetedRoutine && context.hasStrongActive) {
+    const productTags = new Set(tagsFor(product));
+    const isProductActive = productTags.has("retinoid") || 
+                           (productTags.has("acid") && productTags.has("strong")) ||
+                           productTags.has("vitaminC") || 
+                           product.type === "Spot Treatment";
+    
+    // אם זה טיפול ממוקד ויש כבר active חזק, לא להוסיף עוד active
+    if (isProductActive) {
+      return false;
+    }
+  }
+  
+  return true;
 }
 
 function scoreProduct(product, context) {
@@ -473,6 +522,23 @@ function scoreProduct(product, context) {
   if (productMatchesTime(product, context.timeOfDay)) score += 8;
   if (state.favorites.includes(product.id)) score += 2;
   if (context.preferredProductId === product.id) score += 18;
+  
+  // ✅ בונוס למוצרים מאותה סדרה כמו המוצר המרכזי
+  if (context.preferredProductId) {
+    const preferredProduct = getProduct(context.preferredProductId);
+    if (preferredProduct && areProductFamily(product, preferredProduct)) {
+      score += 12;  // העדפה חזקה למוצרים מאותה סדרה
+    }
+  }
+  
+  // ✅ בונוס למוצרים מאותה סדרה כמו המועדף שנבחר
+  if (context.selectedFavoriteProductId) {
+    const favoriteProduct = getProduct(context.selectedFavoriteProductId);
+    if (favoriteProduct && areProductFamily(product, favoriteProduct)) {
+      score += 10;  // העדפה למוצרים מאותה סדרה
+    }
+  }
+  
   if (context.includeMask && product.type === "Mask") score += 9;
   if (context.coupleMode && product.type === "Mask") score += 10;
   if (context.coupleMode && (tags.includes("retinoid") || tags.includes("acid") || tags.includes("spot"))) score -= 40;
@@ -497,9 +563,73 @@ function scoreProduct(product, context) {
   feeling.avoid.forEach((tag) => {
     if (tags.includes(tag)) score -= 12;
   });
+  
+  // ✅ Skin Concern Scoring - בונוס למוצרים שמתאימים למצב עור
+  if (context.feeling === "red") {  // אדמומי
+    if (tags.includes("calming") || tags.includes("soothing")) score += 8;
+    if (tags.includes("barrier") || tags.includes("ceramide")) score += 7;
+    if (tags.includes("centella") || tags.includes("panthenol")) score += 6;
+    if (tags.includes("snail") || tags.includes("hydration")) score += 5;
+  }
+  if (context.feeling === "breakouts") {  // פצעונים
+    if (tags.includes("acne") || tags.includes("balancing")) score += 8;
+    if (tags.includes("niacinamide") || tags.includes("pore")) score += 7;
+    if (tags.includes("salicylic") || tags.includes("lightweight")) score += 6;
+  }
+  if (context.feeling === "spot-treatment") {  // חצ'קון
+    if (tags.includes("calming") || tags.includes("balancing")) score += 7;
+    if (tags.includes("lightweight") || tags.includes("hydration")) score += 5;
+  }
+  if (context.feeling === "pigmentation") {  // כתמים
+    if (tags.includes("vitaminC") || tags.includes("brightening")) score += 8;
+    if (tags.includes("niacinamide") || tags.includes("glow")) score += 7;
+  }
+  if (context.feeling === "dry") {  // יבש ומתוח
+    if (tags.includes("ceramide") || tags.includes("peptide")) score += 8;
+    if (tags.includes("collagen") || tags.includes("snail")) score += 7;
+    if (tags.includes("rich") || tags.includes("nourishing")) score += 6;
+    if (tags.includes("barrier") || tags.includes("hydration")) score += 5;
+  }
+  if (context.feeling === "sensitive") {  // רגיש
+    if (tags.includes("calming") || tags.includes("soothing")) score += 8;
+    if (tags.includes("barrier") || tags.includes("gentle")) score += 7;
+    if (tags.includes("hydration") || tags.includes("minimal")) score += 5;
+  }
+  if (context.feeling === "oily") {  // שומני
+    if (tags.includes("balancing") || tags.includes("pore")) score += 8;
+    if (tags.includes("lightweight") || tags.includes("gel")) score += 7;
+    if (tags.includes("niacinamide") || tags.includes("salicylic")) score += 6;
+  }
+  if (context.feeling === "glow") {  // רוצה זוהר
+    if (tags.includes("peptide") || tags.includes("collagen")) score += 8;
+    if (tags.includes("glow") || tags.includes("radiance")) score += 7;
+    if (tags.includes("vitaminC") || tags.includes("hydration")) score += 6;
+  }
+  if (context.feeling === "aging") {  // אנטי אייג'ינג
+    if (tags.includes("peptide") || tags.includes("collagen")) score += 8;
+    // ✅ רטינול בלילה - בונוס גדול יותר כדי שיופיע לפעמים
+    if (tags.includes("retinoid") && !isDayRoutine(context.timeOfDay)) score += 10;
+    if (tags.includes("nourishing") || tags.includes("texture")) score += 6;
+  }
 
   // מניעת רטינול בבוקר/צהריים - קריטי!
   if (isDayRoutine(context.timeOfDay) && tags.includes("retinoid")) score -= 100;
+  
+  // ✅ מניעת Spot Treatment ללא context מפורש
+  // Spot Treatment מותר רק עם:
+  // 1. feeling מפורש של breakouts/spot-treatment
+  // 2. או כמוצר מועדף שנבחר
+  if (product.type === "Spot Treatment") {
+    const allowSpotTreatment = 
+      (context.feelingExplicitlySelected && 
+       (context.feeling === "breakouts" || context.feeling === "spot-treatment")) ||
+      context.preferredProductId === product.id ||
+      context.selectedFavoriteProductId === product.id;
+    
+    if (!allowSpotTreatment) {
+      score -= 100;  // חסימה קשיחה
+    }
+  }
   
   // צהריים - העדפה למוצרים קלילים במיוחד
   if (context.timeOfDay === "צהריים") {
@@ -510,10 +640,40 @@ function scoreProduct(product, context) {
     if (tags.includes("hydration") && tags.includes("light")) score += 3;
   }
   
+  // ✅ Time-based scoring
   if (isDayRoutine(context.timeOfDay) && tags.includes("vitaminC")) score += 4;
   if (isDayRoutine(context.timeOfDay) && tags.includes("spfRequired")) score -= 6;
+  
+  // ✅ Penalty חזק מאוד לacid/exfoliating בבוקר - כמעט אף פעם לא בבוקר
+  // גם במצב "מפנק" - בבוקר מפנק = hydration/glow, לא exfoliation
+  if (isDayRoutine(context.timeOfDay)) {
+    if (tags.includes("acid")) score -= 15;
+    if (tags.includes("exfoliating")) score -= 15;
+  }
+  
   if (!isDayRoutine(context.timeOfDay) && tags.includes("oil") && context.feeling === "dry") score += 4;
   if (tags.includes("light")) score += 1;
+  
+  // ✅ Smart scoring ל-Oils (Jason Vitamin E) - final nourishing step
+  if (product.type === "Oil" && !isDayRoutine(context.timeOfDay)) {
+    // בונוס בסיסי לערב/לילה
+    score += 5;  // הועלה מ-3
+    
+    // בונוס גדול מאוד למפנק - כדי להגיע ל-70% סבירות
+    if (context.routinePace === 3) score += 15;  // הועלה מ-8
+    
+    // בונוס למצבי עור מתאימים
+    if (context.feeling === "dry") score += 10;  // הועלה מ-7
+    if (context.feeling === "glow") score += 8;  // הועלה מ-6
+    if (context.feeling === "aging") score += 7;  // הועלה מ-5
+    if (context.feeling === "red") score += 6;  // הועלה מ-4
+    if (context.feeling === "sensitive") score += 5;  // הועלה מ-3
+    
+    // קנס למצבים לא מתאימים
+    if (context.feeling === "oily") score -= 12;  // הועלה מ-8
+    if (context.feeling === "breakouts") score -= 15;  // הועלה מ-10
+    if (context.feeling === "spot-treatment") score -= 15;  // הועלה מ-10
+  }
 
   return score + rotationNoise(product.id, context.routineNonce);
 }
@@ -522,7 +682,8 @@ function rotationNoise(id, seed) {
   let value = 0;
   const input = `${id}-${seed}-${new Date().toDateString()}`;
   for (let i = 0; i < input.length; i += 1) value = (value * 31 + input.charCodeAt(i)) % 997;
-  return (value % 17) / 10;
+  // ✅ הגדלה מ-1.7 ל-5 כדי לתת variety יותר גדול
+  return (value % 50) / 10;  // 0-5 points
 }
 
 function isDominantProduct(product) {
@@ -567,28 +728,421 @@ function candidatesFor(context, type = null) {
   return products
     .filter((product) => !type || product.type === type)
     .filter((product) => productMatchesTime(product, context.timeOfDay))
+    // ✅ סינון קשיח: אסור acid/exfoliating/retinoid בבוקר/צהריים
+    .filter((product) => {
+      if (isDayRoutine(context.timeOfDay)) {
+        const tags = new Set(tagsFor(product));
+        // אסור acid, exfoliating, או retinoid בבוקר!
+        if (tags.has("acid") || tags.has("exfoliating") || tags.has("retinoid")) {
+          return false;
+        }
+      }
+      return true;
+    })
     .sort((a, b) => scoreProduct(b, context) - scoreProduct(a, context));
 }
 
 function addProduct(selected, warnings, product, reason, context) {
-  if (!product || selected.some((item) => item.id === product.id)) return false;
+  // ✅ בדיקת duplicate משודרגת - גם לפי id וגם לפי brand+name
+  if (!product || isProductAlreadySelected(product, selected)) return false;
+  
   const conflict = selected.map((item) => detectConflict(item, product, context.feeling)).find(Boolean);
   if (conflict) {
     warnings.push(`דילגתי על ${product.name}: ${conflict}`);
     return false;
   }
   selected.push({ ...product, reason });
+  
+  // ✅ עדכון context.hasStrongActive אחרי הוספת מוצר
+  if (context && context.isTargetedRoutine) {
+    const tags = new Set(tagsFor(product));
+    if (tags.has("retinoid") || (tags.has("acid") && tags.has("strong")) || 
+        tags.has("vitaminC") || product.type === "Spot Treatment") {
+      context.hasStrongActive = true;
+    }
+  }
+  
   return true;
 }
 
 function pickByType(type, selected, context) {
-  return candidatesFor(context, type).find((product) => isSafeAddition(product, selected, context.feeling));
+  const allCandidates = candidatesFor(context, type);
+  const suitable = allCandidates.filter((product) => 
+    isSafeAddition(product, selected, context.feeling, context)
+  );
+  
+  if (suitable.length === 0) return null;
+  if (suitable.length === 1) return suitable[0];
+  
+  // ✅ Smart variation: בחר מתוך 5 הראשונים (הורחב מ-3)
+  const seed = context.routineNonce || Date.now();
+  const index = Math.abs(seed) % Math.min(5, suitable.length);
+  
+  return suitable[index];
+}
+
+function getDailyRoutineNonce(context = {}) {
+  // ✅ Daily Rotation: seed משתנה רק פעם ביום + לפי context
+  // זה מבטיח עקבות באותו יום, variation בימים שונים
+  
+  // תאריך היום (ללא שעה)
+  const today = new Date();
+  const dayKey = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+  
+  // context ייחודי לשגרה
+  const routineKey = [
+    dayKey,
+    context.timeOfDay || state.timeOfDay || 'default',
+    context.routineRoute || state.routineRoute || 'regular',
+    context.feeling || state.feeling || 'glow',
+    context.preferredProductId || state.preferredProductId || 'none'
+  ].join('_');
+  
+  // hash פשוט מה-string
+  let hash = 0;
+  for (let i = 0; i < routineKey.length; i++) {
+    const char = routineKey.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+  
+  return Math.abs(hash);
 }
 
 function realTargetCount() {
-  if (state.requestedSteps <= 2) return 2;
-  if (state.requestedSteps >= 5) return 6;
-  return Math.max(2, state.requestedSteps);
+  // ✅ שאלון "בנה שגרה": מינימום 3, מקסימום 6
+  if (state.routineRoute === "regular" && state.routineFlow === "wizard") {
+    if (state.requestedSteps <= 2) return 3;
+    if (state.requestedSteps >= 5) return 6;
+    return Math.max(3, state.requestedSteps);
+  }
+  
+  // ✅ שגרות רגילות: להחזיר בדיוק מה שהמשתמש בחר
+  // מהיר (1) → 3
+  // מאוזן (2) → 4
+  // מפנק (3) → 5-7 (מוגבל ב-buildRoutine)
+  return state.requestedSteps;  // מחזיר בדיוק: 3, 4, 5, 6, או 7
+}
+
+// ✅ פונקציה לזהות מוצר לפי brand + name (למנוע duplicates)
+function getProductIdentity(product) {
+  if (!product) return null;
+  // נרמול: הסרת רווחים מיותרים, lowercase, הסרת תווים מיוחדים
+  const normalize = (str) => {
+    if (!str) return "";
+    return str.toLowerCase()
+      .replace(/\s+/g, " ")  // רווחים מרובים → רווח אחד
+      .replace(/[^\w\s-]/g, "")  // הסרת תווים מיוחדים
+      .trim();
+  };
+  
+  const brand = normalize(product.brand || "");
+  const name = normalize(product.name || "");
+  
+  return `${brand}_${name}`;
+}
+
+// ✅ בדיקה אם מוצר כבר קיים ב-selected (לפי id או brand+name)
+function isProductAlreadySelected(product, selected) {
+  if (!product) return true;
+  
+  // בדיקה 1: לפי ID
+  if (selected.some(s => s.id === product.id)) {
+    return true;
+  }
+  
+  // בדיקה 2: לפי brand + name
+  const productKey = getProductIdentity(product);
+  if (selected.some(s => getProductIdentity(s) === productKey)) {
+    console.log('🚫 DUPLICATE BLOCKED (by brand+name):', {
+      candidate: { id: product.id, name: product.name, brand: product.brand },
+      key: productKey,
+      existing: selected.filter(s => getProductIdentity(s) === productKey)
+        .map(s => ({ id: s.id, name: s.name, brand: s.brand }))
+    });
+    return true;
+  }
+  
+  return false;
+}
+
+// ✅ פונקציה ליצירת benefit text ספציפי למוצר
+function getProductBenefit(product) {
+  if (!product) return "מוצר טיפוח איכותי.";
+  
+  const tags = new Set(tagsFor(product));
+  const type = product.type;
+  
+  // מסיכות
+  if (type === "Mask") {
+    if (tags.has("collagen") || tags.has("hydration")) return "מעניק לחות עמוקה ומראה מוטן וזוהר.";
+    if (tags.has("clay") || tags.has("pore")) return "מנקה עומק, מטשטש נקבוביות ומאזן שומניות.";
+    if (tags.has("calming") || tags.has("soothing")) return "מרגיע אדמומיות וחיזוק מחסום העור.";
+    if (tags.has("brightening")) return "מבהיר כתמים ומעניק מראה אחיד וזוהר.";
+    return "טיפול מעמיק ומפנק לעור.";
+  }
+  
+  // סרומים
+  if (type === "Serum") {
+    if (tags.has("vitaminC")) return "מבהיר, מעניק זוהר ומגן מנזקים סביבתיים.";
+    if (tags.has("niacinamide")) return "מסייע באיזון שומניות, טשטוש נקבוביות ואחידות גוון.";
+    if (tags.has("peptide")) return "מחזק את העור, משפר גמישות ומעניק מראה צעיר.";
+    if (tags.has("retinoid")) return "מסייע בהחלקת קמטים, שיפור מרקם ואחידות גוון.";
+    if (tags.has("collagen")) return "מעניק לחות עמוקה, מוטנות ומראה זוהר.";
+    if (tags.has("acid")) return "מסייע בהבהרה עדינה, החלקת מרקם ואחידות גוון.";
+    if (tags.has("hydration")) return "מעניק לחות עמוקה ומראה זוהר ובריא.";
+    if (tags.has("calming")) return "מרגיע אדמומיות וחיזוק מחסום העור.";
+    return "טיפול ממוקד לשיפור מראה העור.";
+  }
+  
+  // טונרים
+  if (type === "Toner") {
+    if (tags.has("acid")) return "מכין את העור, מסייע בהבהרה ואיזון pH.";
+    if (tags.has("hydration")) return "מכין את העור וממלא לחות לפני השלבים הבאים.";
+    if (tags.has("calming")) return "מרגיע ומאזן את העור לפני השלבים הבאים.";
+    return "מכין את העור לקליטה אופטימלית של המוצרים הבאים.";
+  }
+  
+  // אסנסים
+  if (type === "Essence") {
+    if (tags.has("hydration")) return "מעניק לחות עמוקה וממלא את העור.";
+    if (tags.has("glow")) return "מעניק זוהר ומראה בריא לעור.";
+    if (tags.has("nourishing")) return "מזין ומחזק את מחסום העור.";
+    return "מעניק לחות והזנה עמוקה.";
+  }
+  
+  // קרמים
+  if (type === "Cream") {
+    if (tags.has("ceramide") || tags.has("barrier")) return "חותם לחות, מחזק מחסום עור ומגן מפני יובש.";
+    if (tags.has("peptide")) return "מזין, מחזק ומשפר את גמישות העור.";
+    if (tags.has("nourishing") || tags.has("rich")) return "מזין עמוק וסוגר את השגרה בלחות עשירה.";
+    if (tags.has("gel") || tags.has("lightweight")) return "חותם לחות בטקסטורה קלילה ונעימה.";
+    return "חותם לחות וסוגר את השגרה.";
+  }
+  
+  // קרם עיניים
+  if (type === "Eye Cream") {
+    if (tags.has("peptide")) return "מחזק, מפחית קמטוטים ונפיחות באזור העיניים.";
+    if (tags.has("caffeine")) return "מפחית נפיחות וכהויות באזור העיניים.";
+    return "טיפול עדין ומזין לאזור העיניים הרגיש.";
+  }
+  
+  // טיפול נקודתי
+  if (type === "Spot Treatment") {
+    return "טיפול ממוקד בפגמים ואדמומיות.";
+  }
+  
+  // שמנים
+  if (type === "Oil") {
+    return "מזין עמוק, חותם לחות ומעניק זוהר.";
+  }
+  
+  // ברירת מחדל
+  return "מוצר טיפוח איכותי למראה עור בריא.";
+}
+
+// ========================================================================
+// 🎯 מערכת חכמה לסינון מועדפים לפי תשובות השאלון
+// ========================================================================
+
+/**
+ * סינון חכם של מוצרים מועדפים לפי כל התשובות בשאלון
+ */
+function getSmartFilteredFavorites(favoriteProducts, context) {
+  const feelingObj = getFeeling(context.feeling);
+  
+  return favoriteProducts
+    .map(product => ({
+      product,
+      score: calculateFavoriteScore(product, context, feelingObj)
+    }))
+    .filter(item => item.score > 0)  // רק מוצרים שמתאימים
+    .sort((a, b) => b.score - a.score)
+    .map(item => item.product);
+}
+
+/**
+ * חישוב ציון התאמה למוצר מועדף
+ */
+function calculateFavoriteScore(product, context, feelingObj) {
+  let score = 100;
+  const tags = new Set(tagsFor(product));
+  const feeling = context.feeling;
+  
+  // רטינול בבוקר = אסור
+  if (isDayRoutine(context.timeOfDay) && tags.has("retinoid")) {
+    return 0;
+  }
+  
+  // בדיקת זמן שימוש
+  if (product.usage && Array.isArray(product.usage)) {
+    const timeMap = {
+      "בוקר": ["בוקר", "בוקר/ערב"],
+      "צהריים": ["בוקר", "ערב", "בוקר/ערב"],
+      "ערב": ["ערב", "לילה", "בוקר/ערב"],
+      "לילה": ["לילה", "ערב"]
+    };
+    
+    const validTimes = timeMap[context.timeOfDay] || [];
+    const hasValidTime = product.usage.some(time => 
+      validTimes.some(valid => time.includes(valid))
+    );
+    
+    if (!hasValidTime) score -= 50;
+  }
+  
+  // מצב עור: רגיש/אדמומי
+  if (feeling === "sensitive" || feeling === "redness") {
+    if (tags.has("soothing") || tags.has("barrier") || tags.has("sensitive")) score += 20;
+    if (tags.has("ceramides") || tags.has("calming")) score += 15;
+    if (tags.has("strong")) score -= 30;
+    if (tags.has("acid")) score -= 25;
+    if (tags.has("retinoid")) score -= 20;
+    if (tags.has("exfoliant")) score -= 20;
+  }
+  
+  // מצב עור: פצעונים
+  if (feeling === "breakouts" || feeling === "spot-treatment") {
+    if (tags.has("acne") || tags.has("spot")) score += 25;
+    if (tags.has("salicylic") || tags.has("bha")) score += 20;
+    if (tags.has("niacinamide")) score += 15;
+    if (tags.has("light") || tags.has("gel")) score += 10;
+    if (tags.has("rich") || tags.has("heavy")) score -= 20;
+  }
+  
+  // מצב עור: כתמים
+  if (feeling === "hyperpigmentation") {
+    if (tags.has("vitaminC") || tags.has("brightening")) score += 25;
+    if (tags.has("niacinamide")) score += 20;
+    if (tags.has("glow")) score += 15;
+    if (tags.has("strong") && tags.has("acid")) score -= 15;
+  }
+  
+  // מצב עור: יבש
+  if (feeling === "dry") {
+    if (tags.has("hydration") || tags.has("moisturizing")) score += 25;
+    if (tags.has("ceramides") || tags.has("peptides")) score += 20;
+    if (tags.has("snail")) score += 15;
+    if (tags.has("barrier")) score += 15;
+    if (tags.has("rich")) score += 10;
+    if (tags.has("acid") && tags.has("strong")) score -= 20;
+    if (tags.has("exfoliant")) score -= 15;
+    if (product.type === "Mask" && tags.has("clay")) score -= 25;
+  }
+  
+  // מצב עור: שומני
+  if (feeling === "oily") {
+    if (tags.has("light") || tags.has("gel")) score += 20;
+    if (tags.has("pore") || tags.has("balancing")) score += 20;
+    if (tags.has("heavy") || tags.has("rich")) score -= 25;
+    if (product.type === "Oil") score -= 30;
+  }
+  
+  // מצב עור: זוהר
+  if (feeling === "glow") {
+    if (tags.has("glow") || tags.has("brightening")) score += 25;
+    if (tags.has("peptides") || tags.has("collagen")) score += 20;
+    if (tags.has("vitaminC")) score += 20;
+    if (tags.has("hydration")) score += 15;
+  }
+  
+  // מצב עור: אנטי אייג'ינג
+  if (feeling === "antiaging") {
+    if (tags.has("peptides") || tags.has("collagen")) score += 25;
+    if (tags.has("antiaging")) score += 20;
+    if (tags.has("retinoid") && !isDayRoutine(context.timeOfDay)) score += 25;
+  }
+  
+  // לוגיקת מסיכות
+  if (product.type === "Mask") {
+    if (!context.includeMask) {
+      score -= 40;
+    } else {
+      if (isDayRoutine(context.timeOfDay)) {
+        if (tags.has("calming") || tags.has("hydration")) score += 15;
+        if (tags.has("exfoliant") || tags.has("clay") || tags.has("peel")) score -= 30;
+      } else {
+        if (tags.has("overnight")) score += 20;
+        if (tags.has("clay") || tags.has("exfoliant")) score += 10;
+      }
+    }
+  }
+  
+  // רמת אגרסיביות
+  if (context.routinePace === 1) {
+    if (tags.has("basic") || tags.has("simple")) score += 10;
+    if (tags.has("special") || tags.has("treatment")) score -= 10;
+  } else if (context.routinePace === 3) {
+    if (tags.has("special") || tags.has("treatment")) score += 10;
+    if (tags.has("luxury")) score += 15;
+  }
+  
+  // בדיקת conflicts
+  if (context.preferredProductId) {
+    const preferredProduct = getProduct(context.preferredProductId);
+    if (preferredProduct && detectConflict(product, preferredProduct, feeling)) {
+      return 0;
+    }
+  }
+  
+  // Spot treatments - רק אם מתאים
+  if (product.type === "Spot Treatment") {
+    if (feeling !== "breakouts" && feeling !== "spot-treatment") {
+      score -= 20;
+    }
+  }
+  
+  // בונוס כללי
+  if (tags.has("snail")) score += 10;
+  if (tags.has("barrier")) score += 10;
+  
+  // SPF - רק בבוקר/צהריים
+  if (product.type === "SPF") {
+    if (isDayRoutine(context.timeOfDay)) {
+      score += 30;
+    } else {
+      score -= 50;
+    }
+  }
+  
+  return Math.max(0, score);
+}
+
+// ========================================================================
+// 🚨 Active Overload Prevention - מניעת עומס actives
+// ========================================================================
+
+/**
+ * בדיקה אם יש active overload בשגרה
+ */
+function hasActiveOverload(products) {
+  const actives = {
+    retinol: false,
+    strongAcids: false,
+    vitaminC: false,
+    spot: false
+  };
+  
+  products.forEach(product => {
+    const tags = new Set(tagsFor(product));
+    if (tags.has("retinoid")) actives.retinol = true;
+    if (tags.has("acid") && tags.has("strong")) actives.strongAcids = true;
+    if (tags.has("vitaminC")) actives.vitaminC = true;
+    if (product.type === "Spot Treatment") actives.spot = true;
+  });
+  
+  // ספירת actives חזקים
+  const strongCount = [actives.retinol, actives.strongAcids, actives.vitaminC, actives.spot]
+    .filter(Boolean).length;
+  
+  return strongCount >= 2;  // 2+ actives = overload
+}
+
+/**
+ * בדיקה אם מוצר יוצר overload עם שגרה קיימת
+ */
+function wouldCreateOverload(product, existingProducts) {
+  return hasActiveOverload([...existingProducts, product]);
 }
 
 function buildRoutine() {
@@ -605,16 +1159,114 @@ function buildRoutine() {
     routineRoute: state.routineRoute,
     routineNonce: state.routineNonce,
   };
+  
+  // ✅ CRITICAL: אם יש displayedRoutine - התחל ממנו!
+  // זה שומר על כל ההחלפות ("החלף מוצר", "שנה שגרה")
+  if (state.displayedRoutine && state.displayedRoutine.steps && state.displayedRoutine.steps.length > 0) {
+    console.log('🔄 buildRoutine: Starting from displayedRoutine (preserving replacements)');
+    console.log('  displayedRoutine:', state.displayedRoutine.steps.map(p => p.name));
+    
+    // התחל מ-displayedRoutine במקום לבנות מאפס
+    const selected = [...state.displayedRoutine.steps];
+    const warnings = state.displayedRoutine.warnings || [];
+    
+    // target מחושב לפי pace
+    let target = context.requestedSteps;
+    
+    // במצב מפנק, מגביל ל-5-6
+    if (context.routinePace === 3) {
+      target = Math.random() < 0.6 ? 6 : 5;
+    }
+    if (context.routinePace === 3 && target > 6) {
+      target = 6;
+    }
+    
+    // הרחב או צמצם את השגרה אם צריך
+    const currentCount = selected.length;
+    console.log(`  Current: ${currentCount}, Target: ${target}`);
+    
+    if (target < currentCount) {
+      console.log(`  Shrinking from ${currentCount} to ${target}...`);
+      
+      // ✅ צמצום: הסר מוצרים מהסוף (לפי priority)
+      // שמור מוצרים מועדפים ומרכזיים
+      const priority = selected.map(p => {
+        let score = 0;
+        if (p.id === context.preferredProductId) score += 100;
+        if (p.id === context.selectedFavoriteProductId) score += 90;
+        if (p.type === "Toner") score += 50;
+        if (p.type === "Cream") score += 40;
+        if (p.type === "Serum") score += 30;
+        if (p.type === "Essence") score += 20;
+        return { product: p, score };
+      });
+      
+      priority.sort((a, b) => b.score - a.score);
+      selected.length = 0;
+      selected.push(...priority.slice(0, target).map(item => item.product));
+      
+      console.log('  After shrinking:', selected.map(p => p.name));
+    }
+    
+    if (target > currentCount) {
+      console.log(`  Expanding from ${currentCount} to ${target}...`);
+      
+      // הוסף מוצרים בטוחים
+      const expansionCandidates = candidatesFor(context)
+        .filter(p => !isProductAlreadySelected(p, selected))  // ✅ בדיקה משודרגת
+        .filter(p => isSafeAddition(p, selected, context.feeling, context));
+      
+      while (selected.length < target && expansionCandidates.length > 0) {
+        const next = expansionCandidates.shift();
+        // ✅ בדיקה כפולה משודרגת נגד duplicates!
+        if (next && 
+            !isProductAlreadySelected(next, selected) &&  // ✅ בדיקה משודרגת
+            isSafeAddition(next, selected, context.feeling, context)) {
+          console.log(`    Adding: ${next.name}`);
+          selected.push(next);
+        }
+      }
+    }
+    
+    // מיין לפי סדר
+    let routine = selected.sort((a, b) => routineOrderScore(a) - routineOrderScore(b));
+    
+    // ✅ CRITICAL: Final dedupe check - מסיר duplicates לפי brand+name
+    const seen = new Set();
+    routine = routine.filter(product => {
+      const key = getProductIdentity(product);
+      if (seen.has(key)) {
+        console.warn('⚠️ DUPLICATE FOUND IN FINAL ROUTINE:', product.name, product.brand);
+        warnings.push(`הוסר duplicate: ${product.name}`);
+        return false;
+      }
+      seen.add(key);
+      return true;
+    });
+    
+    console.log('  Final routine:', routine.map(p => p.name));
+    
+    return { steps: routine, warnings };
+  }
+  
+  console.log('🔄 buildRoutine: Building from scratch (no displayedRoutine)');
+  
   const selected = [];
   const warnings = [];
   
   // target מחושב לפי pace
   let target = context.requestedSteps;
   
-  // במצב מפנק (pace=3), תפזר בין 5-6 שלבים
-  // 70% סיכוי ל-6, 30% ל-5
+  // ✅ במצב מפנק (pace=3), מגביל ל-5-6 מוצרים (לא 7!)
+  // 60% סיכוי ל-6, 40% ל-5
+  // המערכת תעצור כשהשגרה מרגישה מלאה, גם אם לא הגיעה ל-target
   if (context.routinePace === 3) {
-    target = Math.random() < 0.7 ? 6 : 5;
+    target = Math.random() < 0.6 ? 6 : 5;
+  }
+  
+  // ✅ הגבלה קשיחה: לעולם לא יותר מ-6 מוצרים במפנק
+  if (context.routinePace === 3 && target > 6) {
+    target = 6;
   }
   
   let maxTarget = target;
@@ -627,32 +1279,24 @@ function buildRoutine() {
 
   // הוספת מוצר מועדף אם נבחר ועדיין לא בשגרה
   if (favoriteProduct && !selected.find(s => s.product.id === favoriteProduct.id)) {
-    let favoriteDesc = "";
-    if (favoriteProduct.type === "Toner") favoriteDesc = "טונר מהמועדפים שלך.";
-    else if (favoriteProduct.type === "Essence") favoriteDesc = "אסנס מהמועדפים שלך.";
-    else if (favoriteProduct.type === "Serum") favoriteDesc = "סרום מהמועדפים שלך.";
-    else if (favoriteProduct.type === "Eye Cream") favoriteDesc = "קרם עיניים מהמועדפים שלך.";
-    else if (favoriteProduct.type === "Cream") favoriteDesc = "קרם מהמועדפים שלך.";
-    else if (favoriteProduct.type === "Mask") favoriteDesc = "מסיכה מהמועדפים שלך.";
-    else if (favoriteProduct.type === "Oil") favoriteDesc = "שמן מהמועדפים שלך.";
-    else favoriteDesc = "מוצר מהמועדפים שלך.";
-    
-    addProduct(selected, warnings, favoriteProduct, favoriteDesc, context);
+    addProduct(selected, warnings, favoriteProduct, getProductBenefit(favoriteProduct), context);
   }
+  
+  // ✅ "טיפול ממוקד" - active אחד מרכזי בלבד, ללא overload
+  const isTargetedRoutine = context.routineType === "targeted";
+  const hasStrongActive = selected.some(s => {
+    const tags = new Set(tagsFor(s.product));
+    return tags.has("retinoid") || (tags.has("acid") && tags.has("strong")) || 
+           tags.has("vitaminC") || s.product.type === "Spot Treatment";
+  });
+  
+  // עדכון context עם מידע על actives קיימים
+  context.hasStrongActive = hasStrongActive;
+  context.isTargetedRoutine = isTargetedRoutine;
 
   if (preferred) {
-    // יצירת הסבר למוצר המרכזי
-    let productDesc = "";
-    if (preferred.type === "Toner") productDesc = "טונר חלקיק והנעה לפני השלבים הבאים.";
-    else if (preferred.type === "Essence") productDesc = "אסנס להזנה ולחות עמוקה.";
-    else if (preferred.type === "Serum") productDesc = "סרום ממוקד לטיפול בבעיה ספציפית.";
-    else if (preferred.type === "Eye Cream") productDesc = "קרם עיניים לטיפול עדין באזור הרגיש.";
-    else if (preferred.type === "Cream") productDesc = "קרם לחות שסוגר את השגרה.";
-    else if (preferred.type === "Mask") productDesc = "מסיכה לטיפול מיוחד ומפנק.";
-    else if (preferred.type === "Oil") productDesc = "שמן להזנה ולחות עמוקה.";
-    else productDesc = "מוצר טיפוח מיוחד.";
-    
-    const anchorMessage = `המוצר שבחרת הוא המרכז של השגרה. ${productDesc}`;
+    // יצירת benefit למוצר המרכזי
+    const anchorMessage = getProductBenefit(preferred);
     addProduct(selected, warnings, preferred, anchorMessage, context);
     // בדיקה אם המוצר המועדף דומיננטי
     const dominance = isDominantProduct(preferred);
@@ -666,16 +1310,35 @@ function buildRoutine() {
       ? candidatesFor(context).filter((product) => ["Mask", "Serum", "Cream"].includes(product.type) && !hasTag(product, "strong"))
       : candidatesFor(context).filter((product) => ["Serum", "Toner", "Spot Treatment", "Mask"].includes(product.type));
     
-    // אם יש פצעונים, לתת עדיפות ל-Spot Treatment או מוצרי אקנה
-    const central = context.includeMask
-      ? centralPool.find((product) => product.type === "Mask") || centralPool[0]
-      : context.feeling === "breakouts" 
-        ? (centralPool.find((product) => product.type === "Spot Treatment") || 
-           centralPool.find((product) => hasTag(product, "acne") || hasTag(product, "spot")) || 
-           centralPool[0])
-        : centralPool[0];
+    // ✅ Time-aware main active selection
+    let central;
     
-    addProduct(selected, warnings, central, context.coupleMode ? "פתיחה זוגית עדינה וכיפית." : "המוצר המרכזי לפי מצב העור שבחרת.", context);
+    if (context.includeMask) {
+      // מסכה תמיד עדיפה אם כלולה
+      central = centralPool.find((product) => product.type === "Mask") || centralPool[0];
+    } else if (context.feeling === "breakouts") {
+      // פצעונים - Spot Treatment או acne
+      central = centralPool.find((product) => product.type === "Spot Treatment") || 
+                centralPool.find((product) => hasTag(product, "acne") || hasTag(product, "spot")) || 
+                centralPool[0];
+    } else {
+      // ✅ בחירה לפי זמן שגרה
+      if (isDayRoutine(context.timeOfDay)) {
+        // בוקר/צהריים: עדיף vitaminC > brightening > niacinamide
+        central = centralPool.find((product) => hasTag(product, "vitaminC")) ||
+                  centralPool.find((product) => hasTag(product, "brightening") && !hasTag(product, "retinoid")) ||
+                  centralPool.find((product) => hasTag(product, "niacinamide")) ||
+                  centralPool[0];
+      } else {
+        // ערב/לילה: עדיף retinoid > acids > recovery
+        central = centralPool.find((product) => hasTag(product, "retinoid")) ||
+                  centralPool.find((product) => hasTag(product, "acid")) ||
+                  centralPool.find((product) => hasTag(product, "recovery")) ||
+                  centralPool[0];
+      }
+    }
+    
+    addProduct(selected, warnings, central, context.coupleMode ? "פתיחה זוגית עדינה וכיפית." : getProductBenefit(central), context);
     
     // בדיקה אם המוצר המרכזי דומיננטי
     const dominance = isDominantProduct(central);
@@ -684,37 +1347,131 @@ function buildRoutine() {
     }
   }
 
+  // ✅ CRITICAL: החל routineOverrides כאן - לפני הוספת מוצרים נוספים!
+  // זה מבטיח שכל הבדיקות (isSafeAddition, conflicts) רואות את המוצרים האמיתיים
+  if (state.routineOverrides && Object.keys(state.routineOverrides).length > 0) {
+    console.log('🔄 Applying routineOverrides to selected (BEFORE expansion):', state.routineOverrides);
+    console.log('  Before:', selected.map(p => `${p.name} (${p.id})`));
+    
+    selected.forEach((step, index) => {
+      const overrideId = state.routineOverrides[step.id];
+      if (overrideId) {
+        const replacement = getProduct(overrideId);
+        if (replacement) {
+          console.log(`  ✓ Replacing ${step.name} → ${replacement.name}`);
+          selected[index] = { ...replacement, reason: step.reason };
+        }
+      }
+    });
+    
+    console.log('  After:', selected.map(p => `${p.name} (${p.id})`));
+  }
+
   const centralProduct = selected[0];
   const needsPrep = target >= 3 || (centralProduct && routineOrderScore(centralProduct) >= 40);
-  if (needsPrep) {
+  
+  // ✅ Duplicate Prevention - בדיקה כוללת
+  const hasTonerSlot = favoriteProduct?.type === "Toner" || 
+                       preferred?.type === "Toner" ||
+                       selected.some(p => p.type === "Toner");
+  const hasEssenceSlot = favoriteProduct?.type === "Essence" || 
+                         preferred?.type === "Essence" ||
+                         selected.some(p => p.type === "Essence");
+  const hasSerumSlot = favoriteProduct?.type === "Serum" || 
+                       preferred?.type === "Serum" ||
+                       selected.some(p => p.type === "Serum");
+  const hasCreamSlot = favoriteProduct?.type === "Cream" || 
+                       preferred?.type === "Cream" ||
+                       selected.some(p => p.type === "Cream");
+  const hasEyeSlot = (favoriteProduct?.type === "Eye Cream" || favoriteProduct?.type === "Eye Serum") ||
+                     (preferred?.type === "Eye Cream" || preferred?.type === "Eye Serum") ||
+                     selected.some(p => p.type === "Eye Cream" || p.type === "Eye Serum");
+  const hasMaskSlot = favoriteProduct?.type === "Mask" || 
+                      preferred?.type === "Mask" ||
+                      selected.some(p => p.type === "Mask");
+  const hasSpotSlot = favoriteProduct?.type === "Spot Treatment" || 
+                      preferred?.type === "Spot Treatment" ||
+                      selected.some(p => p.type === "Spot Treatment");
+  
+  if (needsPrep && !hasTonerSlot) {
     addProduct(selected, warnings, pickByType("Toner", selected, context), "הכנת העור לפני הטיפול.", context);
   }
-  if (target >= 4 || ["red", "dry", "sensitive"].includes(context.feeling)) {
+  
+  if ((target >= 4 || ["red", "dry", "sensitive"].includes(context.feeling)) && !hasEssenceSlot) {
     addProduct(selected, warnings, pickByType("Essence", selected, context), "שכבת שיקום ולחות לפני הסרומים.", context);
   }
 
-  if (target >= 5 && !selected.some((product) => product.type === "Serum")) {
+  if (target >= 5 && !selected.some((product) => product.type === "Serum") && !hasSerumSlot) {
     addProduct(selected, warnings, pickByType("Serum", selected, context), "סרום תומך שמתאים למצב העור.", context);
+  }
+  
+  if (target === 4 && !selected.some((product) => product.type === "Serum") && !hasSerumSlot) {
+    addProduct(selected, warnings, pickByType("Serum", selected, context), "סרום תומך שמתאים למצב העור.", context);
+  }
+  
+  // ✅ Soothing/Barrier slot - מאזן actives חזקים
+  // אם יש active חזק (retinol, acid, vitaminC) ו-target מספיק גדול
+  const hasActiveInRoutine = selected.some(p => 
+    hasTag(p, "retinoid") || 
+    hasTag(p, "acid") || 
+    hasTag(p, "vitaminC")
+  );
+  
+  if (hasActiveInRoutine && target >= 4 && !context.coupleMode) {
+    // חפש soothing/barrier/calming product שלא בשגרה
+    const soothingCandidates = candidatesFor(context)
+      .filter(p => 
+        (hasTag(p, "soothing") || hasTag(p, "barrier") || hasTag(p, "calming") || hasTag(p, "panthenol")) &&
+        !selected.some(s => s.id === p.id) &&
+        isSafeAddition(p, selected, context.feeling, context)
+      );
+    
+    if (soothingCandidates.length > 0) {
+      addProduct(selected, warnings, soothingCandidates[0], "מרגיע ומאזן את האקטיבים החזקים.", context);
+    }
   }
 
   if (context.includeMask || context.coupleMode) {
-    addProduct(selected, warnings, pickByType("Mask", selected, { ...context, timeOfDay: "לילה" }), context.coupleMode ? "מסיכה זוגית לרגע ספא ביתי." : "מסיכה שמתאימה לבחירה שלך.", context);
+    if (!hasMaskSlot) {
+      addProduct(selected, warnings, pickByType("Mask", selected, { ...context, timeOfDay: "לילה" }), context.coupleMode ? "מסיכה זוגית לרגע ספא ביתי." : "מסיכה שמתאימה לבחירה שלך.", context);
+    }
   }
 
   if (target >= 5) {
-    addProduct(selected, warnings, pickByType("Eye Cream", selected, context), "טיפול עדין לאזור העיניים.", context);
+    if (!hasEyeSlot) {
+      addProduct(selected, warnings, pickByType("Eye Cream", selected, context), "טיפול עדין לאזור העיניים.", context);
+    }
   }
 
-  if (!selected.some((product) => product.type === "Cream")) {
+  if (!selected.some((product) => product.type === "Cream") && !hasCreamSlot) {
     addProduct(selected, warnings, pickByType("Cream", selected, context), "קרם לחות שסוגר את השגרה.", context);
   }
 
-  if (target >= 6 && context.feeling === "dry") {
-    addProduct(selected, warnings, pickByType("Oil", selected, context), "שכבת הזנה רק אם העור ממש יבש.", context);
+  // ✅ Oil - final nourishing step (Jason Vitamin E)
+  // מתאים למפנק + dry/glow/aging + ערב/לילה
+  // מופיע לפעמים (לא תמיד) במפנק
+  const isOilSuitable = !isDayRoutine(context.timeOfDay) && 
+                        (context.routinePace === 3 || 
+                         context.feeling === "dry" || 
+                         context.feeling === "glow" || 
+                         context.feeling === "aging" ||
+                         target >= 6);
+  
+  // ✅ במפנק: 70% סיכוי לשמן (היה 50%)
+  // ב-dry/glow/aging: תמיד
+  const shouldAddOil = isOilSuitable && 
+                       context.feeling !== "oily" && 
+                       context.feeling !== "breakouts" &&
+                       (context.routinePace !== 3 || Math.random() < 0.7);
+  
+  if (shouldAddOil) {
+    addProduct(selected, warnings, pickByType("Oil", selected, context), "שכבת הזנה וזוהר סופית.", context);
   }
 
   if (target >= 3 && (context.feeling === "breakouts" || context.feeling === "spot-treatment")) {
-    addProduct(selected, warnings, pickByType("Spot Treatment", selected, context), "טיפול נקודתי ישירות על פצעון פעיל. למרוח רק על האזור הבעייתי, לא על כל הפנים.", context);
+    if (!hasSpotSlot) {
+      addProduct(selected, warnings, pickByType("Spot Treatment", selected, context), "טיפול נקודתי ישירות על פצעון פעיל. למרוח רק על האזור הבעייתי, לא על כל הפנים.", context);
+    }
   }
 
   if (target >= 5 && !selected.some((product) => product.type === "Mixer")) {
@@ -880,6 +1637,22 @@ function buildRoutine() {
     return Array.from(seen.values());
   }
 
+  // ✅ וידוא שאין nulls/undefineds ב-routine
+  routine = routine.filter(step => step && step.id && step.name);
+  
+  // ✅ CRITICAL: Final dedupe check - מסיר duplicates לפי brand+name
+  const seenProducts = new Set();
+  routine = routine.filter(product => {
+    const key = getProductIdentity(product);
+    if (seenProducts.has(key)) {
+      console.warn('⚠️ DUPLICATE FOUND IN FINAL ROUTINE:', product.name, product.brand);
+      warnings.push(`הוסר duplicate: ${product.name}`);
+      return false;
+    }
+    seenProducts.add(key);
+    return true;
+  });
+  
   return { steps: routine, warnings: deduplicateWarnings(warnings) };
 }
 
@@ -929,14 +1702,30 @@ function selectRoutineProducts(routine, target, maxTarget, preferred, centralPro
 }
 
 function routineOrderScore(product) {
-  if (product.type === "Mask") return maskOrderScore(product);
+  if (product.type === "Mask") {
+    const score = maskOrderScore(product);
+    console.log(`routineOrderScore: ${product.name} (Mask) → ${score}`);
+    return score;
+  }
   const order = { Cleanser: 10, Toner: 20, Essence: 30, Serum: 40, "Spot Treatment": 45, "Eye Cream": 60, Mixer: 68, Cream: 70, Oil: 80, SPF: 90 };
-  return order[product.type] || 50;
+  const score = order[product.type] || 50;
+  console.log(`routineOrderScore: ${product.name} (${product.type}) → ${score}`);
+  return score;
 }
 
 function maskOrderScore(product) {
   const usage = getMaskUsage(product);
-  return usage?.flow === "wash-off" ? 15 : 35;
+  
+  // ✅ מסיכות wash-off (חימר, ניקוי) - מוקדם בשגרה
+  if (usage?.flow === "wash-off") {
+    console.log(`  Mask ${product.name}: wash-off → score 15`);
+    return 15;  // אחרי Cleanser (10), לפני Toner (20)
+  }
+  
+  // ✅ מסיכות hydrating/collagen/sheet - בסוף השגרה
+  // אחרי סרומים (40) ו-Eye Cream (60), לפני/במקום Cream (70)
+  console.log(`  Mask ${product.name}: hydrating → score 65`);
+  return 65;
 }
 
 function getMaskUsage(product) {
@@ -1066,6 +1855,41 @@ function getCouplePlan() {
   return state.couplePlan;
 }
 
+// ✅ קבלת labels דינמיים לפי ה-flow הפעיל
+function getCoupleStepLabels(plan) {
+  const maskTags = plan.maskProduct ? new Set(tagsFor(plan.maskProduct)) : new Set();
+  const isHydratingMask = maskTags.has("collagen") || maskTags.has("hydrating") || 
+                          maskTags.has("repair") || maskTags.has("sheet");
+  
+  // Labels משותפים - opening
+  const openingLabels = ["פתיחה", "הכנה", "מגבת", "ניקוי", "פינוק", "מסיכה"];
+  
+  // Labels לפי סוג מסיכה
+  if (isHydratingMask) {
+    // Biodance: opening → skincare → mask wait → cream → finish
+    return [
+      ...openingLabels,      // 0-5
+      "לחות",                // 6: hydrator
+      "סרום",                // 7: serum
+      "עיניים",              // 8: eye cream
+      "טיימר",               // 9: mask wait
+      "קרם",                 // 10: cream
+      "סיום"                 // 11: closing
+    ];
+  } else {
+    // Clay: opening → mask wait → skincare → cream → finish
+    return [
+      ...openingLabels,      // 0-5
+      "טיימר",               // 6: mask wait
+      "לחות",                // 7: hydrator
+      "סרום",                // 8: serum
+      "עיניים",              // 9: eye cream
+      "קרם",                 // 10: cream
+      "סיום"                 // 11: closing
+    ];
+  }
+}
+
 function coupleRandomText(items, offset = 0) {
   return pickSeeded(items, getCouplePlan().seed, offset);
 }
@@ -1075,18 +1899,87 @@ function renderCoupleScreen() {
   const total = 12;
   const step = Math.max(0, Math.min(total - 1, state.coupleStep));
   const scene = renderCoupleScene(step, plan);
+  const stepLabels = getCoupleStepLabels(plan);  // ✅ labels דינמיים!
 
   return el("section", { className: "screen active couple-screen" }, [
     el("div", { className: "card couple-screen-card" }, [
       el("div", { className: "card-inner" }, [
-        step > 0 ? el("button", { className: "back-link inline-back", text: `${icon("back")} חזרה`, onClick: goBack }) : null,
-        el("div", { className: "stepper" }, Array.from({ length: total }, (_, index) => 
-          el("span", { 
-            className: `step-dot ${index === step ? "active" : ""} ${index < step ? "done" : ""}`
-          })
-        )),
+        step > 0 ? el("button", { className: "back-link inline-back", text: "חזור", onClick: goBack }) : null,
+        // ✅ Stepper חדש עם עיגולים וכותרות - responsive ללא scroll
+        el("div", { 
+          className: "couple-stepper",
+          style: "display: flex; align-items: flex-start; justify-content: space-between; margin: 1.5rem 0 2rem; padding: 0 0.5rem; width: 100%; max-width: 100%; overflow: hidden;"
+        }, stepLabels.flatMap((label, index) => {
+          const items = [
+            // Step item עם עיגול וכותרת
+            el("div", {
+              key: `step-${index}`,
+              className: "step-item",
+              style: "display: flex; flex-direction: column; align-items: center; gap: 0.25rem; flex-shrink: 1; min-width: 0;"
+            }, [
+              // עיגול השלב - responsive
+              el("div", {
+                className: `step-circle ${index === step ? "active" : ""} ${index < step ? "done" : ""}`,
+                style: `
+                  width: clamp(24px, 5vw, 32px);
+                  height: clamp(24px, 5vw, 32px);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: clamp(11px, 2.5vw, 0.875rem);
+                  font-weight: 600;
+                  transition: all 0.3s ease;
+                  flex-shrink: 0;
+                  ${index < step ? 
+                    "background: #9075D7; color: white; border: 2px solid #9075D7;" : 
+                    index === step ? 
+                      "background: white; color: #9075D7; border: 2px solid #9075D7; box-shadow: 0 0 0 4px rgba(144, 117, 215, 0.1);" :
+                      "background: white; color: #9CA3AF; border: 2px solid #E5E7EB;"
+                  }
+                `,
+                text: index < step ? "✓" : (index + 1).toString()
+              }),
+              // כותרת השלב - responsive
+              el("span", {
+                style: `
+                  font-size: clamp(9px, 2vw, 0.75rem);
+                  text-align: center;
+                  color: ${index === step ? "#9075D7" : index < step ? "#6B7280" : "#9CA3AF"};
+                  font-weight: ${index === step ? "600" : "400"};
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  max-width: 100%;
+                `,
+                text: label
+              })
+            ])
+          ];
+          
+          // הוסף קו מחבר אחרי העיגול (אם לא השלב האחרון) - responsive
+          if (index < stepLabels.length - 1) {
+            items.push(
+              el("div", {
+                key: `connector-${index}`,
+                className: "step-connector",
+                style: `
+                  flex: 1;
+                  height: 2px;
+                  background: ${index < step ? "#9075D7" : "#E5E7EB"};
+                  align-self: flex-start;
+                  margin-top: clamp(12px, 2.5vw, 16px);
+                  min-width: 4px;
+                  max-width: 64px;
+                `
+              })
+            );
+          }
+          
+          return items;
+        })),
         scene,
-        renderCoupleNav(step, total),
+        renderCoupleNav(step, total, plan),  // ← העברת plan
       ]),
     ]),
     // Modal להחלפת מוצרים
@@ -1180,8 +2073,15 @@ function renderCoupleScene(step, plan) {
     "עכשיו חובה לשתות מים ולהגיד אחד לשני: איזה חתיך אתה.",
     "טיפוח זוגי הושלם בהצלחה. נשיקות לא כלולות, אבל מומלצות.",
   ];
+  
+  // ✅ זיהוי סוג מסיכה
+  const maskTags = plan.maskProduct ? new Set(tagsFor(plan.maskProduct)) : new Set();
+  const isClayMask = maskTags.has("clay") || maskTags.has("detox") || maskTags.has("pore");
+  const isHydratingMask = maskTags.has("collagen") || maskTags.has("hydrating") || 
+                          maskTags.has("repair") || maskTags.has("sheet");
 
-  const scenes = [
+  // שלבים משותפים - תחילה
+  const openingScenes = [
     () => el("div", { className: "couple-scene opening" }, [
       el("img", { className: "couple-hero-asset", src: "./assets/brand/couple-care.png", alt: "זמן טיפוח זוגי" }),
       el("p", { className: "eyebrow", text: "חוויה זוגית" }),
@@ -1189,7 +2089,6 @@ function renderCoupleScene(step, plan) {
       el("p", { text: "מאמי, זה הזמן שלכם לעצור רגע, לשים את העולם על שקט, ולהפוך את הבית לספא קטן וחמוד רק לשניכם." }),
     ]),
     
-    // שלב 1: מכינים את האווירה (+ כפתור Spotify)
     () => renderCoupleTextScene(
       "מכינים את האווירה", 
       "תביאו מגבת קטנה לכל אחד, כוס מים. זה הזמן להכנס לאווירת ספא בבית. הפעילו מוזיקה נעימה ומרגיעה, והדליקו נרות.", 
@@ -1197,21 +2096,18 @@ function renderCoupleScene(step, plan) {
       { spotifyButton: true }
     ),
     
-    // שלב 2: מגבת חמימה
     () => renderCoupleTextScene(
       "מגבת חמימה, כי מגיע לכם", 
       "הרטיבו מגבת קטנה במים חמימים, סחטו בעדינות והניחו על הפנים לכמה שניות. זה מרכך את העור ופותח את הרגע בטוב.", 
       ["מאמי, לא מים רותחים. אנחנו עושים ספא, לא מרק."]
     ),
     
-    // שלב 3: ניקוי עדין (טקסט מעודכן)
     () => renderCoupleTextScene(
       "ניקוי עדין", 
       "שטפו פנים בעדינות. בלי לשפשף חזק — העור שלכם רוצה אהבה, לא קרצוף של סיר.", 
       ["אהבה גם לעור הפנים"]
     ),
     
-    // שלב 4: רגע של פינוק (+ טיימר 10 דקות)
     () => renderCoupleTextScene(
       "רגע של פינוק", 
       "עשו אחד לשני דודו או מסאג׳ מפנק למשך 10 דקות.", 
@@ -1219,7 +2115,7 @@ function renderCoupleScene(step, plan) {
       { timer: { minutes: 10, label: "10 דקות" } }
     ),
     
-    // שלב 5: המסיכה (+ כפתור החלף)
+    // ✅ המסיכה - תמיד מוצגת פה (לפני branching)
     () => renderCoupleProductScene(
       "המסיכה שלכם להיום 🎭", 
       plan.maskProduct, 
@@ -1227,11 +2123,42 @@ function renderCoupleScene(step, plan) {
       [plan.text, getMaskUsage(plan.maskProduct)?.when].filter(Boolean),
       { replaceButton: true, productType: 'mask' }
     ),
+  ];
+  
+  // שלבי טיפוח לפני מסיכה (Biodance)
+  const skincareBeforeMask = [
+    () => renderCoupleProductScene(
+      "רגע של לחות והרגעה", 
+      plan.hydratorProduct, 
+      "עכשיו מחזירים לעור לחות ורוגע. כמה טפיחות עדינות, בלי למהר. אפשר שכל אחד יטפיח לשני בעדינות — הכי מאמי שיש.", 
+      [],
+      { replaceButton: true, productType: 'hydrator' }
+    ),
     
-    // שלב 6: זמן מסיכה (+ טיימר מותאם + הצעות)
+    () => renderCoupleProductScene(
+      "בוחרים בוסט קטן לעור", 
+      plan.serumProduct, 
+      "זה שלב הבוסט. כמה טיפות, מריחה עדינה, ולתת לעור לשתות את זה בכיף.", 
+      ["מאמי, תמרח לו בעדינות כאילו אתה מטפל ביצירת אמנות קטנה. כי אתה כן."],
+      { replaceButton: true, productType: 'serum' }
+    ),
+    
+    () => renderCoupleProductScene(
+      "קצת אהבה לעיניים", 
+      plan.eyeProduct, 
+      "טיפה קטנה סביב העיניים, בטפיחות עדינות. לא למשוך, לא לשפשף, רק פינוק קטן.", 
+      ["זה שלב אופציונלי. אם לא בא לכם, מדלגים וממשיכים."],
+      { replaceButton: true, productType: 'eye' }
+    ),
+  ];
+  
+  // שלב המסיכה + המתנה
+  const maskWaitScene = [
     () => renderCoupleMaskTimerScene(plan.maskProduct),
-    
-    // שלב 7-10: מוצרים (+ כפתור החלף לכל אחד)
+  ];
+  
+  // שלבי טיפוח אחרי מסיכה (Clay)
+  const skincareAfterMask = [
     () => renderCoupleProductScene(
       "רגע של לחות והרגעה", 
       plan.hydratorProduct, 
@@ -1255,7 +2182,10 @@ function renderCoupleScene(step, plan) {
       ["זה שלב אופציונלי. אם לא בא לכם, מדלגים וממשיכים לקרם לחות."],
       { replaceButton: true, productType: 'eye' }
     ),
-    
+  ];
+  
+  // קרם פנים (תמיד אחרון)
+  const creamScene = [
     () => renderCoupleProductScene(
       "נועלים את כל הטוב", 
       plan.creamProduct, 
@@ -1263,15 +2193,46 @@ function renderCoupleScene(step, plan) {
       ["אפשר שכל אחד ימרח לשני על הלחיים בעדינות. אם מישהו מגזים בכמות — הוא רשמית מאמי קרם."],
       { replaceButton: true, productType: 'cream' }
     ),
-    
-    // שלב סיום
+  ];
+  
+  // שלב סיום
+  const closingScene = [
     () => el("div", { className: "couple-scene" }, [
       el("p", { className: "eyebrow", text: "הושלם" }),
       el("h2", { text: "זהו, אתם זוהרים 💕" }),
       el("p", { text: "סיימתם את זמן הטיפוח הזוגי שלכם. העור קיבל אהבה, אתם קיבלתם רגע ביחד, וזה לגמרי נחשב דייט קטן בבית." }),
       el("div", { className: "success-note", text: coupleRandomText(finishTexts, 9) }),
+      // ✅ תמונה של זוגיות
+      el("img", {
+        src: "./assets/brand/shine-together.png",
+        alt: "זוג זוהר ביחד",
+        style: "width: min(78vw, 320px); height: auto; display: block; margin: 24px auto; object-fit: contain; mix-blend-mode: screen; opacity: 0.95;"
+      }),
     ]),
   ];
+  
+  // ✅ בניית הסדר לפי סוג מסיכה
+  let scenes;
+  
+  if (isHydratingMask) {
+    // Biodance: פתיחה + מסך מסיכה → skincare → מסיכה+טיימר → cream → סיום
+    scenes = [
+      ...openingScenes,          // כולל "המסיכה שלכם להיום"
+      ...skincareBeforeMask,     // Hydrator, Serum, Eye
+      ...maskWaitScene,          // "רגע של פינוק והמתנה" + טיימר
+      ...creamScene,             // Cream
+      ...closingScene
+    ];
+  } else {
+    // Clay: פתיחה + מסך מסיכה → מסיכה+טיימר → skincare → cream → סיום
+    scenes = [
+      ...openingScenes,          // כולל "המסיכה שלכם להיום"
+      ...maskWaitScene,          // "רגע של פינוק והמתנה" + טיימר
+      ...skincareAfterMask,      // Hydrator, Serum, Eye
+      ...creamScene,             // Cream
+      ...closingScene
+    ];
+  }
 
   return scenes[step]();
 }
@@ -1929,7 +2890,7 @@ function getMaskTimerOptions(product) {
   ];
 }
 
-function renderCoupleNav(step, total) {
+function renderCoupleNav(step, total, plan) {
   // פונקציה לעצירת טיימר לפני מעבר לשלב הבא
   const stopTimerAndAdvance = (nextStep) => {
     if (state.coupleTimerInterval) {
@@ -1942,6 +2903,18 @@ function renderCoupleNav(step, total) {
       coupleTimerInterval: null
     });
   };
+  
+  // ✅ זיהוי סוג מסיכה וחישוב step של Eye ו-Mask
+  const maskTags = plan.maskProduct ? new Set(tagsFor(plan.maskProduct)) : new Set();
+  const isHydratingMask = maskTags.has("collagen") || maskTags.has("hydrating") || 
+                          maskTags.has("repair") || maskTags.has("sheet");
+  
+  // חישוב steps
+  // openingScenes: 6 items (0-5)
+  // Biodance: skincare (6-8) → mask (9) → cream (10) → closing (11)
+  // Clay: mask (6) → skincare (7-9) → cream (10) → closing (11)
+  const eyeStep = isHydratingMask ? 8 : 9;
+  const maskStep = isHydratingMask ? 9 : 6;  // ← step של מסיכה
   
   if (step === 0) {
     return el("div", { className: "row-actions couple-actions" }, [
@@ -1969,10 +2942,12 @@ function renderCoupleNav(step, total) {
     el("button", { 
       className: "button", 
       style: "width: 100%;",
-      text: step === 6 ? "המסיכה ירדה, ממשיכים ✨" : "המשך", 
+      // ✅ טקסט מסיכה גם ל-Biodance (step 9) וגם ל-Clay (step 6)
+      text: step === maskStep ? "המסיכה ירדה, ממשיכים ✨" : "המשך", 
       onClick: () => stopTimerAndAdvance(Math.min(total - 1, step + 1)) 
     }),
-    step === 9 ? el("button", { 
+    // ✅ כפתור "דלג" ב-Eye + רגע של פינוק (step 4)
+    (step === eyeStep || step === 4) ? el("button", { 
       className: "button secondary", 
       style: "width: 100%;",
       text: "דלג", 
@@ -1981,42 +2956,355 @@ function renderCoupleNav(step, total) {
   ].filter(Boolean));
 }
 
-function relationProducts(product, kind) {
-  const ids = kind === "good" ? product.goodIds : product.badIds;
-  const explicit = ids.map(getProduct).filter(Boolean);
-  if (explicit.length >= 5 || kind === "bad") return explicit.slice(0, 5);
+// קטגוריות מוצרים לפי Type
+const PRODUCT_CATEGORIES = {
+  "Toner": "toner",
+  "Essence": "essence",
+  "Serum": "serum",
+  "Eye Cream": "eye",
+  "Cream": "moisturizer",
+  "Oil": "oil",
+  "Mask": "mask",
+  "Spot Treatment": "spot",
+  "Mixer": "mixer",
+  "SPF": "spf"
+};
 
-  const auto = products
-    .filter((candidate) => candidate.id !== product.id)
-    .filter((candidate) => kind === "good" ? !detectConflict(product, candidate) : Boolean(detectConflict(product, candidate)))
-    .sort((a, b) => sharedTagCount(product, b) - sharedTagCount(product, a));
-  return [...explicit, ...auto.filter((candidate) => !explicit.some((item) => item.id === candidate.id))].slice(0, 5);
+// פונקציה משודרגת - Works Well Together בלבד
+function worksWellTogether(product) {
+  try {
+    const productCategory = PRODUCT_CATEGORIES[product.type];
+    
+    const candidates = products
+      .filter((candidate) => {
+        if (!candidate || candidate.id === product.id) return false;
+        
+        // ✅ חריג: Product Family - types שונים מותרים!
+        if (areProductFamily(product, candidate)) {
+          return true;  // מוצרים מאותה סדרה = Works Well Together
+        }
+        
+        // ❌ לא אותו Type - רק משלימים!
+        if (candidate.type === product.type) return false;
+        
+        // ❌ לא duplicate steps
+        const candidateCategory = PRODUCT_CATEGORIES[candidate.type];
+        if (isDuplicateStep(productCategory, candidateCategory)) return false;
+        
+        // ✅ בדיקת conflict
+        try {
+          if (detectConflict(product, candidate)) return false;
+        } catch {
+          return false;
+        }
+        
+        return true;
+      })
+      .map((candidate) => ({
+        product: candidate,
+        score: calculateComplementaryScore(product, candidate)
+      }))
+      .filter((item) => item.score >= 3)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 6);
+    
+    return candidates.map(item => item.product);
+  } catch (error) {
+    console.error("Error in worksWellTogether:", error);
+    return [];
+  }
+}
+
+function isDuplicateStep(category1, category2) {
+  // מוצרים מאותה קטגוריה פונקציונלית
+  const duplicates = [
+    ["toner", "essence"],  // שניהם בסיס לחות
+    ["moisturizer", "oil"],  // שניהם סגירה
+    ["eye", "eye"],  // מוצרי עיניים
+    ["spot", "spot"],  // טיפולים נקודתיים
+    ["mask", "mask"]  // מסכות
+  ];
+  
+  return duplicates.some(pair => 
+    (pair[0] === category1 && pair[1] === category2) ||
+    (pair[0] === category2 && pair[1] === category1)
+  );
+}
+
+function calculateComplementaryScore(product, candidate) {
+  try {
+    let score = 0;
+    const productTags = new Set(tagsFor(product));
+    const candidateTags = new Set(tagsFor(candidate));
+    
+    // ✅ בונוס גדול למוצרים מאותה סדרה!
+    if (areProductFamily(product, candidate)) {
+      score += 15;  // coordinated product line
+    }
+    
+    // 1. מוצרי תמיכה כלליים (טובים עם הכל)
+    const supportiveTags = ["hydration", "barrier", "soothing", "sensitive"];
+    if (supportiveTags.some(tag => candidateTags.has(tag))) {
+      score += 4;
+    }
+    
+    // 2. Snail products - משלימים כמעט הכל
+    if (candidateTags.has("snail")) {
+      score += 5;
+    }
+    
+    // 3. השלמה פונקציונלית
+    // אם המוצר שלי פעיל - מחפש תמיכה
+    if (productTags.has("retinoid") || productTags.has("acid") || productTags.has("vitaminC")) {
+      if (candidateTags.has("barrier") || candidateTags.has("hydration") || candidateTags.has("soothing")) {
+        score += 6;
+      }
+    }
+    
+    // 4. לפי סדר בשגרה
+    const routineOrder = ["toner", "essence", "serum", "eye", "moisturizer", "oil", "spf"];
+    const productPos = routineOrder.indexOf(PRODUCT_CATEGORIES[product.type]);
+    const candidatePos = routineOrder.indexOf(PRODUCT_CATEGORIES[candidate.type]);
+    
+    // מעדיף מוצרים שבאים אחרי או לפני בסדר הטבעי
+    if (Math.abs(productPos - candidatePos) <= 2 && productPos !== candidatePos) {
+      score += 3;
+    }
+    
+    // 5. אותה מטרה טיפולית (אבל type שונה)
+    if (product.goodFor && candidate.goodFor) {
+      const sharedGoals = product.goodFor.filter(goal => candidate.goodFor.includes(goal)).length;
+      if (sharedGoals >= 2) {
+        score += 3;
+      } else if (sharedGoals === 1) {
+        score += 1;
+      }
+    }
+    
+    // 6. קרמים ומוצרי סגירה - תמיד טובים בסוף
+    if (candidate.type === "Cream" || candidate.type === "Oil") {
+      score += 2;
+    }
+    
+    return score;
+  } catch (error) {
+    console.error("Error in calculateComplementaryScore:", error);
+    return 0;
+  }
+}
+
+// פונקציה חדשה - Avoid Combining (conflicts חזקים בלבד)
+// ========================================================================
+// 🔗 Product Family Detection - סדרות מוצרים שנועדו לעבוד יחד
+// ========================================================================
+
+/**
+ * בדיקה אם שני מוצרים שייכים לאותה סדרה/family
+ * סדרה = אותו brand + shared keywords + types שונים
+ */
+function areProductFamily(productA, productB) {
+  // חייב להיות types שונים (לא substitutes)
+  if (productA.type === productB.type) return false;
+  
+  // חייב להיות אותו brand
+  if (productA.brand !== productB.brand) return false;
+  
+  const tagsA = new Set(tagsFor(productA));
+  const tagsB = new Set(tagsFor(productB));
+  
+  // זיהוי סדרות ידועות לפי tag מיוחד
+  // SOME BY MI Miracle: tag "miracle"
+  if (tagsA.has("miracle") && tagsB.has("miracle")) return true;
+  
+  // ניתן להוסיף סדרות נוספות בעתיד
+  // Dynasty line, COSRX line, וכו'
+  
+  return false;
+}
+
+function avoidCombining(product) {
+  try {
+    const conflicts = products
+      .filter((candidate) => {
+        if (!candidate || candidate.id === product.id) return false;
+        
+        // ✅ כלל קריטי: Similar Products ו-Avoid Combining הם mutually exclusive
+        // אם אותו Type (ולא Serum) - זה Similar, לא Conflict!
+        if (candidate.type === product.type) {
+          // Toner↔Toner, Eye Cream↔Eye Cream, Cream↔Cream, Mask↔Mask = Similar
+          // אלה תחליפים, לא conflicts
+          if (product.type !== "Serum") {
+            return false;  // ❌ לא conflict - זה Similar
+          }
+          
+          // Serum↔Serum - בודקים אם יש conflict אמיתי
+          // רק אם יש chemistry בעייתי (retinol+acid, retinol+vitC)
+          const productTags = new Set(tagsFor(product));
+          const candidateTags = new Set(tagsFor(candidate));
+          
+          // אם שניהם אותו סוג סרום (שני רטינולים, שתי חומצות) - Similar, לא Conflict
+          if (productTags.has("retinoid") && candidateTags.has("retinoid")) {
+            return false;  // שני רטינולים = Similar
+          }
+          if (productTags.has("acid") && candidateTags.has("acid") && 
+              !productTags.has("retinoid") && !candidateTags.has("retinoid")) {
+            return false;  // שתי חומצות (בלי רטינול) = Similar
+          }
+          // אחרת, ממשיכים לבדוק conflict (retinol vs acid, וכו')
+        }
+        
+        // ✅ כלל חדש: Product Family - לא conflict
+        // אם מאותה סדרה (brand + keywords + types שונים) = Works Well Together
+        if (areProductFamily(product, candidate)) {
+          return false;  // ❌ לא conflict - זו coordinated product line
+        }
+        
+        // בדיקת conflict
+        try {
+          const conflict = detectConflict(product, candidate);
+          if (!conflict) return false;
+          
+          // בדיקה אם זה conflict חזק
+          return isStrongConflict(product, candidate, conflict);
+        } catch {
+          return false;
+        }
+      })
+      .map((candidate) => ({
+        product: candidate,
+        severity: getConflictSeverity(product, candidate)
+      }))
+      .filter((item) => item.severity >= 3)  // רק conflicts חזקים
+      .sort((a, b) => b.severity - a.severity)
+      .slice(0, 5);
+    
+    return conflicts.map(item => item.product);
+  } catch (error) {
+    console.error("Error in avoidCombining:", error);
+    return [];
+  }
+}
+
+function isStrongConflict(product, candidate, conflictMessage) {
+  const productTags = new Set(tagsFor(product));
+  const candidateTags = new Set(tagsFor(candidate));
+  
+  // Conflicts חזקים בלבד:
+  
+  // 1. רטינול + חומצות
+  if ((productTags.has("retinoid") && candidateTags.has("acid")) ||
+      (productTags.has("acid") && candidateTags.has("retinoid"))) {
+    return true;
+  }
+  
+  // 2. רטינול + Vitamin C
+  if ((productTags.has("retinoid") && candidateTags.has("vitaminC")) ||
+      (productTags.has("vitaminC") && candidateTags.has("retinoid"))) {
+    return true;
+  }
+  
+  // 3. מספר חומצות חזקות
+  if (productTags.has("strong") && candidateTags.has("strong") &&
+      productTags.has("acid") && candidateTags.has("acid")) {
+    return true;
+  }
+  
+  // 4. מספר רטינולים
+  if (productTags.has("retinoid") && candidateTags.has("retinoid")) {
+    return true;
+  }
+  
+  // 5. חומצות + Vitamin C
+  if ((productTags.has("acid") && candidateTags.has("vitaminC")) ||
+      (productTags.has("vitaminC") && candidateTags.has("acid"))) {
+    return true;
+  }
+  
+  return false;
+}
+
+function getConflictSeverity(product, candidate) {
+  const productTags = new Set(tagsFor(product));
+  const candidateTags = new Set(tagsFor(candidate));
+  
+  let severity = 0;
+  
+  // רטינול + חומצות - חומרה גבוהה מאוד
+  if ((productTags.has("retinoid") && candidateTags.has("acid")) ||
+      (productTags.has("acid") && candidateTags.has("retinoid"))) {
+    severity += 5;
+  }
+  
+  // מספר פעילים חזקים
+  if (productTags.has("strong") && candidateTags.has("strong")) {
+    severity += 4;
+  }
+  
+  // רטינול + Vitamin C
+  if ((productTags.has("retinoid") && candidateTags.has("vitaminC")) ||
+      (productTags.has("vitaminC") && candidateTags.has("retinoid"))) {
+    severity += 4;
+  }
+  
+  // מספר רטינולים
+  if (productTags.has("retinoid") && candidateTags.has("retinoid")) {
+    severity += 3;
+  }
+  
+  return severity;
+}
+
+// תאימות לאחור - שומרת על הממשק הישן
+function relationProducts(product, kind) {
+  if (kind === "good") {
+    return worksWellTogether(product);
+  } else {
+    return avoidCombining(product);
+  }
 }
 
 function similarProducts(product) {
   try {
-    // חישוב similarity score עם משקלים
-    const candidates = products
-      .filter((candidate) => candidate && candidate.id !== product.id)
+    // 1️⃣ התחל עם המוצרים הדומים המפורשים מ-goodIds (אותו Type)
+    const explicitSimilar = (product.goodIds || [])
+      .map(id => getProduct(id))
+      .filter(p => p && p.type === product.type);  // רק אותו Type
+    
+    // 2️⃣ מצא עוד מוצרים דומים לפי similarity score
+    const autoSimilar = products
       .filter((candidate) => {
+        if (!candidate || candidate.id === product.id) return false;
+        
+        // אם כבר ב-explicit, לא לכלול פעמיים
+        if (explicitSimilar.some(p => p.id === candidate.id)) return false;
+        
+        // ✅ כלל קריטי: אותו Type בלבד
+        if (candidate.type !== product.type) return false;
+        
+        // ✅ בדיקת conflict
         try {
-          return !detectConflict(product, candidate);
+          if (detectConflict(product, candidate)) return false;
         } catch {
-          return true; // אם יש שגיאה בבדיקת conflict, נכלול את המוצר
+          return false;
         }
+        
+        return true;
       })
       .map((candidate) => ({
         product: candidate,
         score: calculateSimilarityScore(product, candidate)
       }))
-      .filter((item) => item.score >= 3)  // ← סף מינימלי!
+      .filter((item) => item.score >= 5)  // ✅ סף נמוך יותר (5 במקום 8)
       .sort((a, b) => b.score - a.score)
-      .slice(0, 8);
+      .map(item => item.product);
     
-    return candidates.map(item => item.product);
+    // 3️⃣ שלב: explicit קודם, אז auto
+    const combined = [...explicitSimilar, ...autoSimilar].slice(0, 6);
+    
+    return combined;
   } catch (error) {
     console.error("Error in similarProducts:", error);
-    return []; // החזרת array ריק במקום לקרוס
+    return [];
   }
 }
 
@@ -2024,40 +3312,49 @@ function calculateSimilarityScore(product, candidate) {
   try {
     let score = 0;
     
-    // 1. אותו product type = חשוב מאוד!
-    if (candidate.type && product.type && candidate.type === product.type) {
-      score += 5;
+    // 1. אותו Type - חובה (כבר מסונן, אבל נותן בונוס)
+    if (candidate.type === product.type) {
+      score += 10;  // בונוס גבוה
     }
     
-    // 2. תגיות משותפות
+    // 2. תגיות משותפות - חשוב מאוד
     const sharedTags = sharedTagCount(product, candidate);
-    if (sharedTags >= 3) {
+    if (sharedTags >= 4) {
+      score += 5;
+    } else if (sharedTags === 3) {
       score += 3;
     } else if (sharedTags === 2) {
       score += 1;
     }
     
-    // 3. אותה קטגוריית זמן (בוקר/ערב/לילה) - עם guards!
-    if (product.usage && candidate.usage && Array.isArray(product.usage) && Array.isArray(candidate.usage)) {
-      const productTimes = new Set(product.usage);
-      const sharedTimes = candidate.usage.filter(time => productTimes.has(time)).length;
-      if (sharedTimes > 0) {
+    // 3. בעיות עור משותפות
+    if (product.goodFor && candidate.goodFor && Array.isArray(product.goodFor) && Array.isArray(candidate.goodFor)) {
+      const productIssues = new Set(product.goodFor);
+      const sharedIssues = candidate.goodFor.filter(issue => productIssues.has(issue)).length;
+      if (sharedIssues >= 3) {
+        score += 4;
+      } else if (sharedIssues === 2) {
+        score += 2;
+      } else if (sharedIssues === 1) {
         score += 1;
       }
     }
     
-    // 4. אותה רמת טיפול
-    if (product.level && candidate.level && product.level === candidate.level) {
-      score += 1;
+    // 4. אותה רמת עוצמה
+    if (product.intensity === candidate.intensity) {
+      score += 2;
     }
     
-    // 5. בעיות עור משותפות - עם guards!
-    if (product.goodFor && candidate.goodFor && Array.isArray(product.goodFor) && Array.isArray(candidate.goodFor)) {
-      const productIssues = new Set(product.goodFor);
-      const sharedIssues = candidate.goodFor.filter(issue => productIssues.has(issue)).length;
-      if (sharedIssues >= 2) {
-        score += 2;
-      } else if (sharedIssues === 1) {
+    // 5. רכיבים דומים (בדיקה פשוטה)
+    if (product.ingredients && candidate.ingredients && Array.isArray(product.ingredients) && Array.isArray(candidate.ingredients)) {
+      const productIngredients = product.ingredients.map(i => i.toLowerCase());
+      const candidateIngredients = candidate.ingredients.map(i => i.toLowerCase());
+      const sharedIngredients = productIngredients.filter(ing => 
+        candidateIngredients.some(cand => cand.includes(ing) || ing.includes(cand))
+      ).length;
+      if (sharedIngredients >= 2) {
+        score += 3;
+      } else if (sharedIngredients === 1) {
         score += 1;
       }
     }
@@ -2065,7 +3362,7 @@ function calculateSimilarityScore(product, candidate) {
     return score;
   } catch (error) {
     console.error("Error in calculateSimilarityScore:", error);
-    return 0; // ניקוד 0 אם יש שגיאה
+    return 0;
   }
 }
 
@@ -2103,58 +3400,105 @@ function toggleFavorite(id, trigger = null) {
   }
 }
 
-function toggleSavedRoutine(routineData, trigger = null) {
-  // בדיקת תקינות
-  if (!routineData || !routineData.steps || !Array.isArray(routineData.steps)) {
-    console.error('Invalid routine data for saving');
-    return;
-  }
-  
-  // יצירת ID ייחודי לשגרה בהתבסס על ההרכב שלה
-  const routineId = JSON.stringify({
-    steps: routineData.steps.map(s => s.id),
-    timeOfDay: routineData.context?.timeOfDay,
-    feeling: routineData.context?.feeling,
-    routineType: routineData.context?.routineType
+function toggleSavedRoutine(routineDataOrSaved, trigger = null) {
+  console.log('💾 toggleSavedRoutine called with:', {
+    hasId: !!(routineDataOrSaved.id),
+    hasRoutine: !!(routineDataOrSaved.routine),
+    isObject: typeof routineDataOrSaved === 'object',
+    steps: routineDataOrSaved.steps?.map(s => s.name) || routineDataOrSaved.routine?.steps.map(s => s.name)
   });
   
-  const wasSaved = state.savedRoutines.some(r => r.id === routineId);
+  // ✅ תמיכה ב-saved object (מכרטיסייה) או routine data (מכפתור שמירה)
+  let routineData, routineId, wasSaved;
+  
+  if (routineDataOrSaved.id && routineDataOrSaved.routine) {
+    // זה saved object מכרטיסייה
+    routineData = routineDataOrSaved.routine;
+    routineId = routineDataOrSaved.id;
+    wasSaved = true;  // ✓ תמיד true כי זה בא מכרטיסייה קיימת
+  } else {
+    // זה routine data מכפתור שמירה
+    routineData = routineDataOrSaved;
+    
+    // בדיקת תקינות
+    if (!routineData || !routineData.steps || !Array.isArray(routineData.steps)) {
+      console.error('Invalid routine data for saving');
+      return;
+    }
+    
+    // יצירת ID ייחודי לכל שמירה - עם timestamp!
+    routineId = JSON.stringify({
+      steps: routineData.steps.map(s => s.id),
+      timeOfDay: routineData.context?.timeOfDay,
+      feeling: routineData.context?.feeling,
+      routineType: routineData.context?.routineType,
+      timestamp: Date.now()
+    });
+    
+    wasSaved = state.savedRoutines.some(r => r.id === routineId);
+  }
+  
   const isSaved = !wasSaved;
   
   if (isSaved) {
     // חישוב כמות מוצרים בפועל - אותו חישוב כמו getRoutineIntro
     const actualCount = routineData.steps.filter(s => s.type !== "SPF").length;
     
-    // שמירת שגרה חדשה
+    // ✅ שמירת snapshot עמוק - structuredClone למניעת references!
     const savedRoutine = {
       id: routineId,
-      routine: routineData,
-      context: routineData.context || {},
-      productCount: actualCount,  // ← שמירת הכמות האמיתית!
+      routine: structuredClone(routineData),  // ✅ deep copy!
+      context: structuredClone(routineData.context || {}),  // ✅ deep copy!
+      productCount: actualCount,
       createdAt: Date.now(),
       name: getRoutineIntro(routineData)
     };
     state.savedRoutines = [savedRoutine, ...state.savedRoutines];
+    
+    console.log('💾 SAVED ROUTINE SNAPSHOT:', {
+      id: routineId.substring(0, 50) + '...',
+      savedAt: savedRoutine.createdAt,
+      productCount: actualCount,
+      products: savedRoutine.routine.steps.map(p => ({ id: p.id, name: p.name }))
+    });
   } else {
     // הסרת שגרה
+    console.log('🗑️ REMOVING SAVED ROUTINE:', {
+      routineId: routineId.substring(0, 50) + '...',
+      beforeCount: state.savedRoutines.length
+    });
     state.savedRoutines = state.savedRoutines.filter(r => r.id !== routineId);
+    console.log('✅ REMOVED! After count:', state.savedRoutines.length);
   }
   
-  // עדכון הלב - רק האייקון, לא כל הכפתור
+  // ✅ עדכון הלב עם אנימציה - בדיוק כמו toggleFavorite!
   if (trigger) {
     trigger.classList.toggle("active", isSaved);
     trigger.setAttribute("aria-pressed", String(isSaved));
     
-    // מצא את span הלב ועדכן רק אותו
+    // בדוק אם יש span לב (כפתור שמירה בשגרה) או לב ישיר (כרטיסייה)
     const heartSpan = trigger.querySelector('.save-routine-heart');
     if (heartSpan) {
+      // יש span - עדכן את ה-span
       heartSpan.textContent = isSaved ? "♥" : "♡";
       heartSpan.classList.add("pulse");
       window.setTimeout(() => {
         heartSpan.classList.remove("pulse");
       }, 420);
+      
+      // ✅ עדכן גם את הטקסט!
+      const textSpan = trigger.querySelector('.save-routine-text');
+      if (textSpan) {
+        // בדיקה: האם זה saved route (נכנסו משגרות שמורות)?
+        const isSavedRoute = state.routineRoute === "saved";
+        textSpan.textContent = isSavedRoute 
+          ? "הסר שגרה"  // שגרה ממועדפים
+          : isSaved 
+            ? "שגרה נשמרה"  // שגרה רגילה ששמורה
+            : "שמור שגרה";  // שגרה רגילה לא שמורה
+      }
     } else {
-      // fallback למקרה שאין span - נניח שזה כפתור פשוט עם לב בלבד
+      // אין span - עדכן את הכפתור ישירות (כרטיסייה)
       trigger.textContent = isSaved ? "♥" : "♡";
       trigger.classList.add("pulse");
       window.setTimeout(() => {
@@ -2165,10 +3509,10 @@ function toggleSavedRoutine(routineData, trigger = null) {
   
   saveSavedRoutines();
   
-  // רק בעמוד מועדפים - רענון
+  // ✅ רענון אם במועדפים והוסרה - בדיוק כמו toggleFavorite!
   if (state.view === "favorites" && wasSaved) {
     window.setTimeout(() => {
-      render();
+      render();  // ✅ הכרטיסייה נעלמת!
     }, 450);
   }
 }
@@ -2187,6 +3531,41 @@ function isRoutineSaved(routineData) {
   });
   
   return state.savedRoutines.some(r => r.id === routineId);
+}
+
+// ✅ Helper: קבל את השגרה המוצגת כרגע (refreshed > displayed > build)
+function getCurrentDisplayedRoutine() {
+  if (state.refreshedRoutine && state.refreshedRoutine.steps) {
+    return {
+      steps: state.refreshedRoutine.steps,
+      warnings: state.refreshedRoutine.warnings || [],
+      context: {
+        timeOfDay: state.timeOfDay,
+        feeling: state.feeling,
+        includeMask: state.includeMask,
+        routineType: state.routineType,
+        routinePace: state.routinePace,
+        preferredProductId: state.preferredProductId,
+        selectedFavoriteProductId: state.selectedFavoriteProductId
+      }
+    };
+  } else if (state.displayedRoutine && state.displayedRoutine.steps) {
+    return {
+      steps: state.displayedRoutine.steps,
+      warnings: state.displayedRoutine.warnings || [],
+      context: state.displayedRoutine.context || {
+        timeOfDay: state.timeOfDay,
+        feeling: state.feeling,
+        includeMask: state.includeMask,
+        routineType: state.routineType,
+        routinePace: state.routinePace,
+        preferredProductId: state.preferredProductId,
+        selectedFavoriteProductId: state.selectedFavoriteProductId
+      }
+    };
+  } else {
+    return buildRoutine();
+  }
 }
 
 function getRandomCompletionMessage() {
@@ -2220,7 +3599,7 @@ function chooseRoutineTimeForProduct(product) {
   return product.time[0] || state.timeOfDay;
 }
 
-function startRoutine({ timeOfDay = null, product = null, feeling = state.feeling, coupleMode = false, direct = false, includeMask = null, route = null, flow = null } = {}) {
+function startRoutine({ timeOfDay = null, product = null, feeling = null, coupleMode = false, direct = false, includeMask = null, route = null, flow = null } = {}) {
   const selected = product || null;
   const routineRoute = route || (selected ? "product" : direct ? "rubric" : "regular");
   const routineFlow = flow || (routineRoute === "regular" ? "wizard" : "direct");
@@ -2230,7 +3609,12 @@ function startRoutine({ timeOfDay = null, product = null, feeling = state.feelin
   const isDirectRegularRoutine = routineRoute === "regular" && routineFlow === "direct";
   const isRubricRoute = routineRoute === "rubric";
   const feelingExplicitlySelected = isRubricRoute;
-  const defaultFeeling = isDirectRegularRoutine && !feelingExplicitlySelected ? "sensitive" : feeling;
+  
+  // ✅ אפס feeling בdirect time routines (כמו "שגרת ערב")
+  // רק rubric route (קרוסלת מצב עור) שומר את feeling
+  const defaultFeeling = isDirectRegularRoutine 
+    ? "glow"  // נייטרלי - לא spot/breakouts
+    : (feeling || state.feeling || "glow");
   
   // Get preferredProductId from feeling if rubric route
   const feelingObj = getFeeling(defaultFeeling);
@@ -2251,12 +3635,29 @@ function startRoutine({ timeOfDay = null, product = null, feeling = state.feelin
     includeMask: includeMask ?? Boolean(coupleMode || selected?.type === "Mask"),
     requestedSteps: coupleMode ? Math.max(state.requestedSteps, 4) : 4,  // תמיד מתחילים עם 4 (מאוזן)
     routineType: routineRoute === "product" ? "balanced" : "balanced",  // תמיד מאוזן
-    routinePace: 2,  // תמיד מתחילים עם מאוזן (2)
+    routinePace: 2,  // ✅ תמיד מתחילים עם מאוזן (2) בשגרה חדשה
     showRoutineChoices: false,
     showWeatherPopover: false,
     completedSteps: new Set(),
     routineOverrides: {},
-    routineNonce: Date.now(),
+    refreshedRoutine: null,  // ✅ אפס refreshed routine בשגרה חדשה
+    displayedRoutine: null,  // ✅ אפס displayed routine בשגרה חדשה
+    routineNonce: usesQuestionFlow 
+      ? Date.now()  // ✅ שאלון: nonce חדש כל פעם (לא daily)
+      : getDailyRoutineNonce({
+          timeOfDay: initialTimeOfDay,
+          routineRoute,
+          feeling: defaultFeeling,
+          preferredProductId: selected?.id || feelingPreferredProductId || null
+        }),  // ✅ שאר השגרות: daily nonce
+  });
+  
+  console.log('🔄 NEW ROUTINE RESET:', {
+    source: routineRoute + '/' + routineFlow,
+    routinePace: state.routinePace,
+    requestedSteps: state.requestedSteps,
+    refreshedRoutine: state.refreshedRoutine,
+    displayedRoutine: state.displayedRoutine
   });
   
   // עכשיו חישוב wizardStep אחרי שה-state מעודכן
@@ -2330,8 +3731,14 @@ function startCoupleFlow(resetPlan = true) {
 }
 
 function navigate(view) {
+  // ✅ שמור את המסך הקודם
+  const previousView = state.view;
+  const previousScreen = state.screen;
+  
   Object.assign(state, {
     view,
+    previousView,  // ✅ חדש
+    previousScreen,  // ✅ חדש
     timeOfDay: view === "home" ? getCurrentRoutineTimeOfDay() : state.timeOfDay,
     showRoutineChoices: false,
     showWeatherPopover: false,
@@ -2371,8 +3778,15 @@ function handleProductSearchInput(event) {
 }
 
 function goBack() {
-  if (state.view === "product") return navigate("products");
-  if (state.view === "favorites") return navigate("home");
+  console.log('🔙 goBack called:', {
+    view: state.view,
+    routineFlow: state.routineFlow,
+    wizardStep: state.wizardStep,
+    routineRoute: state.routineRoute,
+    previousView: state.previousView
+  });
+  
+  // ✅ Couple flow - back logic
   if (state.view === "couple" && state.coupleStep > 0) {
     // עצירת טיימר לפני חזרה אחורה
     if (state.coupleTimerInterval) {
@@ -2387,10 +3801,41 @@ function goBack() {
     } else {
       setState({ coupleStep: state.coupleStep - 1, showWeatherPopover: false });
     }
+    console.log('→ Couple step back');
     return;
   }
-  if (state.view === "couple") return navigate("home");
-  if (state.view === "routine" && state.wizardStep > 0) return setState({ wizardStep: state.wizardStep - 1 });
+  
+  // ✅ Wizard flow - back logic
+  // רק אם זה באמת wizard (לא direct flow!)
+  const isWizardFlow = state.view === "routine" && 
+                       state.routineFlow === "wizard" && 
+                       state.wizardStep > 0;
+  
+  if (isWizardFlow) {
+    console.log('→ Wizard step back to', state.wizardStep - 1);
+    return setState({ wizardStep: state.wizardStep - 1 });
+  }
+  
+  // ✅ Direct flow (home → routine) - חזרה ל-home!
+  if (state.view === "routine" && state.routineFlow === "direct") {
+    console.log('→ Direct flow: navigate to home');
+    return navigate("home");
+  }
+  
+  // ✅ Product page - back to products list
+  if (state.view === "product") {
+    console.log('→ Product page: navigate to products');
+    return navigate("products");
+  }
+  
+  // ✅ Default - use navigation history
+  if (state.previousView && state.previousView !== state.view) {
+    console.log('→ Previous view:', state.previousView);
+    return navigate(state.previousView);
+  }
+  
+  // ✅ Fallback - home
+  console.log('→ Fallback: navigate to home');
   return navigate("home");
 }
 
@@ -2903,14 +4348,21 @@ function renderRoutineScreen() {
           style: "display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 100%; box-sizing: border-box; padding: 0 1.5rem 1rem 0.5rem; gap: 1rem; flex-wrap: nowrap;"
         }, [
           // כפתור חזור - ימין (או placeholder)
-          isProductRoute 
+          state.routineRoute === "saved"
+            ? el("button", { 
+                className: "back-link inline-back", 
+                style: "flex-shrink: 0;",
+                text: `חזור`, 
+                onClick: () => navigate("favorites") 
+              })
+            : isProductRoute 
             ? el("button", { 
                 className: "back-link inline-back", 
                 style: "flex-shrink: 0;",
                 text: `חזור`, 
                 onClick: () => navigate(state.selectedProductId ? "product" : "products") 
               }) 
-            : state.wizardStep > 0 
+            : state.wizardStep > 0 && current.id !== "result"  // ✅ לא במסך תוצאה!
               ? el("button", { 
                   className: "back-link inline-back", 
                   style: "flex-shrink: 0;",
@@ -2919,16 +4371,58 @@ function renderRoutineScreen() {
                 }) 
               : el("div", { style: "flex-shrink: 0; visibility: hidden; width: 60px;" }),
           
-          // כפתור שמור שגרה - שמאל (רק בשלב result) - pill button אחיד
+          // כפתור שמור/הסר שגרה - שמאל (רק בשלב result) - pill button אחיד
           current.id === "result" ? el("button", { 
             className: "save-routine-btn",
-            "aria-label": "שמור שגרה",
-            "aria-pressed": String(isRoutineSaved(buildRoutine())),
+            "aria-label": isSavedRoute ? "הסר שגרה" : "שמור שגרה",
+            "aria-pressed": String(isSavedRoute || isRoutineSaved(buildRoutine())),
             style: "display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.625rem 1rem; margin-left: -1rem; background: #F3EEFF; border: 1.5px solid #9075D7; border-radius: 999px; cursor: pointer; white-space: nowrap; flex-shrink: 0; max-width: fit-content; overflow: visible; transition: all 0.2s ease; box-shadow: none;",
             onClick: (event) => { 
               event.preventDefault(); 
               event.stopPropagation(); 
-              const routine = buildRoutine();
+              
+              // ✅ אנימציית לב!
+              const heartEl = event.currentTarget.querySelector('.save-routine-heart');
+              if (heartEl) {
+                heartEl.classList.add('heart-bounce');
+                setTimeout(() => heartEl.classList.remove('heart-bounce'), 600);
+              }
+              
+              // ✅ שגרה שמורה - הסרה והחזרה למועדפים!
+              if (isSavedRoute && state.loadedSavedRoutine) {
+                console.log('🗑️ REMOVING SAVED ROUTINE from saved route');
+                toggleSavedRoutine(state.loadedSavedRoutine, event.currentTarget);
+                // חזרה למועדפים אחרי הסרה
+                window.setTimeout(() => {
+                  navigate("favorites");
+                }, 500);
+                return;
+              }
+              
+              // ✅ CRITICAL: לקחת snapshot של השגרה המוצגת כרגע!
+              // עדיפות: refreshedRoutine (אחרי "שנה שגרה") > displayedRoutine > buildRoutine
+              let routine;
+              if (state.refreshedRoutine && state.refreshedRoutine.steps) {
+                // יש refreshedRoutine - השתמש בו!
+                routine = {
+                  steps: structuredClone(state.refreshedRoutine.steps),  // ✅ deep copy!
+                  warnings: state.refreshedRoutine.warnings || []
+                };
+                console.log('💾 SAVING ROUTINE FROM refreshedRoutine:', routine.steps.map(s => s.name));
+              } else if (state.displayedRoutine && state.displayedRoutine.steps) {
+                // יש displayedRoutine - השתמש בו!
+                routine = {
+                  steps: structuredClone(state.displayedRoutine.steps),  // ✅ deep copy!
+                  warnings: state.displayedRoutine.warnings || []
+                };
+                console.log('💾 SAVING ROUTINE FROM displayedRoutine:', routine.steps.map(s => s.name));
+              } else {
+                // fallback - בנה מחדש
+                routine = buildRoutine();
+                console.log('💾 SAVING ROUTINE FROM buildRoutine:', routine.steps.map(s => s.name));
+              }
+              
+              // הוסף context
               if (!routine.context) {
                 routine.context = {
                   timeOfDay: state.timeOfDay,
@@ -2940,18 +4434,29 @@ function renderRoutineScreen() {
                   selectedFavoriteProductId: state.selectedFavoriteProductId
                 };
               }
+              
+              console.log('💾 SAVE SNAPSHOT:', {
+                saveId: Date.now(),
+                source: state.refreshedRoutine ? 'refreshedRoutine' : state.displayedRoutine ? 'displayedRoutine' : 'buildRoutine',
+                products: routine.steps.map(p => ({ id: p.id, name: p.name }))
+              });
+              
               toggleSavedRoutine(routine, event.currentTarget); 
             } 
           }, [
             el("span", { 
               className: "save-routine-heart",
-              style: "font-size: 1.5rem; line-height: 1; flex-shrink: 0; display: inline-block; color: #9075D7; background: none; border: none; padding: 0; margin: 0;",
-              text: isRoutineSaved(buildRoutine()) ? "♥" : "♡"
+              style: "font-size: 1.5rem; line-height: 1; flex-shrink: 0; display: inline-block; color: #9075D7; background: none; border: none; padding: 0; margin: 0; transition: transform 0.1s ease;",
+              text: isSavedRoute || isRoutineSaved(buildRoutine()) ? "♥" : "♡"
             }),
             el("span", { 
               className: "save-routine-text",
               style: "font-size: 0.9rem; font-weight: 700; color: #9075D7; white-space: nowrap; flex-shrink: 0;", 
-              text: "שמור שגרה" 
+              text: isSavedRoute 
+                ? "הסר שגרה"  // רק בשגרה ממועדפים
+                : isRoutineSaved(buildRoutine()) 
+                  ? "שגרה נשמרה"  // שגרה רגילה ששמורה
+                  : "שמור שגרה"  // שגרה רגילה לא שמורה
             })
           ]) : el("div", { style: "flex-shrink: 0; visibility: hidden; width: 1px;" })
         ]),
@@ -2960,7 +4465,78 @@ function renderRoutineScreen() {
         isProductRoute ? renderProductRoutineHeader(selectedProduct) : null,
         showSliders ? renderProductRoutineControls() : null,
         hideWizardChrome ? null : isRegularRoute ? state.wizardStep > 0 ? renderLockedRoutineTime() : null : renderTimeSegmented(),
-        hideWizardChrome ? null : el("div", { className: "stepper" }, steps.map((_, index) => el("span", { className: `step-dot ${index === state.wizardStep ? "active" : ""} ${index < state.wizardStep ? "done" : ""}` }))),
+        hideWizardChrome ? null : el("div", { 
+          className: "wizard-stepper",
+          style: "display: flex; align-items: flex-start; justify-content: space-between; margin: 1.5rem 0 2rem; padding: 0 0.5rem; width: 100%; max-width: 100%; overflow: hidden;"
+        }, getWizardStepLabels().flatMap((label, index) => {
+          const items = [
+            // Step item עם עיגול וכותרת - responsive
+            el("div", {
+              key: `step-${index}`,
+              className: "step-item",
+              style: "display: flex; flex-direction: column; align-items: center; gap: 0.25rem; flex-shrink: 1; min-width: 0;"
+            }, [
+              // עיגול השלב - responsive
+              el("div", {
+                className: `step-circle ${index === state.wizardStep ? "active" : ""} ${index < state.wizardStep ? "done" : ""}`,
+                style: `
+                  width: clamp(24px, 5vw, 32px);
+                  height: clamp(24px, 5vw, 32px);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: clamp(11px, 2.5vw, 0.875rem);
+                  font-weight: 600;
+                  transition: all 0.3s ease;
+                  flex-shrink: 0;
+                  ${index < state.wizardStep ? 
+                    "background: #9075D7; color: white; border: 2px solid #9075D7;" : 
+                    index === state.wizardStep ? 
+                      "background: white; color: #9075D7; border: 2px solid #9075D7; box-shadow: 0 0 0 4px rgba(144, 117, 215, 0.1);" :
+                      "background: white; color: #9CA3AF; border: 2px solid #E5E7EB;"
+                  }
+                `,
+                text: index < state.wizardStep ? "✓" : (index + 1).toString()
+              }),
+              // כותרת השלב - responsive
+              el("span", {
+                style: `
+                  font-size: clamp(9px, 2vw, 0.75rem);
+                  text-align: center;
+                  color: ${index === state.wizardStep ? "#9075D7" : index < state.wizardStep ? "#6B7280" : "#9CA3AF"};
+                  font-weight: ${index === state.wizardStep ? "600" : "400"};
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  max-width: 100%;
+                `,
+                text: label
+              })
+            ])
+          ];
+          
+          // הוסף קו מחבר אחרי העיגול (אם לא השלב האחרון) - responsive
+          if (index < getWizardStepLabels().length - 1) {
+            items.push(
+              el("div", {
+                key: `connector-${index}`,
+                className: "step-connector",
+                style: `
+                  flex: 1;
+                  height: 2px;
+                  background: ${index < state.wizardStep ? "#9075D7" : "#E5E7EB"};
+                  align-self: flex-start;
+                  margin-top: clamp(12px, 2.5vw, 16px);
+                  min-width: 4px;
+                  max-width: 64px;
+                `
+              })
+            );
+          }
+          
+          return items;
+        })),
         current.render(),
         hideWizardChrome ? null : renderWizardActions(steps.length),
       ]),
@@ -3013,18 +4589,30 @@ function renderProductRoutineControls() {
         state.routinePace = newPace;
         state.requestedSteps = newSteps;
         
-        // הודעת משוב מפורטת
+        // הודעת משוב - כללית ללא מספרים מדויקים
         if (newPace === 1) {
-          state.paceChangeMessage = stepsDiff < 0 ? `שגרה מהירה: מוצרים בסיסיים, פחות ${Math.abs(stepsDiff)} שלבים` : `שגרה מהירה: מוצרים בסיסיים, 3 שלבים`;
+          state.paceChangeMessage = "שגרה מהירה: מוצרים בסיסיים, פחות שלבים";
         } else if (newPace === 3) {
-          state.paceChangeMessage = stepsDiff > 0 ? `שגרה מפנקת: מוצרים משלימים, נוספו ${stepsDiff} שלבים` : `שגרה מפנקת: מוצרים משלימים, 5-6 שלבים`;
+          state.paceChangeMessage = "שגרה מפנקת: נוספו מוצרים משלימים";
         } else {
-          state.paceChangeMessage = `שגרה מאוזנת: איזון בין בסיס לטיפול, 4 שלבים`;
+          state.paceChangeMessage = "שגרת טיפוח מאוזנת";
         }
         
-        // רענון השגרה
+        // ✅ CRITICAL: לא לאפס refreshedRoutine!
+        // במקום: לקחת את displayedRoutine ולבנות מחדש עם pace חדש
+        console.log('🎚️ Pace slider changed:', oldPace, '→', newPace);
+        console.log('  displayedRoutine exists:', !!state.displayedRoutine);
+        
+        if (state.displayedRoutine) {
+          console.log('  Using displayedRoutine as base (preserving replacements)');
+          console.log('  Current steps:', state.displayedRoutine.steps.map(p => p.name));
+        }
+        
+        // רענון השגרה - buildRoutine() יראה את routinePace החדש
+        // ויחיל את routineOverrides אוטומטית
         state.completedSteps = new Set();
         state.routineNonce = Date.now();
+        state.refreshedRoutine = null;  // buildRoutine() יבנה עם pace חדש + overrides
         render();
         
         // הסר הודעה אחרי 5 שניות
@@ -3042,21 +4630,43 @@ function renderProductRoutineControls() {
 function renderRoutineControlSlider({ label, value, displayValue = value, min, max, display, hint, onValue }) {
   const numericValue = Math.min(max, Math.max(min, Number(value)));
   const progress = ((numericValue - min) / (max - min)) * 100;
+  
+  // ✅ טקסט מרכזי דינמי לפי ערך הסליידר
+  const centerText = "טיפוח " + (display ? display(displayValue) : displayValue);
+  
+  // ✅ key ייחודי לכל ערך - גורם ל-element להתחלף ולהפעיל אנימציה
+  const paceKey = `pace-${displayValue}`;
+  
   return el("label", { className: "routine-control" }, [
-    el("span", { className: "routine-control-header" }, [
-      el("span", { text: label }),
-      el("strong", { text: display(displayValue) }),
+    el("div", { className: "routine-control-header" }, [
+      el("span", { className: "pace-label-side", text: "מהיר" }),
+      el("strong", { 
+        key: paceKey,
+        className: "pace-label-center pace-label-animate", 
+        text: centerText 
+      }),
+      el("span", { className: "pace-label-side", text: "מפנק" }),
     ]),
     el("input", {
       className: "amount-range product-routine-range",
       type: "range",
       min: String(min),
       max: String(max),
-      step: "1",
+      step: "0.01",  // ✅ תנועה חלקה בזמן גרירה
       value: String(numericValue),
       style: `--amount-progress: ${progress}%`,
-      onInput: (event) => onValue(Number(event.target.value)),
-      onChange: (event) => onValue(Number(event.target.value)),
+      onInput: (event) => {
+        // בזמן גרירה - תנועה חלקה, לא עוגל
+        const rawValue = Number(event.target.value);
+        const progress = ((rawValue - min) / (max - min)) * 100;
+        event.target.style.setProperty("--amount-progress", `${progress}%`);
+      },
+      onChange: (event) => {
+        // בסוף הגרירה - עיגול לערך קרוב ✅
+        const rawValue = Number(event.target.value);
+        const rounded = Math.round(rawValue);
+        onValue(rounded);
+      },
     }),
     el("span", { className: "routine-control-hint", text: hint }),
   ]);
@@ -3097,6 +4707,22 @@ function getRoutineWizardSteps(route = state.routineRoute) {
   ];
 }
 
+// ✅ קבלת labels קצרים לכל שלב wizard
+function getWizardStepLabels() {
+  const steps = getRoutineWizardSteps();
+  const labelMap = {
+    time: "זמן",
+    amount: "כמות",
+    mask: "מסיכה",
+    feeling: "עור",
+    type: "מטרה",
+    favorites: "מועדף",
+    result: "שגרה"
+  };
+  
+  return steps.map(step => labelMap[step.id] || "שלב");
+}
+
 function getRoutineStepIndex(stepId, route = state.routineRoute) {
   const index = getRoutineWizardSteps(route).findIndex((step) => step.id === stepId);
   return index >= 0 ? index : 0;
@@ -3124,7 +4750,10 @@ function renderLockedRoutineTime() {
 }
 
 function renderRoutineTimeStep() {
-  const locked = state.routineTimeLocked;
+  // ✅ בשאלון (wizard), הזמן לעולם לא נעול - המשתמש בוחר בחופשיות
+  const isWizard = state.routineRoute === "regular" && state.routineFlow === "wizard";
+  const locked = isWizard ? false : state.routineTimeLocked;
+  
   const nextStep = getRoutineStepIndex("amount");
   return el("div", { className: "wizard-screen active" }, [
     el("p", { text: locked ? "הזמן כבר נבחר לשגרה הזאת, מאמי. ממשיכים עם אותה בחירה." : "בחר את הזמן שעליו נבנה את השגרה. אחרי ההמשך הבחירה ננעלת כדי שהמוצרים יישארו מדויקים." }),
@@ -3139,22 +4768,53 @@ function renderRoutineTimeStep() {
 
 function renderAmountStep() {
   const label = state.requestedSteps >= 5 ? "5+" : String(state.requestedSteps);
-  const rangeValue = Math.max(2, state.requestedSteps);
-  const rangeProgress = ((rangeValue - 2) / 3) * 100;
-  const syncAmount = (event) => {
-    const value = Math.max(2, Number(event.target.value));
-    state.requestedSteps = value;
-    const progress = ((value - 2) / 3) * 100;
+  const rangeValue = Math.max(3, state.requestedSteps);
+  const rangeProgress = ((rangeValue - 3) / 2) * 100;
+  
+  const syncAmountSmooth = (event) => {
+    // ✅ בזמן גרירה - תנועה חלקה, עדכון ויזואלי בלבד
+    const rawValue = Number(event.target.value);
+    const progress = ((rawValue - 3) / 2) * 100;
     event.target.style.setProperty("--amount-progress", `${progress}%`);
+    
+    // עדכון תצוגה זמנית
     const display = event.target.closest(".amount-step")?.querySelector(".amount-display");
-    if (display) display.textContent = value >= 5 ? "5+" : String(value);
+    if (display) {
+      const rounded = Math.round(rawValue);
+      display.textContent = rounded >= 5 ? "5+" : String(rounded);
+    }
+  };
+  
+  const syncAmountFinal = (event) => {
+    // ✅ בסוף הגרירה - עיגול ועדכון state
+    const rawValue = Number(event.target.value);
+    const rounded = Math.max(3, Math.round(rawValue));
+    state.requestedSteps = rounded;
+    
+    const progress = ((rounded - 3) / 2) * 100;
+    event.target.style.setProperty("--amount-progress", `${progress}%`);
+    
+    const display = event.target.closest(".amount-step")?.querySelector(".amount-display");
+    if (display) display.textContent = rounded >= 5 ? "5+" : String(rounded);
+    
     state.quietRender = true;
     render();
   };
+  
   return el("div", { className: "wizard-screen active amount-step" }, [
     el("div", { className: "amount-display", text: label }),
-    el("input", { className: "amount-range", type: "range", min: "2", max: "5", step: "1", value: String(rangeValue), style: `--amount-progress: ${rangeProgress}%`, onInput: syncAmount, onChange: syncAmount }),
-    el("p", { className: "step-meta", text: "2 אומר שגרה הכי מינימלית וחכמה. 5+ אומר שגרה עשירה, אבל עדיין בלי לערבב פעילים מסוכנים." }),
+    el("input", { 
+      className: "amount-range", 
+      type: "range", 
+      min: "3", 
+      max: "5", 
+      step: "0.01",  // ✅ תנועה חלקה
+      value: String(rangeValue), 
+      style: `--amount-progress: ${rangeProgress}%`, 
+      onInput: syncAmountSmooth,  // בזמן גרירה
+      onChange: syncAmountFinal   // בסוף גרירה
+    }),
+    el("p", { className: "step-meta", text: "3 אומר שגרה מינימלית וחכמה. 4 אומר שגרה מאוזנת. 5+ אומר שגרה עשירה יותר, רק אם יש התאמה אמיתית." }),
   ]);
 }
 
@@ -3198,13 +4858,27 @@ function renderFavoritesStep() {
   const nextStep = getRoutineStepIndex("result");
   
   // קבלת מועדפים זמינים
-  const favoriteProducts = state.favorites
+  const allFavorites = state.favorites
     .map(id => getProduct(id))
     .filter(product => product && product.name); // רק מוצרים תקינים
   
-  // אם אין מועדפים - לא אמור להגיע לכאן, אבל בטיחות
+  // ✅ סינון חכם לפי כל התשובות בשאלון
+  const context = {
+    timeOfDay: state.timeOfDay,
+    feeling: state.feeling,
+    includeMask: state.includeMask,
+    routineType: state.routineType,
+    routinePace: state.routinePace,
+    requestedSteps: state.requestedSteps,
+    preferredProductId: state.preferredProductId
+  };
+  
+  const favoriteProducts = getSmartFilteredFavorites(allFavorites, context);
+  
+  // אם אין מועדפים מתאימים - לדלג אוטומטית
   if (favoriteProducts.length === 0) {
     setState({ 
+      selectedFavoriteProductId: null,
       wizardStep: nextStep,
       routineLoading: true
     });
@@ -3232,11 +4906,21 @@ function renderFavoritesStep() {
     queueRoutineLoadingDone();
   };
   
+  // כותרת דינמית
+  const title = favoriteProducts.length === allFavorites.length
+    ? "רוצה לכלול מוצר מהמועדפים שלך בשגרה?"
+    : `מצאתי ${favoriteProducts.length} מוצרים מהמועדפים שמתאימים לשגרה שלך:`;
+  
   return el("div", { className: "wizard-screen active" }, [
     el("p", { 
       className: "step-meta", 
-      text: "רוצה לכלול מוצר מהמועדפים שלך בשגרה?" 
+      text: title
     }),
+    favoriteProducts.length < allFavorites.length ? 
+      el("p", { 
+        style: "font-size: 0.9rem; color: #6b7280; margin-bottom: 1rem;",
+        text: `סיננתי רק מוצרים שמתאימים לזמן השימוש ולמצב העור שבחרת.`
+      }) : null,
     el("div", { className: "favorites-grid", style: "display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; margin: 1.5rem 0;" }, 
       favoriteProducts.map(product => 
         el("button", { 
@@ -3266,7 +4950,78 @@ function renderFavoritesStep() {
 }
 
 function renderRoutineResultStep() {
-  const routine = buildRoutine();
+  // ✅ בשגרה שמורה - השתמש ב-saved routine, לא buildRoutine!
+  const isSavedRoute = state.routineRoute === "saved";
+  
+  let routine;
+  if (isSavedRoute && state.loadedSavedRoutine && state.loadedSavedRoutine.routine) {
+    // ✅ שגרה שמורה - טען את ה-snapshot!
+    routine = state.loadedSavedRoutine.routine;
+    console.log('📖 LOADING SAVED ROUTINE:', {
+      id: state.loadedSavedRoutine.id?.substring(0, 50),
+      count: routine.steps.length,
+      products: routine.steps.map(s => s.name)
+    });
+  } else if (state.refreshedRoutine) {
+    // יש refreshed routine - השתמש בו
+    routine = state.refreshedRoutine;
+    console.log('📖 LOADING REFRESHED ROUTINE:', routine.steps.map(s => s.name));
+  } else {
+    // fallback - build מחדש
+    routine = buildRoutine();
+    console.log('📖 LOADING BUILD ROUTINE:', routine.steps.map(s => s.name));
+  }
+  
+  // ✅ שמור את השגרה המוצגת ב-state כדי ש-Replace Product יוכל להשתמש בה
+  state.displayedRoutine = routine;
+  
+  // ✅ CRITICAL: Final dedupe BEFORE RENDER - זה הנקודה האחרונה לפני תצוגה!
+  if (routine && routine.steps) {
+    console.log('🔍 FINAL ROUTINE BEFORE DEDUPE:', routine.steps.map(p => ({
+      id: p.id,
+      name: p.name,
+      brand: p.brand,
+      key: getProductIdentity(p)
+    })));
+    
+    const seenIds = new Set();
+    const seenKeys = new Set();
+    const originalLength = routine.steps.length;
+    
+    routine.steps = routine.steps.filter(product => {
+      const id = product.id;
+      const key = getProductIdentity(product);
+      
+      if (seenIds.has(id) || seenKeys.has(key)) {
+        console.warn('⚠️⚠️⚠️ FINAL DEDUPE REMOVED DUPLICATE BEFORE RENDER:', {
+          id,
+          key,
+          name: product.name,
+          brand: product.brand,
+          reason: product.reason
+        });
+        return false;
+      }
+      
+      seenIds.add(id);
+      seenKeys.add(key);
+      return true;
+    });
+    
+    if (routine.steps.length < originalLength) {
+      console.warn(`⚠️ DEDUPE REMOVED ${originalLength - routine.steps.length} DUPLICATES`);
+    }
+    
+    console.log('✅ FINAL ROUTINE AFTER DEDUPE:', routine.steps.map(p => ({
+      id: p.id,
+      name: p.name,
+      brand: p.brand,
+      key: getProductIdentity(p)
+    })));
+    
+    // עדכן גם ב-displayedRoutine
+    state.displayedRoutine = routine;
+  }
   
   // Guard: אם אין routine תקין
   if (!routine || !routine.steps) {
@@ -3277,9 +5032,14 @@ function renderRoutineResultStep() {
   
   const product = getProduct(state.preferredProductId);
   const isProductRoute = state.routineRoute === "product";
-  const intro = isProductRoute && product
-    ? `בניתי שגרה סביב ${product.name}. הוא נשאר בפנים בכל שינוי, ושאר השלבים מתעדכנים לפי מה שבחרת.`
-    : getRoutineIntro(routine);
+  
+  // ✅ תמיד להשתמש ב-getRoutineIntro() - הוא כבר מטפל בכל הסוגים
+  const intro = getRoutineIntro(routine);
+  
+  // הוספת הערה מיוחדת לשגרה סביב מוצר
+  const productNote = isProductRoute && product
+    ? `המוצר ${product.name} נשאר בפנים בכל שינוי, ושאר השלבים מתעדכנים לפי מה שבחרת.`
+    : null;
   
   // הוספת context לשגרה לצורך שמירה (רק אם אין)
   if (!routine.context) {
@@ -3298,6 +5058,7 @@ function renderRoutineResultStep() {
 
   return el("div", { className: isProductRoute ? "routine-result-content" : "wizard-screen active" }, [
     el("p", { html: intro }),
+    productNote ? el("p", { className: "product-note", text: productNote, style: "font-size: 0.9rem; color: #6b7280; margin-top: 0.5rem;" }) : null,
     state.paceChangeMessage 
       ? el("div", { className: "pace-change-notice", text: state.paceChangeMessage })
       : null,
@@ -3307,6 +5068,100 @@ function renderRoutineResultStep() {
     renderRoutinePreview(routine),
     (isProductRoute || state.routineRoute === "saved") ? null : renderNextProductSuggestion(routine),
     routine.warnings && routine.warnings.length ? renderWarnings(routine.warnings) : null,
+    // ✅ כפתור "שנה שגרה" - רק בשגרות רגילות, לא בשגרות שמורות!
+    state.routineRoute === "saved" ? null : el("button", { 
+      className: "button", 
+      style: "width: 100%; margin-top: 1.5rem; background: #9075D7; color: white; border: 2px solid #9075D7; font-size: 1rem; padding: 1rem;",
+      text: "שנה שגרה ↻", 
+      onClick: () => {
+        // שמור את השגרה הנוכחית
+        const currentRoutine = buildRoutine();
+        if (!currentRoutine || !currentRoutine.steps || currentRoutine.steps.length === 0) return;
+        
+        console.log('🔄 Refreshing', currentRoutine.steps.length, 'steps');
+        
+        // שינוי seed
+        const newSeed = Date.now() + Math.random();
+        
+        // בנה context
+        const context = {
+          timeOfDay: state.timeOfDay,
+          feeling: state.feeling,
+          routinePace: state.routinePace,
+          routineType: state.routineType,
+          includeMask: state.includeMask,
+          preferredProductId: state.preferredProductId,
+          selectedFavoriteProductId: state.selectedFavoriteProductId,
+          routineNonce: newSeed,
+          isTargetedRoutine: state.routineType === "targeted",
+          hasStrongActive: false
+        };
+        
+        console.log('⏰ Routine time:', state.timeOfDay, '→', isDayRoutine(state.timeOfDay) ? 'DAY' : 'NIGHT');
+        
+        // בנה שגרה מרעננת - עבור על כל step והחלף
+        const refreshedSteps = currentRoutine.steps.map(step => {
+          // שמור מוצרים מועדפים
+          if (step.id === state.preferredProductId || 
+              step.id === state.selectedFavoriteProductId) {
+            console.log(`  Keeping preferred: ${step.name}`);
+            return step;
+          }
+          
+          try {
+            // מצא מוצרים אחרים מאותו type
+            const otherSteps = currentRoutine.steps.filter(s => s.id !== step.id);
+            const allOfType = candidatesFor(context, step.type);
+            
+            console.log(`  ${step.type}: found ${allOfType.length} candidates`);
+            if (allOfType.length > 0) {
+              console.log(`    Top 3 scores:`, allOfType.slice(0, 3).map(p => 
+                `${p.name.substring(0, 20)} (${scoreProduct(p, context).toFixed(1)})`
+              ).join(', '));
+            }
+            
+            // סנן: לא אותו מוצר + לא duplicate + בטוח להוסיף
+            const alternatives = allOfType
+              .filter(p => p.id !== step.id)
+              .filter(p => !isProductAlreadySelected(p, otherSteps))  // ✅ מניעת duplicates!
+              .filter(p => isSafeAddition(p, otherSteps, context.feeling, context));
+            
+            if (alternatives.length > 0) {
+              // בחר אקראי מתוך 5 ראשונים
+              const topFive = alternatives.slice(0, 5);
+              const randomIndex = Math.floor(Math.random() * topFive.length);
+              const newProduct = topFive[randomIndex];
+              
+              console.log(`  ${step.type}: ${step.name} → ${newProduct.name}`);
+              return { ...newProduct, reason: step.reason };
+            } else {
+              console.log(`  ${step.type}: keeping ${step.name} (no alternatives)`);
+              return step;
+            }
+          } catch (err) {
+            console.error(`  Error with ${step.type}:`, err);
+            return step;
+          }
+        });
+        
+        console.log('✅ Refreshed:', refreshedSteps.map(s => s.name).join(', '));
+        
+        // ✅ סדר מחדש לפי routineOrderScore
+        refreshedSteps.sort((a, b) => routineOrderScore(a) - routineOrderScore(b));
+        console.log('✅ Sorted:', refreshedSteps.map(s => s.name).join(', '));
+        
+        // שמור את השגרה המרעננת ב-state
+        state.refreshedRoutine = {
+          steps: refreshedSteps,
+          warnings: currentRoutine.warnings || []
+        };
+        
+        // נקה overrides (לא צריך יותר)
+        state.routineOverrides = {};
+        
+        render();
+      }
+    })
   ]);
 }
 
@@ -3376,7 +5231,7 @@ function getRoutineIntro(routine) {
   
   // 1. שגרה סביב מוצר
   if (isProduct && product) {
-    return highlightCount(`הנה שגרת ${state.timeOfDay} ${paceDesc} סביב ${product.name}, עם ${stepCount} מוצרים תומכים.`);
+    return highlightCount(`הנה שגרת ${state.timeOfDay} ${paceDesc} עם ${stepCount} מוצרים סביב ${product.name}.`);
   }
   
   // 2. שאלון מלא - כל הפרטים
@@ -3531,14 +5386,21 @@ function renderCompletionModal() {
 function renderProductReplacementOverlay() {
   if (!state.showProductReplacement || !state.productToReplace) return null;
   
-  const routine = buildRoutine();
-  const context = {
-    timeOfDay: state.timeOfDay,
-    feeling: state.feeling,
-    routinePace: state.routinePace,
-  };
-  
-  const replacements = findReplacementProducts(state.productToReplace, routine, context);
+  // ✅ חישוב candidates בנפרד - עם הגנה מפני errors
+  let replacements = [];
+  try {
+    // ✅ השתמש בשגרה המוצגת, לא buildRoutine() מחדש!
+    const routine = state.displayedRoutine || buildRoutine();
+    const context = {
+      timeOfDay: state.timeOfDay,
+      feeling: state.feeling,
+      routinePace: state.routinePace,
+    };
+    replacements = findReplacementProducts(state.productToReplace, routine, context) || [];
+  } catch (error) {
+    console.error("Error in findReplacementProducts:", error);
+    replacements = [];
+  }
   
   return el("div", { 
     className: "replacement-overlay", 
@@ -3656,12 +5518,30 @@ function renderProductReplacementOverlay() {
                 
                 console.log('  Override saved:', JSON.stringify(state.routineOverrides));
                 
+                // ✅ עדכן את displayedRoutine ישירות
+                if (state.displayedRoutine && state.displayedRoutine.steps) {
+                  console.log('  Updating displayedRoutine...');
+                  console.log('  Before replacement:', state.displayedRoutine.steps.map(s => s.name));
+                  
+                  state.displayedRoutine.steps = state.displayedRoutine.steps.map(step => {
+                    if (step.id === productToReplaceId) {
+                      console.log(`    Replacing ${step.name} with ${state.selectedReplacement.name}`);
+                      return { ...state.selectedReplacement, reason: step.reason };
+                    }
+                    return step;
+                  });
+                  
+                  console.log('  After replacement:', state.displayedRoutine.steps.map(s => s.name));
+                  
+                  // ✅ שמור את displayedRoutine ב-refreshedRoutine כדי שלא יקרא buildRoutine()
+                  state.refreshedRoutine = state.displayedRoutine;
+                }
+                
                 // הגדר הודעה
                 state.replacementMessage = "המוצר הוחלף בהצלחה ✨";
                 
-                // עדכן את השגרה
-                state.routineNonce = Date.now();
-                state.completedSteps = new Set();
+                // ✅ לא לעדכן routineNonce - זה יגרום ל-buildRoutine להרוץ שוב!
+                // ✅ לא לאפס completedSteps - השגרה לא השתנתה!
                 
                 console.log('  Closing overlay...');
                 
@@ -3769,33 +5649,177 @@ function findReplacementProducts(productToReplace, routine, context) {
   
   if (!productToReplace || !routine || !context) return [];
   
+  console.log('🔄 Replace Product:', productToReplace.name);
+  console.log('⏰ Routine time:', context.timeOfDay, '→', isDayRoutine(context.timeOfDay) ? 'DAY' : 'NIGHT');
+  
   const routineProductIds = routine.steps.map(s => s.id);
   const otherProducts = routine.steps.filter(s => s.id !== productToReplace.id);
+  
+  console.log('📋 Current routine:', otherProducts.map(p => `${p.name} (${p.type})`).join(', '));
+  
+  // ✅ קבוצת טונרים - חלופות אחת לשנייה
+  const TONER_ALTERNATIVES = ["3", "1", "19"];  // Essence Toner, COSRX, SOME BY MI
+  
+  // אם זה טונר מהקבוצה, להציע את הטונרים האחרים ישירות
+  if (TONER_ALTERNATIVES.includes(productToReplace.id)) {
+    console.log('🔄 Toner replacement - offering other toners');
+    
+    const tonerAlternatives = TONER_ALTERNATIVES
+      .filter(id => id !== productToReplace.id)
+      .map(getProduct)
+      .filter(Boolean)
+      .filter(p => {
+        // בדיקת זמן
+        if (!productMatchesTime(p, context.timeOfDay)) {
+          console.log(`  ✗ ${p.name}: time mismatch`);
+          return false;
+        }
+        
+        // בבוקר: לא טונרי חומצות
+        if (isDayRoutine(context.timeOfDay)) {
+          const tags = new Set(tagsFor(p));
+          if (tags.has("acid") || tags.has("exfoliating")) {
+            console.log(`  ✗ ${p.name}: acid not allowed in day routine`);
+            return false;
+          }
+        }
+        
+        // בדיקת conflict עם שאר השגרה (ללא הטונר הנוכחי!)
+        const hasConflict = otherProducts.some(other => {
+          const comp = checkProductCompatibility(p, other);
+          if (!comp.compatible) {
+            console.log(`  ✗ ${p.name}: conflict with ${other.name} - ${comp.reason}`);
+            return true;
+          }
+          return false;
+        });
+        
+        if (!hasConflict) {
+          console.log(`  ✓ ${p.name}: valid alternative`);
+        }
+        
+        return !hasConflict;
+      });
+    
+    // ניקוד פשוט לפי feeling
+    const scored = tonerAlternatives.map(product => ({
+      product,
+      score: scoreProduct(product, context)
+    })).sort((a, b) => b.score - a.score);
+    
+    // ✅ החזר רק את ה-products, לא את האובייקטים עם score
+    return scored.map(item => item.product);
+  }
+  
+  // בדיקת actives קיימים בשגרה (ללא המוצר שמחליפים)
+  const hasRetinol = otherProducts.some(p => hasTag(p, "retinoid"));
+  const hasStrongAcids = otherProducts.some(p => hasTag(p, "acid") && hasTag(p, "strong"));
+  const hasVitaminC = otherProducts.some(p => hasTag(p, "vitaminC"));
+  const hasSpot = otherProducts.some(p => p.type === "Spot Treatment");
+  
+  console.log('🧪 Active check:', {
+    hasRetinol,
+    hasStrongAcids,
+    hasVitaminC,
+    hasSpot
+  });
+  
+  // Track rejected products with reasons
+  const rejected = [];
   
   // סנן מוצרים לפי סוג
   const candidates = products.filter(p => {
     // לא אותו מוצר
-    if (p.id === productToReplace.id) return false;
+    if (p.id === productToReplace.id) {
+      rejected.push({ product: p, reason: 'Same product' });
+      return false;
+    }
     
-    // רק אותו סוג מוצר
-    if (p.type !== productToReplace.type) return false;
+    // רק אותו סוג מוצר (או Eye Cream ↔ Eye Serum)
+    const isSameType = p.type === productToReplace.type;
+    const isEyeCompatible = (productToReplace.type === "Eye Cream" && p.type === "Eye Serum") ||
+                            (productToReplace.type === "Eye Serum" && p.type === "Eye Cream");
+    
+    if (!isSameType && !isEyeCompatible) {
+      rejected.push({ product: p, reason: `Wrong type: ${p.type} !== ${productToReplace.type}` });
+      return false;
+    }
     
     // לא מוצר שכבר בשגרה
-    if (routineProductIds.includes(p.id)) return false;
+    if (routineProductIds.includes(p.id)) {
+      rejected.push({ product: p, reason: 'Already in routine' });
+      return false;
+    }
     
     // בדיקת התאמה לזמן
-    if (!productMatchesTime(p, context.timeOfDay)) return false;
+    if (!productMatchesTime(p, context.timeOfDay)) {
+      rejected.push({ product: p, reason: `Time mismatch: ${p.time.join(', ')} doesn't match ${context.timeOfDay}` });
+      return false;
+    }
     
-    // בדיקת תאימות עם שאר המוצרים - אם לא תואם, לא להציע
+    const tags = new Set(tagsFor(p));
+    
+    // ✅ בוקר: לא רטינול, לא חומצות חזקות, לא overnight
+    if (isDayRoutine(context.timeOfDay)) {
+      if (tags.has("retinoid")) {
+        rejected.push({ product: p, reason: 'Retinoid not allowed in day routine' });
+        return false;
+      }
+      if (tags.has("strong") && tags.has("acid")) {
+        rejected.push({ product: p, reason: 'Strong acid not allowed in day routine' });
+        return false;
+      }
+      if (tags.has("overnight")) {
+        rejected.push({ product: p, reason: 'Overnight not allowed in day routine' });
+        return false;
+      }
+    }
+    
+    // ✅ עומס actives: לא להציע עוד actives חזקים
+    if (tags.has("retinoid") && (hasStrongAcids || hasSpot)) {
+      rejected.push({ product: p, reason: 'Retinoid would create overload (already has acids/spot)' });
+      return false;
+    }
+    if (tags.has("acid") && tags.has("strong") && (hasRetinol || hasSpot)) {
+      rejected.push({ product: p, reason: 'Acid would create overload (already has retinol/spot)' });
+      return false;
+    }
+    
+    // בדיקת תאימות עם שאר המוצרים (ללא המוצר שמחליפים)
     const isCompatible = otherProducts.every(other => {
       const compatibility = checkProductCompatibility(p, other);
       return compatibility.compatible;
     });
     
-    if (!isCompatible) return false;
+    if (!isCompatible) {
+      const conflicts = otherProducts
+        .map(other => {
+          const comp = checkProductCompatibility(p, other);
+          return comp.compatible ? null : `${other.name}: ${comp.reason}`;
+        })
+        .filter(Boolean);
+      rejected.push({ product: p, reason: `Compatibility conflict: ${conflicts.join('; ')}` });
+      return false;
+    }
     
     return true;
   });
+  
+  console.log(`✅ Found ${candidates.length} candidates for ${productToReplace.type}`);
+  if (candidates.length > 0 && candidates.length <= 5) {
+    console.log('  ✓ Accepted:', candidates.map(p => p.name).join(', '));
+  }
+  
+  // Show rejected toners specifically if replacing a toner
+  if (productToReplace.type === "Toner") {
+    const rejectedToners = rejected.filter(r => r.product.type === "Toner");
+    if (rejectedToners.length > 0) {
+      console.log(`  ✗ Rejected ${rejectedToners.length} toners:`);
+      rejectedToners.forEach(r => {
+        console.log(`    - ${r.product.name}: ${r.reason}`);
+      });
+    }
+  }
   
   // ניקוד כל מוצר לפי התאמה
   const scored = candidates.map(product => {
@@ -4062,7 +6086,8 @@ function renderSavedRoutineCard(saved) {
         requestedSteps: 4,  // ✅ FIX: תמיד 4 בהתחלה
         wizardStep: getRoutineStepIndex("result", "saved"),
         routineTimeLocked: true,  // ← זמן נעול
-        routineNonce: Date.now()
+        routineNonce: Date.now(),
+        loadedSavedRoutine: saved  // ✅ שמירת ה-saved object כדי להסיר אותו אחר כך!
       });
     }
   };
@@ -4077,7 +6102,7 @@ function renderSavedRoutineCard(saved) {
         event.preventDefault(); 
         event.stopPropagation(); 
         event.stopImmediatePropagation();
-        toggleSavedRoutine(routine, event.currentTarget); 
+        toggleSavedRoutine(saved, event.currentTarget);  // ✅ saved במקום routine!
       }
     }),
     // אין תמונה - ישר לתוכן
@@ -4230,9 +6255,12 @@ function renderProductPage() {
   const product = getProduct(state.selectedProductId) || products[0];
   const isFavorite = state.favorites.includes(product.id);
   const isFavoritePulsing = state.favoritePulseId === product.id;
-  const good = relationProducts(product, "good");
-  const bad = relationProducts(product, "bad");
+  
+  // ✅ סדר נכון: Similar → Complementary → Conflicts
   const similar = similarProducts(product);
+  const complementary = worksWellTogether(product);
+  const conflicts = avoidCombining(product);
+  
   return el("section", { className: "screen active product-page" }, [
     el("button", { className: "back-link page-back", text: `חזור`, onClick: goBack }),
     el("div", { className: "card product-hero" }, [
@@ -4257,11 +6285,17 @@ function renderProductPage() {
     renderInfoBlock("טוב ל", product.goodFor),
     renderMaskUsageCard(product),
     renderInfoBlock("משתלב טוב עם", getCompatibleIngredients(product)),
-    bad.length ? renderInfoBlock("לא מומלץ לשלב עם", bad.map((item) => item.name)) : null,
     product.warnings.length ? renderWarnings(product.warnings) : null,
-    renderProductCarousel("מוצרים שהולכים איתו טוב", good),
-    bad.length ? renderProductCarousel("מוצרים שלא טובים איתו", bad, "bad") : null,
-    similar.length ? renderProductCarousel("מוצרים דומים", similar) : null,
+    
+    // ✅ סדר נכון של קרוסלות:
+    // 1️⃣ Similar Products - תחליפים (אותו Type בלבד)
+    similar.length ? renderProductCarousel("מוצרים דומים", similar, "similar") : null,
+    
+    // 2️⃣ Works Well Together - משלימים (types שונים)
+    complementary.length ? renderProductCarousel("מוצרים משלימים", complementary, "good") : null,
+    
+    // 3️⃣ Avoid Combining - רק conflicts חזקים (אם יש)
+    conflicts.length ? renderProductCarousel("לא מומלץ לשלב", conflicts, "bad") : null,
   ]);
 }
 
@@ -4286,15 +6320,26 @@ function renderMaskUsageCard(product) {
 
 function renderProductCarousel(title, items, tone = "good") {
   if (!items.length) return null;
+  
+  // קביעת סגנון לפי סוג הקרוסלה
+  let borderStyle = "";
+  let className = `mini-carousel ${tone}`;
+  
+  // ✅ רק conflicts מקבלים border אדום
+  if (tone === "bad") {
+    borderStyle = "border: 2px solid #FF6060;";
+  }
+  // ✅ הסרנו את הבורדר הכחול - מוצרים דומים ללא מסגרת
+  
   return el("section", { className: "carousel-section" }, [
     el("div", { className: "section-title" }, [el("h2", { text: title })]),
     el("div", { 
-      className: `mini-carousel ${tone}`,
+      className: className,
       style: "scrollbar-width: none; -ms-overflow-style: none;"
     }, items.map((product) =>
       el("button", { 
         className: `mini-product-card ${tone}`, 
-        style: tone === "bad" ? "border: 2px solid #FF6060;" : "",
+        style: borderStyle,
         onClick: () => openProduct(product.id) 
       }, [
         renderProductImage(product, "mini-product-image"),
@@ -4378,6 +6423,19 @@ function describeWeatherCode(code) {
       display: none;
       width: 0;
       height: 0;
+    }
+    
+    /* ✅ אנימציית לב לכפתור שמור שגרה */
+    @keyframes heartBounce {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.3); }
+      50% { transform: scale(0.9); }
+      75% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    
+    .save-routine-heart.heart-bounce {
+      animation: heartBounce 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
   `;
   document.head.appendChild(style);
