@@ -1905,79 +1905,103 @@ function renderCoupleScreen() {
     el("div", { className: "card couple-screen-card" }, [
       el("div", { className: "card-inner" }, [
         step > 0 ? el("button", { className: "back-link inline-back", text: "חזור", onClick: goBack }) : null,
-        // ✅ Stepper חדש עם עיגולים וכותרות - responsive ללא scroll
+        // ✅ Stepper עם sliding window - מציג רק 7 שלבים במובייל
         el("div", { 
           className: "couple-stepper",
           style: "display: flex; align-items: flex-start; justify-content: space-between; margin: 1.5rem 0 2rem; padding: 0 0.5rem; width: 100%; max-width: 100%; overflow: hidden;"
-        }, stepLabels.flatMap((label, index) => {
-          const items = [
-            // Step item עם עיגול וכותרת
-            el("div", {
-              key: `step-${index}`,
-              className: "step-item",
-              style: "display: flex; flex-direction: column; align-items: center; gap: 0.25rem; flex-shrink: 1; min-width: 0;"
-            }, [
-              // עיגול השלב - responsive
-              el("div", {
-                className: `step-circle ${index === step ? "active" : ""} ${index < step ? "done" : ""}`,
-                style: `
-                  width: clamp(24px, 5vw, 32px);
-                  height: clamp(24px, 5vw, 32px);
-                  border-radius: 50%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: clamp(11px, 2.5vw, 0.875rem);
-                  font-weight: 600;
-                  transition: all 0.3s ease;
-                  flex-shrink: 0;
-                  ${index < step ? 
-                    "background: #9075D7; color: white; border: 2px solid #9075D7;" : 
-                    index === step ? 
-                      "background: white; color: #9075D7; border: 2px solid #9075D7; box-shadow: 0 0 0 4px rgba(144, 117, 215, 0.1);" :
-                      "background: white; color: #9CA3AF; border: 2px solid #E5E7EB;"
-                  }
-                `,
-                text: index < step ? "✓" : (index + 1).toString()
-              }),
-              // כותרת השלב - responsive
-              el("span", {
-                style: `
-                  font-size: clamp(9px, 2vw, 0.75rem);
-                  text-align: center;
-                  color: ${index === step ? "#9075D7" : index < step ? "#6B7280" : "#9CA3AF"};
-                  font-weight: ${index === step ? "600" : "400"};
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  max-width: 100%;
-                `,
-                text: label
-              })
-            ])
-          ];
+        }, (() => {
+          // חשב איזה שלבים להציג (sliding window)
+          const maxVisible = window.innerWidth < 600 ? 7 : stepLabels.length;
+          const totalSteps = stepLabels.length;
           
-          // הוסף קו מחבר אחרי העיגול (אם לא השלב האחרון) - responsive
-          if (index < stepLabels.length - 1) {
-            items.push(
-              el("div", {
-                key: `connector-${index}`,
-                className: "step-connector",
-                style: `
-                  flex: 1;
-                  height: 2px;
-                  background: ${index < step ? "#9075D7" : "#E5E7EB"};
-                  align-self: flex-start;
-                  margin-top: clamp(12px, 2.5vw, 16px);
-                  min-width: 4px;
-                  max-width: 64px;
-                `
-              })
-            );
+          let start = 0;
+          let end = totalSteps;
+          
+          if (totalSteps > maxVisible) {
+            // מרכז את השלב הנוכחי בwindow
+            start = Math.max(0, step - Math.floor(maxVisible / 2));
+            end = start + maxVisible;
+            
+            // אם הגענו לסוף, תזיז אחורה
+            if (end > totalSteps) {
+              end = totalSteps;
+              start = end - maxVisible;
+            }
           }
           
-          return items;
-        })),
+          const visibleLabels = stepLabels.slice(start, end);
+          
+          return visibleLabels.flatMap((label, visibleIndex) => {
+            const actualIndex = start + visibleIndex;
+            const items = [
+              // Step item עם עיגול וכותרת
+              el("div", {
+                key: `step-${actualIndex}`,
+                className: "step-item",
+                style: "display: flex; flex-direction: column; align-items: center; gap: 0.25rem; flex-shrink: 1; min-width: 0;"
+              }, [
+                // עיגול השלב - responsive
+                el("div", {
+                  className: `step-circle ${actualIndex === step ? "active" : ""} ${actualIndex < step ? "done" : ""}`,
+                  style: `
+                    width: clamp(28px, 6vw, 36px);
+                    height: clamp(28px, 6vw, 36px);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: clamp(12px, 3vw, 0.9rem);
+                    font-weight: 600;
+                    transition: all 0.3s ease;
+                    flex-shrink: 0;
+                    ${actualIndex < step ? 
+                      "background: #9075D7; color: white; border: 2px solid #9075D7;" : 
+                      actualIndex === step ? 
+                        "background: white; color: #9075D7; border: 2px solid #9075D7; box-shadow: 0 0 0 4px rgba(144, 117, 215, 0.1);" :
+                        "background: white; color: #9CA3AF; border: 2px solid #E5E7EB;"
+                    }
+                  `,
+                  text: actualIndex < step ? "✓" : (actualIndex + 1).toString()
+                }),
+                // כותרת השלב - responsive
+                el("span", {
+                  style: `
+                    font-size: clamp(10px, 2.2vw, 0.75rem);
+                    text-align: center;
+                    color: ${actualIndex === step ? "#9075D7" : actualIndex < step ? "#6B7280" : "#9CA3AF"};
+                    font-weight: ${actualIndex === step ? "600" : "400"};
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 100%;
+                  `,
+                  text: label
+                })
+              ])
+            ];
+            
+            // הוסף קו מחבר אחרי העיגול (אם לא השלב האחרון בwindow)
+            if (visibleIndex < visibleLabels.length - 1) {
+              items.push(
+                el("div", {
+                  key: `connector-${actualIndex}`,
+                  className: "step-connector",
+                  style: `
+                    flex: 1;
+                    height: 2px;
+                    background: ${actualIndex < step ? "#9075D7" : "#E5E7EB"};
+                    align-self: flex-start;
+                    margin-top: clamp(14px, 3vw, 18px);
+                    min-width: 8px;
+                    max-width: 64px;
+                  `
+                })
+              );
+            }
+            
+            return items;
+          });
+        })()),
         scene,
         renderCoupleNav(step, total, plan),  // ← העברת plan
       ]),
