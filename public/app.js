@@ -137,10 +137,10 @@ const feelings = [
 ];
 
 const routineSlots = [
-  { id: "בוקר", icon: "☼", action: "שגרת טיפוח לבוקר", alternative: "אני מעדיף שגרת בוקר" },
-  { id: "צהריים", icon: "☀", action: "שגרת טיפוח לצהריים", alternative: "אני מעדיף שגרה לצהריים" },
-  { id: "ערב", icon: "✶", action: "שגרת טיפוח לערב", alternative: "אני מעדיף שגרה לערב" },
-  { id: "לילה", icon: "☾", action: "שגרת טיפוח לפני השינה", alternative: "אני מעדיף שגרת לילה" },
+  { id: "בוקר", icon: "☀️", action: "שגרת טיפוח לבוקר", alternative: "אני מעדיף שגרת בוקר" },
+  { id: "צהריים", icon: "🌞", action: "שגרת טיפוח לצהריים", alternative: "אני מעדיף שגרה לצהריים" },
+  { id: "ערב", icon: "✨", action: "שגרת טיפוח לערב", alternative: "אני מעדיף שגרה לערב" },
+  { id: "לילה", icon: "🌙", action: "שגרת טיפוח לפני השינה", alternative: "אני מעדיף שגרת לילה" },
 ];
 
 const typeLabels = {
