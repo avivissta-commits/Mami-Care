@@ -430,8 +430,17 @@ function productImagePath(product) {
 }
 
 function renderProductImage(product, className = "product-thumb") {
-  return el("div", { className }, [
-    el("img", { src: productImagePath(product), alt: `${product.brand} ${product.name}`, loading: "lazy" }),
+  const isLarge = className.includes("product-thumb-large");
+  return el("div", { 
+    className,
+    style: isLarge ? "width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; margin: 0 auto;" : ""
+  }, [
+    el("img", { 
+      src: productImagePath(product), 
+      alt: `${product.brand} ${product.name}`, 
+      loading: "lazy",
+      style: isLarge ? "max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;" : ""
+    }),
   ]);
 }
 
@@ -4209,10 +4218,10 @@ function renderRecommendationsSection() {
   };
   
   return el("div", { className: "card recommendations-section" }, [
-    el("div", { className: "card-inner", style: "padding-top: 1.25rem; padding-right: 1rem;" }, [
+    el("div", { className: "card-inner", style: "padding-top: 0.75rem; padding-right: 1rem;" }, [
       // ✅ Header with title and favorite button in same row
-      el("div", { className: "recommendation-header-row", style: "display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; gap: 12px;" }, [
-        el("h3", { text: "המלצות עבורך", style: "margin: 0;" }),
+      el("div", { className: "recommendation-header-row", style: "display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 0; gap: 12px;" }, [
+        el("h3", { text: "המלצות עבורך", style: "margin: 0; line-height: 1.15;" }),
         // Favorite button with proper styling and animation
         el("button", {
           className: `favorite-button ${isRecommendedFavorite ? "active" : ""} ${state.favoritePulseId === currentRecommendation.id ? "pulse" : ""}`,
@@ -4228,7 +4237,7 @@ function renderRecommendationsSection() {
           }
         }),
       ]),
-      el("p", { className: "section-desc", style: "color: #9075D7;", text: `מוצר מומלץ ל${currentTime}` }),
+      el("p", { className: "section-desc", style: "color: #9075D7; margin: -2px 0 0.5rem 0; line-height: 1.25;", text: `מוצר מומלץ ל${currentTime}` }),
       
       // Carousel container with direction for animations
       el("div", { 
@@ -4247,12 +4256,13 @@ function renderRecommendationsSection() {
           }
         }),
         
-        // Product card (larger image)
+        // Product card (larger image) with scoped styling
         renderProductCard(currentRecommendation, { 
           hideBorder: true, 
           benefitText, 
           hideFavorite: true,
-          largerImage: true 
+          largerImage: true,
+          compactSpacing: true  // ✅ חדש: הפעל spacing צמוד
         }),
         
         // Next button
@@ -6194,10 +6204,15 @@ function getVisibleProducts(onlyFavorites) {
 function renderProductCard(product, options = {}) {
   const isFavorite = state.favorites.includes(product.id);
   const isFavoritePulsing = state.favoritePulseId === product.id;
-  const { hideBorder = false, benefitText = null, hideFavorite = false, largerImage = false } = options;
+  const { hideBorder = false, benefitText = null, hideFavorite = false, largerImage = false, compactSpacing = false } = options;
   
   // סגנון מותאם אם צריך להסיר border
-  const cardStyle = hideBorder ? "border: none; box-shadow: none; background: transparent;" : "";
+  let cardStyle = hideBorder ? "border: none; box-shadow: none; background: transparent;" : "";
+  
+  // ✅ Override spacing ל-recommendations section
+  if (compactSpacing) {
+    cardStyle += " padding: 0.5rem 0 0 0; min-height: unset; gap: 0.75rem;";
+  }
   
   return el("article", { 
     className: "product-card", 
