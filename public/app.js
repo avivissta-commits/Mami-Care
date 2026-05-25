@@ -4303,7 +4303,6 @@ function renderCoupleHomeCard() {
           el("span", { text: "✨ רומנטי" }),
           el("span", { text: "🫶 מקרב" }),
           el("span", { text: "🧖 מפנק" }),
-          el("span", { text: "😌 מרגיע" }),
         ]),
       ]),
       el("button", { className: "button primary-hero", text: "יאללה, מתחילים ✨", onClick: () => startCoupleFlow(true) }),
