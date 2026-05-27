@@ -433,7 +433,9 @@ function renderProductImage(product, className = "product-thumb") {
   const isLarge = className.includes("product-thumb-large");
   return el("div", { 
     className,
-    style: isLarge ? "width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; margin: 0 auto;" : ""
+    style: isLarge 
+      ? "width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; margin: 0 auto; background: transparent; border: none; box-shadow: none;"
+      : ""
   }, [
     el("img", { 
       src: productImagePath(product), 
@@ -4037,7 +4039,6 @@ function renderRecommendationsSection() {
   
   // סינון מוצרים לפי זמן ביום
   let recommendedProducts;
-  let benefitText = "";
   
   if (hour >= 6 && hour < 12) {
     // בוקר: מוצרים קלילים ומהירים
@@ -4047,7 +4048,6 @@ function renderRecommendationsSection() {
       (p.type === "Toner" && p.tags.includes("hydration")) ||
       (p.type === "SPF")
     );
-    benefitText = "מעניק לחות קלילה בלי להכביד — מתאים לבוקר מהיר.";
   } else if (hour >= 12 && hour < 18) {
     // צהריים: רענון ותחזוקה
     recommendedProducts = products.filter(p => 
@@ -4056,7 +4056,6 @@ function renderRecommendationsSection() {
       (p.type === "SPF") ||
       (p.type === "Serum" && p.tags.includes("hydration"))
     );
-    benefitText = "עוזר לרענן ולשמור על העור גם באמצע היום.";
   } else {
     // ערב/לילה: טיפול עמוק ומפנק
     recommendedProducts = products.filter(p => 
@@ -4066,7 +4065,6 @@ function renderRecommendationsSection() {
       (p.type === "Eye Cream") ||
       (p.type === "Toner" && p.tags.includes("repair"))
     );
-    benefitText = "מתאים לערב רגוע כשהעור צריך פינוק וטיפול עמוק.";
   }
   
   // fallback אם אין מוצרים מתאימים
@@ -4074,7 +4072,6 @@ function renderRecommendationsSection() {
     recommendedProducts = products.filter(p => 
       p.type === "Serum" || p.type === "Cream" || p.type === "Mask"
     );
-    benefitText = "מוצר איכותי שמתאים לשגרת טיפוח.";
   }
   
   // ✅ Smart filtering by time of day with metadata
@@ -4259,10 +4256,10 @@ function renderRecommendationsSection() {
         // Product card (larger image) with scoped styling
         renderProductCard(currentRecommendation, { 
           hideBorder: true, 
-          benefitText, 
+          benefitText: currentRecommendation.simpleDesc || "",  // ✅ simpleDesc = השדה הנכון!
           hideFavorite: true,
           largerImage: true,
-          compactSpacing: true  // ✅ חדש: הפעל spacing צמוד
+          compactSpacing: true
         }),
         
         // Next button
