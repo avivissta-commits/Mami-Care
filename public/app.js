@@ -107,40 +107,40 @@ const products = [
 ];
 
 const tips = [
-  "💧 להתחיל תמיד ממרקם קליל למרקם עשיר — טונר, סרום, קרם ואז שמן אם צריך. העור אוהב סדר ✨",
-  "☀️ מקדם הגנה זה לא רק לקיץ — גם בחורף, בבית וליד חלון. SPF הוא החבר הכי טוב של העור שלך 🤍",
-  "💤 שינה טובה = עור שמח יותר. 7-9 שעות שינה יכולות לעשות יותר מכל סרום יקר 😴",
-  "🚰 לשתות מספיק מים במהלך היום עוזר לעור להיראות חיוני, רגוע וזוהר ✨",
-  "🫶 לא צריך 10 חומצות ביחד כדי שהעור יעבוד — לפעמים דווקא שגרה פשוטה ועדינה עושה קסמים.",
-  "🧴 כשמורחים סרום או קרם — לא לשפשף חזק. ללחוץ בעדינות על העור כאילו אתה מפנק אותו 💕",
-  "🧼 לנקות פנים בעדינות — עור נקי זה חשוב, אבל נקי מדי יכול לגרות ולייבש.",
-  "🌙 רטינול וחומצות אוהבים את הלילה. השמש פחות אוהבת אותם 😌",
-  "🍓 תזונה טובה משפיעה גם על העור — ירקות, פירות וחלבון יכולים לעזור לזוהר טבעי מבפנים.",
-  "🛏️ להחליף ציפית לפחות פעם בשבוע. העור שלך יודה לך על זה 🫧",
-  "✨ אם מוצר חדש עושה גירוי — לעצור, להרגיע ולתת לעור לנוח. לא חייבים לסבול בשביל היופי.",
-  "🧖 מסכות זה לא מבחן סיבולת — בדרך כלל 10-15 דקות מספיקות, אלא אם כתוב אחרת 😴",
-  "🤍 שגרת טיפוח טובה היא עקבית, לא אגרסיבית. עדיף קצת כל יום מאשר להגזים פעם בשבוע.",
-  "🫧 עור יבש לא תמיד צריך עוד חומצות — לפעמים הוא פשוט מבקש יותר לחות והרגעה.",
-  "☕ פחות סטרס, יותר טיפוח עצמי. גם 10 דקות שקט עם שגרה נעימה יכולות לעשות פלאים לעור ולמצב רוח 💆",
+  { icon: "layers", text: "להתחיל תמיד ממרקם קליל למרקם עשיר — טונר, סרום, קרם ואז שמן אם צריך. העור אוהב סדר." },
+  { icon: "spf", text: "מקדם הגנה זה לא רק לקיץ — גם בחורף, בבית וליד חלון. SPF הוא החבר הכי טוב של העור שלך." },
+  { icon: "sleep", text: "שינה טובה = עור שמח יותר. 7-9 שעות שינה יכולות לעשות יותר מכל סרום יקר." },
+  { icon: "drink", text: "לשתות מספיק מים במהלך היום עוזר לעור להיראות חיוני, רגוע וזוהר." },
+  { icon: "gentle", text: "לא צריך 10 חומצות ביחד כדי שהעור יעבוד — לפעמים דווקא שגרה פשוטה ועדינה עושה קסמים." },
+  { icon: "lotion", text: "כשמורחים סרום או קרם — לא לשפשף חזק. ללחוץ בעדינות על העור כאילו אתה מפנק אותו." },
+  { icon: "cleanser", text: "לנקות פנים בעדינות — עור נקי זה חשוב, אבל נקי מדי יכול לגרות ולייבש." },
+  { icon: "moon", text: "רטינול וחומצות אוהבים את הלילה. השמש פחות אוהבת אותם." },
+  { icon: "food", text: "תזונה טובה משפיעה גם על העור — ירקות, פירות וחלבון יכולים לעזור לזוהר טבעי מבפנים." },
+  { icon: "pillow", text: "להחליף ציפית לפחות פעם בשבוע. העור שלך יודה לך על זה." },
+  { icon: "pause", text: "אם מוצר חדש עושה גירוי — לעצור, להרגיע ולתת לעור לנוח. לא חייבים לסבול בשביל היופי." },
+  { icon: "mask", text: "מסכות זה לא מבחן סיבולת — בדרך כלל 10-15 דקות מספיקות, אלא אם כתוב אחרת." },
+  { icon: "consistency", text: "שגרת טיפוח טובה היא עקבית, לא אגרסיבית. עדיף קצת כל יום מאשר להגזים פעם בשבוע." },
+  { icon: "hydration", text: "עור יבש לא תמיד צריך עוד חומצות — לפעמים הוא פשוט מבקש יותר לחות והרגעה." },
+  { icon: "calm", text: "פחות סטרס, יותר טיפוח עצמי. גם 10 דקות שקט עם שגרה נעימה יכולות לעשות פלאים לעור ולמצב רוח." },
 ];
 
 const feelings = [
-  { id: "red", icon: "🔴", label: "אדמומי", desc: "שגרה מרגיעה בלי עומס פעילים.", prefer: ["redness", "soothing", "hydration", "barrier", "sensitive"], avoid: ["retinoid", "acid", "strong"] },
-  { id: "breakouts", icon: "🫧", label: "יש לי פצעונים", desc: "ניקוי עדין, איזון ותמיכה.", prefer: ["acne", "spot", "niacinamide", "pore", "barrier"], avoid: ["retinoid"] },
-  { id: "spot-treatment", icon: "🎯", label: "חצ'קון", desc: "טיפול נקודתי לפצעון פעיל.", prefer: ["spot", "acne"], avoid: ["retinoid"], preferredProductId: "32" },
-  { id: "spots", icon: "🟤", label: "כתמים", desc: "הבהרה עדינה וזוהר.", prefer: ["brightening", "spots", "vitaminC", "niacinamide"], avoid: ["retinoid"] },
-  { id: "dry", icon: "🍂", label: "יבש ומתוח", desc: "לחות, קרם ושיקום מחסום עור.", prefer: ["hydration", "barrier", "collagen", "cream", "snail"], avoid: ["acid", "retinoid", "strong"] },
-  { id: "sensitive", icon: "🪶", label: "רגיש", desc: "מינימום גירוי, מקסימום רוגע.", prefer: ["sensitive", "soothing", "barrier", "hydration"], avoid: ["acid", "retinoid", "strong", "clay"] },
-  { id: "oily", icon: "💧", label: "שומני / נקבוביות", desc: "איזון בלי לייבש.", prefer: ["pore", "oily", "niacinamide", "clay"], avoid: ["oil", "rich"] },
-  { id: "glow", icon: "🌟", label: "רוצה זוהר", desc: "גלואו, קולגן ופפטידים.", prefer: ["glow", "collagen", "peptides", "brightening"], avoid: [] },
-  { id: "antiaging", icon: "♻️", label: "אנטי אייג׳ינג", desc: "פפטידים או רטינול כשזה מתאים.", prefer: ["antiaging", "retinoid", "peptides", "collagen"], avoid: [] },
+  { id: "red", icon: "redness", label: "אדמומי", desc: "שגרה מרגיעה בלי עומס פעילים.", prefer: ["redness", "soothing", "hydration", "barrier", "sensitive"], avoid: ["retinoid", "acid", "strong"] },
+  { id: "breakouts", icon: "breakouts", label: "יש לי פצעונים", desc: "ניקוי עדין, איזון ותמיכה.", prefer: ["acne", "spot", "niacinamide", "pore", "barrier"], avoid: ["retinoid"] },
+  { id: "spot-treatment", icon: "spot", label: "חצ'קון", desc: "טיפול נקודתי לפצעון פעיל.", prefer: ["spot", "acne"], avoid: ["retinoid"], preferredProductId: "32" },
+  { id: "spots", icon: "spots", label: "כתמים", desc: "הבהרה עדינה וזוהר.", prefer: ["brightening", "spots", "vitaminC", "niacinamide"], avoid: ["retinoid"] },
+  { id: "dry", icon: "dry", label: "יבש ומתוח", desc: "לחות, קרם ושיקום מחסום עור.", prefer: ["hydration", "barrier", "collagen", "cream", "snail"], avoid: ["acid", "retinoid", "strong"] },
+  { id: "sensitive", icon: "sensitive", label: "רגיש", desc: "מינימום גירוי, מקסימום רוגע.", prefer: ["sensitive", "soothing", "barrier", "hydration"], avoid: ["acid", "retinoid", "strong", "clay"] },
+  { id: "oily", icon: "oily", label: "שומני / נקבוביות", desc: "איזון בלי לייבש.", prefer: ["pore", "oily", "niacinamide", "clay"], avoid: ["oil", "rich"] },
+  { id: "glow", icon: "glow", label: "רוצה זוהר", desc: "גלואו, קולגן ופפטידים.", prefer: ["glow", "collagen", "peptides", "brightening"], avoid: [] },
+  { id: "antiaging", icon: "antiaging", label: "אנטי אייג׳ינג", desc: "פפטידים או רטינול כשזה מתאים.", prefer: ["antiaging", "retinoid", "peptides", "collagen"], avoid: [] },
 ];
 
 const routineSlots = [
-  { id: "בוקר", icon: "☀️", action: "שגרת טיפוח לבוקר", alternative: "אני מעדיף שגרת בוקר" },
-  { id: "צהריים", icon: "🌞", action: "שגרת טיפוח לצהריים", alternative: "אני מעדיף שגרה לצהריים" },
-  { id: "ערב", icon: "✨", action: "שגרת טיפוח לערב", alternative: "אני מעדיף שגרה לערב" },
-  { id: "לילה", icon: "🌙", action: "שגרת טיפוח לפני השינה", alternative: "אני מעדיף שגרת לילה" },
+  { id: "בוקר", icon: "sun-high", action: "שגרת טיפוח לבוקר", alternative: "אני מעדיף שגרת בוקר" },
+  { id: "צהריים", icon: "sun-half", action: "שגרת טיפוח לצהריים", alternative: "אני מעדיף שגרה לצהריים" },
+  { id: "ערב", icon: "evening", action: "שגרת טיפוח לערב", alternative: "אני מעדיף שגרה לערב" },
+  { id: "לילה", icon: "moon", action: "שגרת טיפוח לפני השינה", alternative: "אני מעדיף שגרת לילה" },
 ];
 
 const typeLabels = {
@@ -172,34 +172,98 @@ const filterTags = [
 const completionMessages = [
   "מאמי…איזה גלואו!",
   "זהו מאמי, העור שלך אומר תודה!",
-  "זהו מאמי 😌 העור שלך מסודר",
-  "הפנים שלך עכשיו אחרי ספא קטן 😌",
-  "שגרה הסתיימה. רמת חתיך עלתה ⬆️",
+  "זהו מאמי, העור שלך מסודר",
+  "הפנים שלך עכשיו אחרי ספא קטן",
+  "שגרה הסתיימה. רמת חתיך עלתה",
   "יפה לך לדאוג לעצמך, מאמי"
 ];
 
-// הצעות רומנטיות למצב זוגי - עם אימוג'ים
 const coupleSuggestions = [
-  { emoji: "💆‍♂️", text: "המשיכו פינוק של דודו או מסאג׳" },
-  { emoji: "💕", text: "ספרו אחד לשני 5 דברים שאתם אוהבים במאמי" },
-  { emoji: "👀", text: "החזיקו ידיים והסתכלו אחד לשני בעיניים" },
-  { emoji: "🤗", text: "חיבוק ארוך בלי לדבר" },
-  { emoji: "✨", text: "כל אחד נותן מחמאה שלא אמר אף פעם" },
-  { emoji: "💋", text: "נשיקה על כל אצבע" },
-  { emoji: "💭", text: "כל אחד אומר זיכרון קטן שהוא אוהב מהקשר" },
-  { emoji: "☕", text: "להכין אחד לשני תה" },
-  { emoji: "📝", text: "כל אחד כותב פתק קטן עם \"דייט שהייתי רוצה\" לשבוע הקרוב" },
-  { emoji: "🌟", text: "תספרו על רגע קטן שעשה לכם טוב השבוע" },
-  { emoji: "💬", text: "ספרו אחד לשני משהו שלא אמרתם מספיק" },
-  { emoji: "🙏", text: "תגידו תודה על משהו קטן שהשני עושה" },
-  { emoji: "🏠", text: "תגידו מה גורם לבית להרגיש בית" },
-  { emoji: "☀️", text: "כל אחד אומר משהו קטן שהוא אוהב בשגרה שלכם" },
-  { emoji: "💇", text: "לטפו אחד לשני את השיער בזמן שיר רגוע" },
-  { emoji: "❤️", text: "כל אחד אומר מה הוא הכי מעריך בקשר" },
-  { emoji: "😊", text: "ספרו אחד לשני למה הוא חמוד" },
-  { emoji: "💝", text: "תגידו מחמאה למאמי שלכם" },
-  { emoji: "📸", text: "תעשו סלפי עם המסיכה. גם אם זה מביך." }
+  { icon: "massage", text: "המשיכו פינוק של דודו או מסאג׳" },
+  { icon: "couple-love", text: "ספרו אחד לשני 5 דברים שאתם אוהבים במאמי" },
+  { icon: "eyes", text: "החזיקו ידיים והסתכלו אחד לשני בעיניים" },
+  { icon: "hug", text: "חיבוק ארוך בלי לדבר" },
+  { icon: "compliment", text: "כל אחד נותן מחמאה שלא אמר אף פעם" },
+  { icon: "kiss", text: "נשיקה על כל אצבע" },
+  { icon: "thought", text: "כל אחד אומר זיכרון קטן שהוא אוהב מהקשר" },
+  { icon: "tea", text: "להכין אחד לשני תה" },
+  { icon: "note", text: "כל אחד כותב פתק קטן עם \"דייט שהייתי רוצה\" לשבוע הקרוב" },
+  { icon: "glow", text: "תספרו על רגע קטן שעשה לכם טוב השבוע" },
+  { icon: "chat", text: "ספרו אחד לשני משהו שלא אמרתם מספיק" },
+  { icon: "thanks", text: "תגידו תודה על משהו קטן שהשני עושה" },
+  { icon: "home", text: "תגידו מה גורם לבית להרגיש בית" },
+  { icon: "sunrise", text: "כל אחד אומר משהו קטן שהוא אוהב בשגרה שלכם" },
+  { icon: "hair", text: "לטפו אחד לשני את השיער בזמן שיר רגוע" },
+  { icon: "heart", text: "כל אחד אומר מה הוא הכי מעריך בקשר" },
+  { icon: "smile", text: "ספרו אחד לשני למה הוא חמוד" },
+  { icon: "gift", text: "תגידו מחמאה למאמי שלכם" },
+  { icon: "camera", text: "תעשו סלפי עם המסיכה. גם אם זה מביך." }
 ];
+
+const ICON_SVGS = {
+  heart: '<path d="M12 20.4C8.4 17.6 4.2 14.1 4.2 9.5c0-2.5 1.9-4.3 4.2-4.3 1.4 0 2.7.7 3.6 1.8.9-1.1 2.2-1.8 3.6-1.8 2.3 0 4.2 1.8 4.2 4.3 0 4.6-4.2 8.1-7.8 10.9Z"/>',
+  home: '<path d="M4 10.7c0-.7.3-1.3.8-1.7l6-4.7c.7-.5 1.7-.5 2.4 0l6 4.7c.5.4.8 1 .8 1.7V19c0 1.1-.9 2-2 2h-3.3v-5.4c0-.7-.5-1.2-1.2-1.2h-3c-.7 0-1.2.5-1.2 1.2V21H6c-1.1 0-2-.9-2-2v-8.3Z"/>',
+  routine: '<path d="M13.3 3.5c.3-.8 1.4-.8 1.7 0l.8 2.2c.1.3.4.6.7.7l2.2.8c.8.3.8 1.4 0 1.7l-2.2.8c-.3.1-.6.4-.7.7l-.8 2.2c-.3.8-1.4.8-1.7 0l-.8-2.2c-.1-.3-.4-.6-.7-.7l-2.2-.8c-.8-.3-.8-1.4 0-1.7l2.2-.8c.3-.1.6-.4.7-.7l.8-2.2Z"/><path d="M7.5 11.1c.2-.6 1-.6 1.2 0l.5 1.4c.1.2.2.4.5.5l1.4.5c.6.2.6 1 0 1.2l-1.4.5c-.2.1-.4.2-.5.5l-.5 1.4c-.2.6-1 .6-1.2 0L7 15.7c-.1-.2-.2-.4-.5-.5l-1.4-.5c-.6-.2-.6-1 0-1.2l1.4-.5c.2-.1.4-.2.5-.5l.5-1.4Z" opacity=".72"/>',
+  products: '<rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2" opacity=".72"/><rect x="4" y="13" width="7" height="7" rx="2" opacity=".72"/><rect x="13" y="13" width="7" height="7" rx="2"/>',
+  filter: '<rect x="4" y="6" width="16" height="3" rx="1.5"/><rect x="7" y="11" width="10" height="3" rx="1.5" opacity=".82"/><rect x="10" y="16" width="4" height="3" rx="1.5" opacity=".7"/>',
+  search: '<path d="M10.6 4.2a6.4 6.4 0 1 0 0 12.8 6.4 6.4 0 0 0 0-12.8Zm0 3a3.4 3.4 0 1 1 0 6.8 3.4 3.4 0 0 1 0-6.8Z"/><rect x="15.1" y="14.3" width="6.3" height="3.2" rx="1.6" transform="rotate(45 15.1 14.3)"/>',
+  warn: '<path d="M12 3.8 21 19c.5.9-.1 2-1.1 2H4.1c-1 0-1.6-1.1-1.1-2l9-15.2Z"/><rect x="11" y="8" width="2" height="7" rx="1" fill="#fff"/><circle cx="12" cy="17.8" r="1.2" fill="#fff"/>',
+  check: '<path d="M9.8 17.8c-.5 0-1-.2-1.3-.6l-3.2-3.4a1.6 1.6 0 0 1 2.4-2.2l2.1 2.2 6.5-7.1a1.6 1.6 0 0 1 2.4 2.2l-7.7 8.4c-.3.3-.7.5-1.2.5Z"/>',
+  close: '<rect x="5" y="10.3" width="14" height="3.4" rx="1.7" transform="rotate(45 12 12)"/><rect x="5" y="10.3" width="14" height="3.4" rx="1.7" transform="rotate(-45 12 12)"/>',
+  back: '<path d="M8.7 5.3c.7-.7 1.8-.7 2.5 0 .6.7.6 1.8 0 2.5l-2.5 2.4H19c1 0 1.8.8 1.8 1.8S20 13.8 19 13.8H8.7l2.5 2.4c.6.7.6 1.8 0 2.5-.7.7-1.8.7-2.5 0l-5.4-5.5c-.7-.7-.7-1.8 0-2.5l5.4-5.4Z"/>',
+  sunrise: '<circle cx="12" cy="12" r="4.8"/><rect x="11" y="2.8" width="2" height="4" rx="1"/><rect x="11" y="17.2" width="2" height="4" rx="1"/><rect x="17.2" y="11" width="4" height="2" rx="1"/><rect x="2.8" y="11" width="4" height="2" rx="1"/><rect x="16.4" y="5" width="2" height="3.8" rx="1" transform="rotate(45 17.4 6.9)"/><rect x="5.6" y="16.2" width="2" height="3.8" rx="1" transform="rotate(45 6.6 18.1)"/><rect x="16.4" y="16.2" width="2" height="3.8" rx="1" transform="rotate(-45 17.4 18.1)"/><rect x="5.6" y="5" width="2" height="3.8" rx="1" transform="rotate(-45 6.6 6.9)"/>',
+  "sun-high": '<circle cx="12" cy="12" r="5.8"/><circle cx="12" cy="3.5" r="1.4"/><circle cx="12" cy="20.5" r="1.4"/><circle cx="20.5" cy="12" r="1.4"/><circle cx="3.5" cy="12" r="1.4"/><circle cx="18" cy="6" r="1.2"/><circle cx="6" cy="18" r="1.2"/><circle cx="18" cy="18" r="1.2"/><circle cx="6" cy="6" r="1.2"/>',
+  "sun-half": '<path d="M5.4 13.2a6.6 6.6 0 0 1 13.2 0H5.4Z"/><rect x="3.4" y="15.4" width="17.2" height="2.8" rx="1.4"/><rect x="11" y="3.1" width="2" height="3.6" rx="1"/><rect x="17" y="6.2" width="2" height="3.4" rx="1" transform="rotate(45 18 7.9)"/><rect x="5" y="6.2" width="2" height="3.4" rx="1" transform="rotate(-45 6 7.9)"/><rect x="20" y="11.6" width="2.7" height="2" rx="1"/><rect x="1.3" y="11.6" width="2.7" height="2" rx="1"/>',
+  evening: '<path d="M12 3.8c.3-.8 1.4-.8 1.7 0l1.1 3c.1.3.4.6.7.7l3 1.1c.8.3.8 1.4 0 1.7l-3 1.1c-.3.1-.6.4-.7.7l-1.1 3c-.3.8-1.4.8-1.7 0l-1.1-3c-.1-.3-.4-.6-.7-.7l-3-1.1c-.8-.3-.8-1.4 0-1.7l3-1.1c.3-.1.6-.4.7-.7l1.1-3Z"/><path d="M5 17.6h14c.8 0 1.4.6 1.4 1.4s-.6 1.4-1.4 1.4H5c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4Z" opacity=".68"/>',
+  moon: '<path d="M18.8 14.7c-4.8 1.5-9.5-2.1-9.5-7.1 0-1.2.3-2.3.8-3.3.3-.6-.2-1.2-.8-1C5.7 4.5 3 7.9 3 12c0 5 4 9 9 9 3.7 0 6.9-2.2 8.3-5.4.3-.6-.2-1.2-.9-1-.2 0-.3.1-.6.1Z"/>',
+  cloud: '<path d="M8 18.2a5 5 0 0 1-.4-10c.8-2.4 3-4 5.6-4 3.1 0 5.6 2.3 5.9 5.3A4.3 4.3 0 0 1 18 18.2H8Z"/>',
+  rain: '<path d="M8 16.3a4.8 4.8 0 0 1-.4-9.6c.8-2.1 2.9-3.6 5.3-3.6 3 0 5.4 2.1 5.7 5a4.1 4.1 0 0 1-.9 8.2H8Z"/><path d="M8.7 18.1c.5.2.8.7.6 1.2l-.6 1.7c-.2.5-.7.8-1.2.6s-.8-.7-.6-1.2l.6-1.7c.2-.5.7-.8 1.2-.6Zm5 0c.5.2.8.7.6 1.2l-.6 1.7c-.2.5-.7.8-1.2.6s-.8-.7-.6-1.2l.6-1.7c.2-.5.7-.8 1.2-.6Zm5 0c.5.2.8.7.6 1.2l-.6 1.7c-.2.5-.7.8-1.2.6s-.8-.7-.6-1.2l.6-1.7c.2-.5.7-.8 1.2-.6Z" opacity=".75"/>',
+  partly: '<circle cx="8.2" cy="8.4" r="4.2"/><path d="M8 18.5a4.8 4.8 0 0 1-.3-9.6 5.8 5.8 0 0 1 10.9 1.8 4.1 4.1 0 0 1-.8 8.2H8Z" opacity=".78"/>',
+  layers: '<rect x="5" y="4" width="14" height="4.2" rx="2.1"/><rect x="4" y="9.2" width="16" height="4.2" rx="2.1" opacity=".82"/><rect x="6" y="14.4" width="12" height="4.2" rx="2.1" opacity=".68"/>',
+  spf: '<path d="M12 3.2 19.4 6v5.2c0 4.5-2.9 7.9-7.4 9.6-4.5-1.7-7.4-5.1-7.4-9.6V6L12 3.2Z"/><circle cx="12" cy="10.4" r="2.4" fill="#fff" opacity=".95"/><rect x="11" y="13.3" width="2" height="4.2" rx="1" fill="#fff" opacity=".95"/>',
+  sleep: '<rect x="4" y="12.5" width="16" height="5.7" rx="2.8"/><rect x="5.8" y="9.2" width="6" height="3.8" rx="1.9" opacity=".75"/><path d="M15.1 4.5h5.2l-4.5 5.8h4.5v2.1h-7.1l4.5-5.8h-2.6V4.5Z"/>',
+  drink: '<path d="M8 3.8h8c.8 0 1.4.7 1.3 1.5l-1.1 14c-.1.9-.8 1.6-1.7 1.6h-5c-.9 0-1.6-.7-1.7-1.6l-1.1-14c-.1-.8.5-1.5 1.3-1.5Zm1 5.8.5 6.8c.1.6.6 1 1.1 1h2.8c.6 0 1.1-.4 1.1-1l.5-6.8H9Z"/>',
+  gentle: '<path d="M12.3 4.1c.4-.7 1.5-.6 1.7.2l.7 2.1 2.1.7c.8.3.9 1.4.2 1.8l-1.8 1.3.1 2.3c0 .8-1 .1-1.5-.4l-1.8-1.4-1.8 1.4c-.6.5-1.5-.2-1.5-1l.1-2.3-1.8-1.3c-.7-.5-.5-1.6.2-1.8l2.1-.7.7-2.1c.2-.8 1.3-.9 1.7-.2l1.3 1.8 1.3-1.8Z"/><path d="M5.5 15.5c2.8 2.7 7 4.3 13 2.7-1.4 2.5-3.9 3.6-7.1 3.2-3-.3-5.3-2-6.9-4.7-.4-.7.4-1.4 1-1.2Z" opacity=".72"/>',
+  lotion: '<rect x="8" y="3.5" width="8" height="3.4" rx="1.2"/><path d="M9.3 6.6h5.4c1.2 0 2.2 1 2.2 2.2v10c0 1.2-1 2.2-2.2 2.2H9.3c-1.2 0-2.2-1-2.2-2.2v-10c0-1.2 1-2.2 2.2-2.2Zm.8 4.2c0 .6.5 1.1 1.1 1.1h3.1c.6 0 1.1-.5 1.1-1.1s-.5-1.1-1.1-1.1h-3.1c-.6 0-1.1.5-1.1 1.1Z"/>',
+  cleanser: '<path d="M6.2 9.5c0-1.1.9-2 2-2h7.6c1.1 0 2 .9 2 2v8.7c0 1.1-.9 2-2 2H8.2c-1.1 0-2-.9-2-2V9.5Z"/><rect x="9" y="3.8" width="6" height="3.4" rx="1.2"/><circle cx="9" cy="12" r="1.3" fill="#fff" opacity=".9"/><circle cx="14" cy="14.5" r="1.8" fill="#fff" opacity=".75"/>',
+  food: '<circle cx="8" cy="8" r="4.2"/><path d="M14 4.2c2.6.4 4.6 2.7 4.6 5.4 0 3-2.4 5.4-5.4 5.4-.3 0-.7 0-1-.1.7-1.4 1.1-3 1.1-4.7 0-2.2-.6-4.2-1.6-5.9.4-.1.8-.1 1.3-.1Z" opacity=".72"/><path d="M7 13.4c2.2 2.7 5.3 4.8 9.6 6.1.8.2 1.4-.7 1-1.4-2.1-3.4-5.2-5.4-9.3-6-.8-.1-1.4.7-.8 1.4Z"/>',
+  pillow: '<path d="M5.8 7h12.4C19.7 7 21 8.3 21 9.8v4.4c0 1.5-1.3 2.8-2.8 2.8H5.8C4.3 17 3 15.7 3 14.2V9.8C3 8.3 4.3 7 5.8 7Zm1.1 2.9a1.5 1.5 0 0 0 0 3h10.2a1.5 1.5 0 0 0 0-3H6.9Z"/>',
+  play: '<path d="M8.1 5.6c0-1.2 1.4-1.9 2.4-1.2l8.4 5.8c.9.6.9 2 0 2.6l-8.4 5.8c-1 .7-2.4 0-2.4-1.2V5.6Z"/>',
+  pause: '<circle cx="12" cy="12" r="9"/><rect x="8.6" y="7.7" width="2.7" height="8.6" rx="1.3" fill="#fff"/><rect x="13.7" y="7.7" width="2.7" height="8.6" rx="1.3" fill="#fff"/>',
+  mask: '<path d="M5 8.4c0-1.3 1-2.4 2.3-2.5l9.5-.8c1.5-.1 2.7 1.1 2.7 2.6v3.6c0 4.3-3.2 7.8-7.5 8.2-4.3-.4-7.5-3.9-7.5-8.2V8.4Z"/><circle cx="9" cy="11" r="1.2" fill="#fff"/><circle cx="15" cy="11" r="1.2" fill="#fff"/><path d="M9.3 15c1.7 1.2 3.7 1.2 5.4 0 .6-.4 1.3.4.8 1-1.4 1.8-5.6 1.8-7 0-.5-.6.2-1.4.8-1Z" fill="#fff"/>',
+  consistency: '<path d="M12 4a8 8 0 1 1-7.4 5H3.2c-.7 0-1.1-.8-.7-1.3L5.8 4c.4-.5 1.2-.5 1.6 0l3.3 3.7c.4.5.1 1.3-.7 1.3H8.4A4.8 4.8 0 1 0 12 7.2c-.9 0-1.6-.7-1.6-1.6S11.1 4 12 4Z"/>',
+  calm: '<path d="M6 13.2c3.6-5.4 7.8-8.1 12.8-8.1.8 0 1.2.8.9 1.5-2.4 5.2-6.5 8.2-12.2 9-.2.9-.2 1.8-.1 2.8.1.8-.5 1.5-1.3 1.5s-1.4-.5-1.5-1.3c-.3-2.2.1-4.4 1.4-6.6Z"/>',
+  hydration: '<path d="M12 3.6s6 6.2 6 10.7A6 6 0 0 1 6 14.3C6 9.8 12 3.6 12 3.6Zm-2.4 9.8a1 1 0 0 0-1.8.7c.7 2.2 2.2 3.3 4.1 3.3a1 1 0 0 0 0-2c-1.2 0-1.9-.6-2.3-1.6Z"/>',
+  water: '<path d="M12 3.6s6 6.2 6 10.7A6 6 0 0 1 6 14.3C6 9.8 12 3.6 12 3.6Z"/>',
+  oily: '<path d="M12 3.7s5.4 5.6 5.4 9.7a5.4 5.4 0 0 1-10.8 0c0-4.1 5.4-9.7 5.4-9.7Z"/><circle cx="16.6" cy="6.2" r="2" opacity=".68"/><circle cx="7" cy="18.5" r="1.5" opacity=".6"/>',
+  redness: '<circle cx="12" cy="12" r="8"/><circle cx="8.5" cy="9" r="1.4" fill="#fff" opacity=".82"/><circle cx="14.9" cy="14.6" r="2.1" fill="#fff" opacity=".48"/>',
+  breakouts: '<circle cx="8" cy="9" r="3.2"/><circle cx="15.2" cy="8.4" r="2.4" opacity=".72"/><circle cx="14" cy="15.7" r="3.5" opacity=".82"/><circle cx="6.7" cy="17" r="1.9" opacity=".6"/>',
+  spot: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.6" fill="#fff" opacity=".82"/><circle cx="12" cy="12" r="2.1"/>',
+  spots: '<circle cx="9" cy="9" r="3.5"/><circle cx="15.5" cy="10.5" r="2.2" opacity=".7"/><circle cx="13.5" cy="16" r="3" opacity=".82"/>',
+  dry: '<path d="M6.3 5.7c5.5.1 9 2.8 10.7 8.2.2.6-.4 1.2-1 1-5.4-1.7-8.1-5.2-8.2-10.7 0-.8 1-.9 1.4-.3l.9 1.5 1.6-1.9c.5-.5 1.4-.1 1.3.6l-.2 2.3 2.3-.3c.7-.1 1.1.8.6 1.3l-1.8 1.6 1.4.9c.6.4.5 1.4-.3 1.4-5.5-.1-9-2.8-10.7-8.2-.2-.6.4-1.2 1-1Z"/>',
+  sensitive: '<path d="M13.4 3.9c.8-.6 1.8.3 1.4 1.2l-2.1 5 4.8-2.1c.9-.4 1.7.7 1.1 1.4l-8.8 10.5c-.8.9-2.2.1-1.6-1l2.1-5-4.8 2.1c-.9.4-1.7-.7-1.1-1.4L13.4 3.9Z"/>',
+  glow: '<path d="M12 3.4c.3-.8 1.4-.8 1.7 0l1.1 3.2c.1.3.4.6.7.7l3.2 1.1c.8.3.8 1.4 0 1.7l-3.2 1.1c-.3.1-.6.4-.7.7l-1.1 3.2c-.3.8-1.4.8-1.7 0l-1.1-3.2c-.1-.3-.4-.6-.7-.7L7 10.1c-.8-.3-.8-1.4 0-1.7l3.2-1.1c.3-.1.6-.4.7-.7L12 3.4Z"/><circle cx="6.2" cy="17.2" r="1.7" opacity=".72"/><circle cx="18" cy="18.2" r="2.1" opacity=".62"/>',
+  antiaging: '<path d="M12 4a8 8 0 0 1 7.9 6.7l1.2-1.2c.5-.5 1.4-.2 1.4.6v5c0 .6-.5 1.1-1.1 1.1h-5c-.8 0-1.1-.9-.6-1.4l1.6-1.6A5.3 5.3 0 1 0 12 17.3c1 0 1.8.8 1.8 1.8S13 21 12 21a8.5 8.5 0 0 1 0-17Z"/>',
+  massage: '<path d="M7.2 5.2c.9-.6 2.1.1 2.1 1.2v5.8h1.1V4.8c0-1.1.9-1.9 1.9-1.9s1.9.8 1.9 1.9v7.4h1.1V6.5c0-1.1.9-1.9 1.9-1.9s1.9.8 1.9 1.9v8c0 4.2-3.4 7.5-7.5 7.5H10c-3.1 0-5.6-2.5-5.6-5.6v-4.8c0-.8.7-1.4 1.4-1.1l2.1.8V6.4c0-.6.3-1.1.7-1.4Z"/>',
+  "couple-love": '<path d="M8.1 4.8c1.2 0 2.3.6 2.9 1.5.7-.9 1.8-1.5 3-1.5 2 0 3.6 1.6 3.6 3.7 0 3.3-3.2 5.8-6.5 8.3-3.2-2.5-6.4-5-6.4-8.3 0-2.1 1.6-3.7 3.4-3.7Z"/><circle cx="18.3" cy="15.7" r="2.8" opacity=".65"/><circle cx="5.8" cy="17" r="2.2" opacity=".55"/>',
+  eyes: '<path d="M12 6.2c4.6 0 7.8 3.3 9 5.3.3.5.3 1 0 1.5-1.2 2-4.4 5.3-9 5.3S4.2 15 3 13c-.3-.5-.3-1 0-1.5 1.2-2 4.4-5.3 9-5.3Zm0 3.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"/>',
+  hug: '<path d="M8.2 7.8a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4Zm7.6 0a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4ZM4.2 13.2c0-2.2 1.8-4 4-4h.4c1.4 0 2.6.7 3.4 1.8.8-1.1 2-1.8 3.4-1.8h.4c2.2 0 4 1.8 4 4v3.2c0 1-.8 1.8-1.8 1.8h-1.2V14c0-.7-.5-1.2-1.2-1.2S14.4 13.3 14.4 14v6.3h-4.8V14c0-.7-.5-1.2-1.2-1.2S7.2 13.3 7.2 14v4.2H6c-1 0-1.8-.8-1.8-1.8v-3.2Z"/>',
+  compliment: '<path d="M12 3.4c.3-.8 1.4-.8 1.7 0l1.1 3.2c.1.3.4.6.7.7l3.2 1.1c.8.3.8 1.4 0 1.7l-3.2 1.1c-.3.1-.6.4-.7.7l-1.1 3.2c-.3.8-1.4.8-1.7 0l-1.1-3.2c-.1-.3-.4-.6-.7-.7L7 10.1c-.8-.3-.8-1.4 0-1.7l3.2-1.1c.3-.1.6-.4.7-.7L12 3.4Z"/><path d="M5 17.5h14c.8 0 1.4.6 1.4 1.4S19.8 20.3 19 20.3H5c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4Z" opacity=".6"/>',
+  kiss: '<path d="M5 10.6c0-2.5 2-4.6 4.6-4.6h4.8c2.6 0 4.6 2.1 4.6 4.6 0 4-4.4 6.8-7 8.2-2.6-1.4-7-4.2-7-8.2Zm4.1-1.2c1.4.8 3.2.8 4.6 0 .7-.4 1.4.5.9 1.1-1 1.4-4.3 1.4-5.4 0-.4-.6.2-1.5.9-1.1Z"/>',
+  thought: '<circle cx="10" cy="10" r="5.6"/><circle cx="16.6" cy="15.2" r="3.2" opacity=".72"/><circle cx="6.2" cy="18.4" r="1.7" opacity=".58"/>',
+  tea: '<path d="M5 8h11c1.1 0 2 .9 2 2v.3h.8a3.2 3.2 0 1 1 0 6.4h-1.3A5.3 5.3 0 0 1 12.2 21H9.8A5.8 5.8 0 0 1 4 15.2V9c0-.6.4-1 1-1Zm13 2.9v3.5h.8a1.8 1.8 0 0 0 0-3.5H18Z"/><rect x="8" y="3" width="2" height="4" rx="1" opacity=".65"/><rect x="13" y="2" width="2" height="5" rx="1" opacity=".65"/>',
+  note: '<path d="M6.5 3.5h9c1.1 0 2 .9 2 2v14c0 .8-.9 1.2-1.5.7L14.1 19 12 20.4c-.4.3-.9.3-1.3 0L8.9 19 7 20.2c-.6.4-1.5 0-1.5-.7v-14c0-1.1.9-2 2-2Zm2 5.2c0 .6.5 1.1 1.1 1.1h4.8c.6 0 1.1-.5 1.1-1.1s-.5-1.1-1.1-1.1H9.6c-.6 0-1.1.5-1.1 1.1Zm0 4c0 .6.5 1.1 1.1 1.1h3.6c.6 0 1.1-.5 1.1-1.1s-.5-1.1-1.1-1.1H9.6c-.6 0-1.1.5-1.1 1.1Z"/>',
+  chat: '<path d="M5 6.4c0-1.5 1.2-2.7 2.7-2.7h8.6c1.5 0 2.7 1.2 2.7 2.7v6.1c0 1.5-1.2 2.7-2.7 2.7H12l-4.2 3.5c-.7.6-1.8.1-1.8-.8v-2.8C4.9 14.8 4 13.7 4 12.5V6.4Z"/>',
+  thanks: '<path d="M7 12.2V5.5c0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8v5.3h1V4.8c0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8v6h1V6.6c0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8v8.1c0 4.2-3.4 7.6-7.6 7.6h-1.4C7.6 22.3 5 19.7 5 16.5v-3.2c0-1 .8-1.8 1.8-1.8.1 0 .2 0 .2.1Z"/>',
+  hair: '<path d="M12 3.2c4 0 7.2 3.2 7.2 7.2v5.9c0 1.5-1.2 2.7-2.7 2.7h-.6v-5.4c0-2.3-1.2-4.4-3.2-5.5-.7 2.6-2.6 4.6-5.5 5.7V19h-.7C5 19 3.8 17.8 3.8 16.3v-5.9C3.8 6.4 7 3.2 12 3.2Z"/><path d="M9 18.2c1.8 1.2 4.2 1.2 6 0v1c0 1.7-1.3 3-3 3s-3-1.3-3-3v-1Z" opacity=".72"/>',
+  smile: '<circle cx="12" cy="12" r="8.7"/><circle cx="9" cy="10" r="1.2" fill="#fff"/><circle cx="15" cy="10" r="1.2" fill="#fff"/><path d="M8.6 14.1c2 2.2 4.8 2.2 6.8 0 .5-.6 1.5.1 1 1-1.4 2.5-7.4 2.5-8.8 0-.5-.9.5-1.6 1-1Z" fill="#fff"/>',
+  gift: '<path d="M4.2 10h17v9c0 1.1-.9 2-2 2H6.2c-1.1 0-2-.9-2-2v-9Z"/><rect x="3.2" y="7" width="18.8" height="4" rx="1.5"/><rect x="10.7" y="7" width="2.6" height="14" fill="#fff" opacity=".9"/><path d="M8 6.9c-1.7 0-3-1.1-3-2.4S6 2.3 7.2 2.8c1.3.5 2.5 2 3.2 4.1H8Zm8 0h-2.4c.7-2.1 1.9-3.6 3.2-4.1C18 2.3 19 3.2 19 4.5s-1.3 2.4-3 2.4Z"/>',
+  camera: '<path d="M6.4 6.3h2.2l1.1-1.7c.3-.5.9-.8 1.5-.8h3.6c.6 0 1.2.3 1.5.8l1.1 1.7h2.2c1.3 0 2.4 1.1 2.4 2.4v9c0 1.3-1.1 2.4-2.4 2.4H6.4C5.1 20.1 4 19 4 17.7v-9c0-1.3 1.1-2.4 2.4-2.4Zm5.6 3.1a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Z"/>',
+  music: '<path d="M17.5 3.2c.8-.2 1.5.4 1.5 1.2v10.8a3.1 3.1 0 1 1-2.2-3V8.4l-7 1.5v7a3.1 3.1 0 1 1-2.2-3V7.6c0-.7.5-1.3 1.2-1.5l8.7-1.9Z"/>',
+  timer: '<path d="M9 3h6c.7 0 1.3.6 1.3 1.3S15.7 5.6 15 5.6h-.6v1.1a8.2 8.2 0 1 1-4.8 0V5.6H9c-.7 0-1.3-.6-1.3-1.3S8.3 3 9 3Zm3 7.4c-.8 0-1.4.6-1.4 1.4v3.4c0 .8.6 1.4 1.4 1.4s1.4-.6 1.4-1.4v-3.4c0-.8-.6-1.4-1.4-1.4Z"/>',
+  remove: '<path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Zm-3.8 7.1h7.6c.8 0 1.4.6 1.4 1.4s-.6 1.4-1.4 1.4H8.2c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4Z"/>',
+  sparkle: '<path d="M12 3.4c.3-.8 1.4-.8 1.7 0l1 2.8c.1.3.4.6.7.7l2.8 1c.8.3.8 1.4 0 1.7l-2.8 1c-.3.1-.6.4-.7.7l-1 2.8c-.3.8-1.4.8-1.7 0l-1-2.8c-.1-.3-.4-.6-.7-.7l-2.8-1c-.8-.3-.8-1.4 0-1.7l2.8-1c.3-.1.6-.4.7-.7l1-2.8Z"/><circle cx="6" cy="17.5" r="1.8" opacity=".7"/><circle cx="18" cy="17.8" r="1.5" opacity=".58"/>',
+};
 
 const photoProductIds = new Set(products.map((item) => item.id));
 
@@ -1815,11 +1879,11 @@ function getWeatherMood() {
 function getWeatherIcon() {
   const description = String(state.weather.description || "");
   const temp = Math.round(Number(state.weather.temp || 0));
-  if (/גשם|ממטרים/.test(description)) return "☔";
-  if (/מעונן|עננים|ערפילי/.test(description)) return "☁️";
-  if (temp >= 30) return "☀️";
-  if (!isDayRoutine()) return "🌙";
-  return "🌤️";
+  if (/גשם|ממטרים/.test(description)) return "rain";
+  if (/מעונן|עננים|ערפילי/.test(description)) return "cloud";
+  if (temp >= 30) return "sun-high";
+  if (!isDayRoutine()) return "moon";
+  return "partly";
 }
 
 function getWeatherCopy() {
@@ -1901,6 +1965,93 @@ function getCoupleStepLabels(plan) {
   }
 }
 
+function renderCoupleStepper(stepLabels, step) {
+  const totalSteps = stepLabels.length;
+  const visibleCount = Math.min(7, totalSteps);
+  const middleOffset = Math.floor(visibleCount / 2);
+  const maxStart = Math.max(0, totalSteps - visibleCount);
+  const start = Math.min(Math.max(0, step - middleOffset), maxStart);
+  const end = start + visibleCount;
+  const visibleLabels = stepLabels.slice(start, end);
+  const classes = [
+    "couple-stepper",
+    start > 0 ? "has-before" : "",
+    end < totalSteps ? "has-after" : "",
+  ].filter(Boolean).join(" ");
+
+  return el("div", {
+    className: classes,
+    style: "display: flex; align-items: flex-start; justify-content: space-between; margin: 1.5rem 0 2rem; padding: 0 0.5rem; width: 100%; max-width: 100%; overflow: hidden;",
+    "aria-label": `התקדמות טיפול זוגי: שלב ${step + 1} מתוך ${totalSteps}`,
+  }, [
+    ...visibleLabels.flatMap((label, visibleIndex) => {
+      const actualIndex = start + visibleIndex;
+      const items = [
+        el("div", {
+          key: `step-${actualIndex}`,
+          className: "step-item",
+          style: "display: flex; flex-direction: column; align-items: center; gap: 0.25rem; flex-shrink: 1; min-width: 0;",
+          "aria-current": actualIndex === step ? "step" : undefined,
+        }, [
+          el("div", {
+            className: `step-circle ${actualIndex === step ? "active" : ""} ${actualIndex < step ? "done" : ""}`,
+            style: `
+              width: clamp(24px, 5vw, 32px);
+              height: clamp(24px, 5vw, 32px);
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: clamp(11px, 2.5vw, 0.875rem);
+              font-weight: 600;
+              transition: all 0.3s ease;
+              flex-shrink: 0;
+              ${actualIndex < step ? 
+                "background: #9075D7; color: white; border: 2px solid #9075D7;" : 
+                actualIndex === step ? 
+                  "background: white; color: #9075D7; border: 2px solid #9075D7; box-shadow: 0 0 0 4px rgba(144, 117, 215, 0.1);" :
+                  "background: white; color: #9CA3AF; border: 2px solid #E5E7EB;"
+              }
+            `,
+          }, actualIndex < step ? [vectorIcon("check", "step-check-icon")] : [document.createTextNode((actualIndex + 1).toString())]),
+          el("span", {
+            style: `
+              font-size: clamp(9px, 2vw, 0.75rem);
+              text-align: center;
+              color: ${actualIndex === step ? "#9075D7" : actualIndex < step ? "#6B7280" : "#9CA3AF"};
+              font-weight: ${actualIndex === step ? "600" : "400"};
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 100%;
+            `,
+            text: label
+          })
+        ]),
+      ];
+
+      if (visibleIndex < visibleLabels.length - 1) {
+        items.push(el("div", {
+          key: `connector-${actualIndex}`,
+          className: "step-connector",
+          "aria-hidden": "true",
+          style: `
+            flex: 1;
+            height: 2px;
+            background: ${actualIndex < step ? "#9075D7" : "#E5E7EB"};
+            align-self: flex-start;
+            margin-top: clamp(12px, 2.5vw, 16px);
+            min-width: 4px;
+            max-width: 64px;
+          `
+        }));
+      }
+
+      return items;
+    }),
+  ]);
+}
+
 function coupleRandomText(items, offset = 0) {
   return pickSeeded(items, getCouplePlan().seed, offset);
 }
@@ -1916,103 +2067,7 @@ function renderCoupleScreen() {
     el("div", { className: "card couple-screen-card" }, [
       el("div", { className: "card-inner" }, [
         step > 0 ? el("button", { className: "back-link inline-back", text: "חזור", onClick: goBack }) : null,
-        // ✅ Stepper עם sliding window - מציג רק 7 שלבים במובייל
-        el("div", { 
-          className: "couple-stepper",
-          style: "display: flex; align-items: flex-start; justify-content: space-between; margin: 1.5rem 0 2rem; padding: 0 0.5rem; width: 100%; max-width: 100%; overflow: hidden;"
-        }, (() => {
-          // חשב איזה שלבים להציג (sliding window)
-          const maxVisible = window.innerWidth < 600 ? 7 : stepLabels.length;
-          const totalSteps = stepLabels.length;
-          
-          let start = 0;
-          let end = totalSteps;
-          
-          if (totalSteps > maxVisible) {
-            // מרכז את השלב הנוכחי בwindow
-            start = Math.max(0, step - Math.floor(maxVisible / 2));
-            end = start + maxVisible;
-            
-            // אם הגענו לסוף, תזיז אחורה
-            if (end > totalSteps) {
-              end = totalSteps;
-              start = end - maxVisible;
-            }
-          }
-          
-          const visibleLabels = stepLabels.slice(start, end);
-          
-          return visibleLabels.flatMap((label, visibleIndex) => {
-            const actualIndex = start + visibleIndex;
-            const items = [
-              // Step item עם עיגול וכותרת
-              el("div", {
-                key: `step-${actualIndex}`,
-                className: "step-item",
-                style: "display: flex; flex-direction: column; align-items: center; gap: 0.25rem; flex-shrink: 1; min-width: 0;"
-              }, [
-                // עיגול השלב - responsive
-                el("div", {
-                  className: `step-circle ${actualIndex === step ? "active" : ""} ${actualIndex < step ? "done" : ""}`,
-                  style: `
-                    width: clamp(28px, 6vw, 36px);
-                    height: clamp(28px, 6vw, 36px);
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: clamp(12px, 3vw, 0.9rem);
-                    font-weight: 600;
-                    transition: all 0.3s ease;
-                    flex-shrink: 0;
-                    ${actualIndex < step ? 
-                      "background: #9075D7; color: white; border: 2px solid #9075D7;" : 
-                      actualIndex === step ? 
-                        "background: white; color: #9075D7; border: 2px solid #9075D7; box-shadow: 0 0 0 4px rgba(144, 117, 215, 0.1);" :
-                        "background: white; color: #9CA3AF; border: 2px solid #E5E7EB;"
-                    }
-                  `,
-                  text: actualIndex < step ? "✓" : (actualIndex + 1).toString()
-                }),
-                // כותרת השלב - responsive
-                el("span", {
-                  style: `
-                    font-size: clamp(10px, 2.2vw, 0.75rem);
-                    text-align: center;
-                    color: ${actualIndex === step ? "#9075D7" : actualIndex < step ? "#6B7280" : "#9CA3AF"};
-                    font-weight: ${actualIndex === step ? "600" : "400"};
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    max-width: 100%;
-                  `,
-                  text: label
-                })
-              ])
-            ];
-            
-            // הוסף קו מחבר אחרי העיגול (אם לא השלב האחרון בwindow)
-            if (visibleIndex < visibleLabels.length - 1) {
-              items.push(
-                el("div", {
-                  key: `connector-${actualIndex}`,
-                  className: "step-connector",
-                  style: `
-                    flex: 1;
-                    height: 2px;
-                    background: ${actualIndex < step ? "#9075D7" : "#E5E7EB"};
-                    align-self: flex-start;
-                    margin-top: clamp(14px, 3vw, 18px);
-                    min-width: 8px;
-                    max-width: 64px;
-                  `
-                })
-              );
-            }
-            
-            return items;
-          });
-        })()),
+        renderCoupleStepper(stepLabels, step),
         scene,
         renderCoupleNav(step, total, plan),  // ← העברת plan
       ]),
@@ -2120,7 +2175,7 @@ function renderCoupleScene(step, plan) {
     () => el("div", { className: "couple-scene opening" }, [
       el("img", { className: "couple-hero-asset", src: "./assets/brand/couple-care.png", alt: "זמן טיפוח זוגי" }),
       el("p", { className: "eyebrow", text: "חוויה זוגית" }),
-      el("h2", { text: "זמן טיפוח זוגי 💕" }),
+      el("h2", {}, [iconLabel("couple-love", "זמן טיפוח זוגי", "heading-icon-label")]),
       el("p", { text: "מאמי, זה הזמן שלכם לעצור רגע, לשים את העולם על שקט, ולהפוך את הבית לספא קטן וחמוד רק לשניכם." }),
     ]),
     
@@ -2152,7 +2207,7 @@ function renderCoupleScene(step, plan) {
     
     // ✅ המסיכה - תמיד מוצגת פה (לפני branching)
     () => renderCoupleProductScene(
-      "המסיכה שלכם להיום 🎭", 
+      "המסיכה שלכם להיום", 
       plan.maskProduct, 
       getCoupleMaskText(plan.maskProduct), 
       [plan.text, getMaskUsage(plan.maskProduct)?.when].filter(Boolean),
@@ -2234,7 +2289,7 @@ function renderCoupleScene(step, plan) {
   const closingScene = [
     () => el("div", { className: "couple-scene" }, [
       el("p", { className: "eyebrow", text: "הושלם" }),
-      el("h2", { text: "זהו, אתם זוהרים 💕" }),
+      el("h2", {}, [iconLabel("glow", "זהו, אתם זוהרים", "heading-icon-label")]),
       el("p", { text: "סיימתם את זמן הטיפוח הזוגי שלכם. העור קיבל אהבה, אתם קיבלתם רגע ביחד, וזה לגמרי נחשב דייט קטן בבית." }),
       el("div", { className: "success-note", text: coupleRandomText(finishTexts, 9) }),
       // ✅ תמונה של זוגיות
@@ -2274,163 +2329,246 @@ function renderCoupleScene(step, plan) {
 
 function renderCoupleTextScene(title, text, actions = [], options = {}) {
   const { spotifyButton, timer, suggestions } = options;
+  const icon = getCoupleTextSceneIcon(title, options);
   
-  return el("div", { className: "couple-scene" }, [
-    el("p", { className: "eyebrow", text: "שלב טיפוח זוגי" }),
-    el("h2", { text: title }),
-    el("p", { text }),
+  return el("div", { className: "couple-scene couple-text-scene" }, [
+    el("div", { className: "couple-scene-hero" }, [
+      el("p", { className: "eyebrow", text: "שלב טיפוח זוגי" }),
+      el("h2", {}, [iconLabel(icon, title, "heading-icon-label")]),
+    ]),
     
-    // כפתור Spotify
-    spotifyButton ? el("a", {
-      href: "https://open.spotify.com/playlist/5EsjbD20Kzq8ONeJyHJoW9?si=O2KzZgd-SfeaOHCbbJ4kQQ&pi=qm9A4PZWStCrc&nd=1&dlsi=e683ba474bb74774",
-      target: "_blank",
-      className: "button primary",
-      style: "margin: 1rem 0; display: inline-block; text-decoration: none; text-align: center; background: #D4CAEF; color: #9075D7; border: 2px solid #9075D7;"
-    }, [document.createTextNode("🎵 מוזיקת ספא")]) : null,
+    el("section", { className: "couple-guidance-card" }, [
+      el("div", { className: "couple-guidance-icon" }, [vectorIcon(icon)]),
+      el("div", { className: "couple-guidance-copy" }, [
+        el("p", { className: "couple-guidance-text", text }),
+        spotifyButton ? el("a", {
+          href: "https://open.spotify.com/playlist/5EsjbD20Kzq8ONeJyHJoW9?si=O2KzZgd-SfeaOHCbbJ4kQQ&pi=qm9A4PZWStCrc&nd=1&dlsi=e683ba474bb74774",
+          target: "_blank",
+          className: "button secondary couple-music-button"
+        }, [iconLabel("music", "מוזיקת ספא")]) : null,
+        actions.length ? el("div", { className: "couple-action-list" }, actions.map((action) => el("span", { text: action }))) : null,
+      ]),
+    ]),
     
-    // טיימר
     timer ? renderCoupleTimer(timer) : null,
-    
-    // הצעות רומנטיות
     suggestions ? renderCoupleSuggestions() : null,
-    
-    // פעולות רגילות
-    actions.length ? el("div", { className: "couple-action-list" }, actions.map((action) => el("span", { text: action }))) : null,
   ]);
+}
+
+function getCoupleTextSceneIcon(title, options = {}) {
+  if (options.icon) return options.icon;
+  if (title.includes("אווירה")) return "music";
+  if (title.includes("מגבת")) return "water";
+  if (title.includes("ניקוי")) return "cleanser";
+  if (title.includes("פינוק")) return "massage";
+  return "sparkle";
+}
+
+function getCoupleProductSceneIcon(productType, product) {
+  const icons = {
+    mask: "mask",
+    hydrator: "hydration",
+    serum: "lotion",
+    eye: "eyes",
+    cream: "lotion"
+  };
+  if (icons[productType]) return icons[productType];
+  if (product?.type === "Mask") return "mask";
+  if (product?.type === "Serum") return "lotion";
+  if (product?.type === "Eye Cream") return "eyes";
+  if (product?.type === "Cream") return "lotion";
+  return "products";
 }
 
 function renderCoupleTimer(timerConfig) {
   const { minutes, label } = timerConfig;
   const isActive = state.coupleTimerSeconds > 0;
   const isRunning = state.coupleTimerInterval !== null;
+  const displaySeconds = isActive ? state.coupleTimerSeconds : minutes * 60;
+  const timerLabel = label || `${minutes} דקות`;
   
-  // חישוב אחוז התקדמות - מתחיל מריק ומתמלא
-  const totalSeconds = minutes * 60;
-  const progress = isActive ? (state.coupleTimerSeconds / totalSeconds) : 1;
-  
-  // SVG circle parameters
-  const radius = 80;
-  const strokeWidth = 5;  // מסגרת דקה יותר
-  const circumference = 2 * Math.PI * radius;
-  const strokeDashoffset = circumference * progress;  // התקדמות - מתמלא ככל שהזמן עובר
-  
-  return el("div", { 
-    className: "couple-timer-container", 
-    style: "margin: 1.5rem 0; padding: 1.5rem; background: var(--color-surface); border-radius: 12px; text-align: center;" 
+  return el("section", { 
+    className: "mask-timer-card couple-timer-card",
+    "aria-label": "טיימר זוגי"
   }, [
-    // תצוגת טיימר עגול
-    isActive ? el("div", {
-      style: "position: relative; width: 200px; height: 200px; margin: 0 auto 1.5rem;"
+    el("div", { className: "mask-timer-card-top" }, [
+      el("div", { className: "mask-timer-badge" }, [vectorIcon("timer")]),
+      el("div", { className: "mask-timer-copy" }, [
+        el("p", { className: "mask-timer-kicker", text: "הזמן לשלב הזה" }),
+        el("div", { className: "mask-timer-time couple-timer-text" }, [
+          document.createTextNode(formatTime(displaySeconds))
+        ]),
+        el("p", { className: "mask-timer-note", text: timerLabel }),
+      ]),
+    ]),
+
+    !isActive ? el("button", {
+      className: "button mask-timer-primary",
+      onClick: () => startCoupleTimer(minutes)
     }, [
-      // SVG עיגול מתקדם
-      (() => {
-        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute("width", "200");
-        svg.setAttribute("height", "200");
-        svg.setAttribute("viewBox", "0 0 200 200");
-        svg.style.transform = "rotate(-90deg)";
-        
-        // עיגול רקע (בהיר דק)
-        const bgCircle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        bgCircle.setAttribute("cx", "100");
-        bgCircle.setAttribute("cy", "100");
-        bgCircle.setAttribute("r", radius.toString());
-        bgCircle.setAttribute("fill", "none");
-        bgCircle.setAttribute("stroke", "#D4CAEF");
-        bgCircle.setAttribute("stroke-width", strokeWidth.toString());
-        
-        // עיגול מתקדם - צבע אחיד סגול
-        const progressCircle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        progressCircle.setAttribute("cx", "100");
-        progressCircle.setAttribute("cy", "100");
-        progressCircle.setAttribute("r", radius.toString());
-        progressCircle.setAttribute("fill", "none");
-        progressCircle.setAttribute("stroke", "#9075D7");
-        progressCircle.setAttribute("stroke-width", strokeWidth.toString());
-        progressCircle.setAttribute("stroke-linecap", "round");
-        progressCircle.setAttribute("stroke-dasharray", circumference.toString());
-        progressCircle.setAttribute("stroke-dashoffset", strokeDashoffset.toString());
-        progressCircle.setAttribute("class", "couple-timer-circle");
-        progressCircle.style.transition = "stroke-dashoffset 0.3s ease-out";
-        
-        svg.appendChild(bgCircle);
-        svg.appendChild(progressCircle);
-        
-        return svg;
-      })(),
-      
-      // הזמן במרכז העיגול
-      el("div", {
-        className: "couple-timer-text",
-        style: "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; font-weight: bold; color: var(--color-text);"
-      }, [
-        document.createTextNode(formatTime(state.coupleTimerSeconds))
-      ])
-    ]) : null,
-    
-    // כפתורים
-    el("div", { className: "timer-controls", style: "display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;" }, [
-      !isActive ? 
-        el("button", {
-          className: "button primary",
-          text: `הפעל טיימר ${label || minutes + ' דקות'}`,
-          onClick: () => startCoupleTimer(minutes)
-        }) : null,
-      
-      isActive && isRunning ?
-        el("button", {
-          className: "button",
-          text: "השהה",
-          onClick: toggleCoupleTimer
-        }) : null,
-      
-      isActive && !isRunning ?
-        el("button", {
-          className: "button primary",
-          text: "המשך",
-          onClick: toggleCoupleTimer
-        }) : null,
-      
-      isActive ?
-        el("button", {
-          className: "button secondary",
-          text: "התחל מחדש",
-          onClick: () => resetCoupleTimer(minutes)
-        }) : null,
-    ])
+      vectorIcon("play"),
+      document.createTextNode(`התחילו טיימר ${timerLabel}`)
+    ]) : el("button", {
+      className: "button mask-timer-primary",
+      onClick: toggleCoupleTimer
+    }, [
+      vectorIcon(isRunning ? "pause" : "play"),
+      document.createTextNode(isRunning ? "השהה טיימר" : "המשך טיימר")
+    ]),
+
+    el("div", { className: "mask-timer-divider" }),
+
+    isActive ? el("div", { className: "timer-controls mask-timer-controls" }, [
+      el("button", {
+        className: "button secondary",
+        text: "התחל מחדש",
+        onClick: () => resetCoupleTimer(minutes)
+      })
+    ]) : el("p", { className: "couple-timer-helper", text: "לחצו להתחיל כשאתם מוכנים." })
   ]);
 }
 
 function renderCoupleSuggestions() {
-  const currentSuggestion = coupleSuggestions[state.coupleSuggestionIndex];
+  const currentSuggestion = coupleSuggestions[state.coupleSuggestionIndex] || coupleSuggestions[0];
   
   return el("div", { 
-    className: "couple-suggestions-card",
-    style: "margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; color: white;"
+    className: "couple-suggestions-card"
   }, [
-    el("h3", { 
-      style: "margin: 0 0 1rem 0; font-size: 1.1rem; text-align: center; color: white;",
-      text: "דברים שאפשר לעשות בזמן הזה"
-    }),
-    el("div", {
-      style: "text-align: center; margin: 1rem 0;"
-    }, [
-      el("div", { 
-        style: "font-size: 30px; margin-bottom: 0.5rem;",
-        text: currentSuggestion.emoji
-      }),
+    el("div", { className: "couple-suggestions-icon" }, [vectorIcon(currentSuggestion.icon)]),
+    el("div", { className: "couple-suggestions-content" }, [
+      el("h3", { text: "בזמן ההמתנה" }),
+      el("p", { className: "couple-suggestions-label", text: "דברים שאפשר לעשות בזמן הזה" }),
       el("p", { 
-        style: "font-size: 1.1rem; margin: 0; color: white; line-height: 1.5;",
+        className: "couple-suggestions-text",
         text: currentSuggestion.text
-      })
-    ]),
-    el("button", {
-      className: "button",
-      style: "background: white; color: #f5576c; border: none; width: 100%; margin-top: 0.5rem;",
-      text: "עוד משהו חמוד 💕",
-      onClick: getRandomSuggestion
-    })
+      }),
+      el("button", {
+        className: "button couple-suggestions-button",
+        onClick: getRandomSuggestion
+      }, [
+        iconLabel("heart", "עוד משהו חמוד"),
+      ])
+    ])
   ]);
+}
+
+function getCoupleMaskTimerSubtitle(maskUsage) {
+  if (!maskUsage) return "בחרו זמן שמתאים למסיכה, ותנו לעצמכם רגע שקט ביחד.";
+  if (maskUsage.flow === "hydrating") return "הניחו, הדקו בעדינות, ותנו למסיכה לעשות את הקסם שלה.";
+  return "מרחו שכבה אחידה, המתינו, ואז שטפו בעדינות.";
+}
+
+function getCoupleMaskTimerLabel(maskProduct, maskUsage) {
+  if (maskUsage?.flow === "wash-off") {
+    if (hasTag(maskProduct, "clay") || hasTag(maskProduct, "detox")) return "לעור שומני / נקבוביות";
+    return "לניקוי עדין";
+  }
+  if (maskUsage?.kind) return maskUsage.kind;
+  return "למסיכה שבחרתם";
+}
+
+function getCoupleMaskPrepSteps(maskProduct, maskUsage) {
+  if (maskProduct?.id === "23") {
+    return [
+      {
+        icon: "mask",
+        title: "הנחה והידוק",
+        text: "להניח את המסיכה על הפנים ולהדק בעדינות כדי שתשב צמוד ונעים."
+      },
+      {
+        icon: "timer",
+        title: "עד שהיא כמעט שקופה",
+        text: "אפשר 40-60 דקות לקיצור, שעתיים לפינוק עמוק, או להשאיר ללילה אם מתאים לכם."
+      },
+      {
+        icon: "gentle",
+        title: "להסיר בלי לשטוף",
+        text: "להסיר בעדינות ולטפוח את שארית החומר עד ספיגה. לא לשטוף אחרי."
+      }
+    ];
+  }
+
+  if (maskProduct?.id === "28") {
+    return [
+      {
+        icon: "mask",
+        title: "שכבה באזורי נקבוביות",
+        text: "למרוח שכבה אחידה, במיוחד באף, מצח וסנטר."
+      },
+      {
+        icon: "timer",
+        title: "לא לייבש לגמרי",
+        text: "להמתין 10-15 דקות, או 5-7 דקות אם רוצים קצר ועדין יותר."
+      },
+      {
+        icon: "water",
+        title: "מים פושרים ועיסוי",
+        text: "להרטיב מעט, לעסות בעדינות בתנועות מעגליות ולשטוף היטב."
+      }
+    ];
+  }
+
+  if (maskProduct?.id === "29") {
+    return [
+      {
+        icon: "mask",
+        title: "שכבה דקה ואחידה",
+        text: "למרוח בעדינות ולהימנע מאזור העיניים והשפתיים."
+      },
+      {
+        icon: "timer",
+        title: "ייבוש חלקי בלבד",
+        text: "להמתין 10-15 דקות, או 5-8 דקות בקיצור. לא למשוך מעבר למה שהעור צריך."
+      },
+      {
+        icon: "water",
+        title: "שטיפה ואז לחות",
+        text: "לשטוף עם מים פושרים ולעסות בעדינות. אחר כך ממשיכים ללחות מרגיעה."
+      }
+    ];
+  }
+
+  if (maskUsage?.flow === "wash-off") {
+    return [
+      {
+        icon: "mask",
+        title: "שכבה אחידה",
+        text: maskUsage?.how || "למרוח שכבה אחידה, בלי להעמיס ובלי לשפשף."
+      },
+      {
+        icon: "timer",
+        title: "זמן לפי האריזה",
+        text: maskUsage?.wait || "להמתין לפי הוראות המוצר."
+      },
+      {
+        icon: "water",
+        title: "שטיפה עדינה",
+        text: maskUsage?.finish || "לשטוף במים פושרים ובעדינות."
+      }
+    ];
+  }
+
+  return [
+    {
+      icon: "mask",
+      title: "הנחה עדינה",
+      text: maskUsage?.how || "להניח או למרוח לפי הוראות המוצר."
+    },
+    {
+      icon: "timer",
+      title: "זמן לפי האריזה",
+      text: maskUsage?.wait || "להמתין לפי הוראות המוצר."
+    },
+    {
+      icon: "gentle",
+      title: "סיום מתאים",
+      text: maskUsage?.finish || "להסיר בעדינות ולהמשיך לשלב הבא."
+    }
+  ];
+}
+
+function formatMaskTimerOption(option) {
+  return [option.label, option.note].filter(Boolean).join(" ");
 }
 
 function renderCoupleMaskTimerScene(maskProduct) {
@@ -2438,171 +2576,64 @@ function renderCoupleMaskTimerScene(maskProduct) {
   const isActive = state.coupleTimerSeconds > 0;
   const isRunning = state.coupleTimerInterval !== null;
   const maskUsage = getMaskUsage(maskProduct);
-  
-  // חישוב אחוז התקדמות - מתחיל מריק ומתמלא
   const firstOption = timerOptions.find(o => o.recommended) || timerOptions[0];
-  const selectedMinutes = state.coupleSelectedTimerMinutes || firstOption.minutes;  // ← הזמן שנבחר!
-  const totalSeconds = selectedMinutes * 60;
-  const progress = isActive ? (state.coupleTimerSeconds / totalSeconds) : 1;
-  const radius = 80;
-  const strokeWidth = 5;  // מסגרת דקה
-  const circumference = 2 * Math.PI * radius;
-  const strokeDashoffset = circumference * progress;  // מתמלא ככל שהזמן עובר
+  const hasSelectedMaskTimer = timerOptions.some(option => option.minutes === state.coupleSelectedTimerMinutes);
+  const selectedMinutes = hasSelectedMaskTimer ? state.coupleSelectedTimerMinutes : firstOption.minutes;
+  const displaySeconds = isActive ? state.coupleTimerSeconds : selectedMinutes * 60;
+  const prepSteps = getCoupleMaskPrepSteps(maskProduct, maskUsage);
   
-  return el("div", { className: "couple-scene" }, [
-    el("p", { className: "eyebrow", text: "זמן מסיכה" }),
-    el("h2", { text: "רגע של פינוק והמתנה 💕" }),
-    
-    // הוראות למסיכה - כרטיסים בשורה
-    maskUsage ? el("div", { 
-      className: "mask-instructions-cards",
-      style: "display: flex; gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; justify-content: space-between;"
-    }, [
-      // כרטיס "איך לשים"
-      el("div", {
-        style: "flex: 1; min-width: 250px; background: #F6F5FA; border: 1px solid #8D77AC; border-radius: 12px; padding: 1.25rem; text-align: center;"
-      }, [
-        el("div", { 
-          style: "font-size: 1.75rem; margin-bottom: 0.5rem;",
-          text: "💡"
-        }),
-        el("h3", { 
-          style: "color: #9575DD; margin: 0 0 0.75rem 0; font-size: 1rem; font-weight: 600;",
-          text: "איך לשים את המסיכה"
-        }),
-        el("p", { 
-          style: "margin: 0; line-height: 1.6; color: #374151; font-size: 0.95rem;",
-          text: maskUsage.how || maskUsage.when
-        })
+  return el("div", { className: "couple-scene couple-mask-timer-scene" }, [
+    el("div", { className: "mask-timer-hero" }, [
+      el("p", { className: "eyebrow", text: "זמן מסיכה" }),
+      el("h2", {}, [iconLabel("timer", "מסיכת פינוק והמתנה", "heading-icon-label")]),
+      el("p", { className: "mask-timer-subtitle", text: getCoupleMaskTimerSubtitle(maskUsage) }),
+    ]),
+
+    el("section", { className: "mask-timer-card", "aria-label": "טיימר מסיכה" }, [
+      el("div", { className: "mask-timer-card-top" }, [
+        el("div", { className: "mask-timer-badge" }, [vectorIcon("timer")]),
+        el("div", { className: "mask-timer-copy" }, [
+          el("p", { className: "mask-timer-kicker", text: "הזמן המומלץ למסיכה הזו" }),
+          el("div", { className: "mask-timer-time couple-timer-text" }, [
+            document.createTextNode(formatTime(displaySeconds))
+          ]),
+          el("p", { className: "mask-timer-note", text: getCoupleMaskTimerLabel(maskProduct, maskUsage) }),
+        ]),
       ]),
-      
-      // כרטיס "כמה זמן"
-      el("div", {
-        style: "flex: 1; min-width: 250px; background: #F6F5FA; border: 1px solid #8D77AC; border-radius: 12px; padding: 1.25rem; text-align: center;"
+
+      !isActive ? el("button", {
+        className: "button mask-timer-primary",
+        onClick: () => startCoupleTimer(firstOption.minutes)
       }, [
-        el("div", { 
-          style: "font-size: 1.75rem; margin-bottom: 0.5rem;",
-          text: "⏳"
-        }),
-        el("h3", { 
-          style: "color: #9575DD; margin: 0 0 0.75rem 0; font-size: 1rem; font-weight: 600;",
-          text: "כמה זמן להשאיר"
-        }),
-        el("p", { 
-          style: "margin: 0; line-height: 1.6; color: #374151; font-size: 0.95rem;",
-          html: maskUsage.wait.replace(/(\d+-\d+)/g, '<span style="color: #9575DD; font-weight: bold;">$1</span>')
-        })
+        vectorIcon("play"),
+        document.createTextNode(`התחילו טיימר ${firstOption.label}`)
+      ]) : el("button", {
+        className: "button mask-timer-primary",
+        onClick: toggleCoupleTimer
+      }, [
+        vectorIcon(isRunning ? "pause" : "play"),
+        document.createTextNode(isRunning ? "השהה טיימר" : "המשך טיימר")
       ]),
-      
-      // כרטיס "איך להוריד"
-      el("div", {
-        style: "flex: 1; min-width: 250px; background: #F6F5FA; border: 1px solid #8D77AC; border-radius: 12px; padding: 1.25rem; text-align: center;"
-      }, [
-        el("div", { 
-          style: "font-size: 1.75rem; margin-bottom: 0.5rem;",
-          text: "✖️"
-        }),
-        el("h3", { 
-          style: "color: #9575DD; margin: 0 0 0.75rem 0; font-size: 1rem; font-weight: 600;",
-          text: "איך להוריד"
-        }),
-        el("p", { 
-          style: "margin: 0; line-height: 1.6; color: #374151; font-size: 0.95rem;",
-          text: maskUsage.finish
-        })
-      ])
-    ]) : el("p", { text: "בחרו את משך הזמן המתאים למסיכה שלכם:" }),
-    
-    // כפתורי טיימר
-    !isActive ? el("div", { 
-      className: "mask-timer-options",
-      style: "display: flex; gap: 1rem; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;"
-    }, timerOptions.map(option => 
-      el("button", {
-        className: option.recommended ? "button primary" : "button",
-        style: option.recommended ? "font-weight: bold;" : "",
-        text: `${option.label} ${option.note || ''}`,
-        onClick: () => startCoupleTimer(option.minutes)
-      })
-    )) : null,
-    
-    // תצוגת טיימר פעיל עם עיגול
-    isActive ? el("div", { 
-      className: "couple-timer-container", 
-      style: "margin: 1.5rem 0; padding: 1.5rem; background: var(--color-surface); border-radius: 12px; text-align: center;" 
-    }, [
-      // טיימר עגול
-      el("div", {
-        style: "position: relative; width: 200px; height: 200px; margin: 0 auto 1.5rem;"
-      }, [
-        // SVG עיגול מתקדם
-        (() => {
-          const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-          svg.setAttribute("width", "200");
-          svg.setAttribute("height", "200");
-          svg.setAttribute("viewBox", "0 0 200 200");
-          svg.style.transform = "rotate(-90deg)";
-          
-          // עיגול רקע - צבע מותג
-          const bgCircle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-          bgCircle.setAttribute("cx", "100");
-          bgCircle.setAttribute("cy", "100");
-          bgCircle.setAttribute("r", radius.toString());
-          bgCircle.setAttribute("fill", "none");
-          bgCircle.setAttribute("stroke", "#D4CAEF");  // ← צבע מותג בהיר
-          bgCircle.setAttribute("stroke-width", strokeWidth.toString());
-          
-          // עיגול מתקדם - צבע סגול אחיד (ללא גרדיאנט)
-          const progressCircle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-          progressCircle.setAttribute("cx", "100");
-          progressCircle.setAttribute("cy", "100");
-          progressCircle.setAttribute("r", radius.toString());
-          progressCircle.setAttribute("fill", "none");
-          progressCircle.setAttribute("stroke", "#9075D7");  // ← צבע סגול מותג
-          progressCircle.setAttribute("stroke-width", strokeWidth.toString());
-          progressCircle.setAttribute("stroke-linecap", "round");
-          progressCircle.setAttribute("stroke-dasharray", circumference.toString());
-          progressCircle.setAttribute("stroke-dashoffset", strokeDashoffset.toString());
-          progressCircle.setAttribute("class", "couple-timer-circle");
-          progressCircle.style.transition = "stroke-dashoffset 0.3s ease-out";
-          
-          svg.appendChild(bgCircle);
-          svg.appendChild(progressCircle);
-          
-          return svg;
-        })(),
-        
-        // הזמן במרכז
-        el("div", {
-          className: "couple-timer-text",
-          style: "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; font-weight: bold; color: var(--color-text);"
-        }, [
-          document.createTextNode(formatTime(state.coupleTimerSeconds))
-        ])
-      ]),
-      
-      // כפתורים
-      el("div", { className: "timer-controls", style: "display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;" }, [
-        isRunning ?
+
+      el("div", { className: "mask-timer-divider" }),
+
+      !isActive ? el("div", { className: "mask-timer-options" }, [
+        el("p", { className: "mask-timer-options-label", text: "בחרי זמן אחר:" }),
+        el("div", { className: "mask-timer-option-list" }, timerOptions.map(option => 
           el("button", {
-            className: "button",
-            text: "השהה",
-            onClick: toggleCoupleTimer
-          }) :
-          el("button", {
-            className: "button primary",
-            text: "המשך",
-            onClick: toggleCoupleTimer
-          }),
-        
+            className: option.recommended ? "mask-timer-option is-recommended" : "mask-timer-option",
+            text: formatMaskTimerOption(option),
+            onClick: () => startCoupleTimer(option.minutes)
+          })
+        ))
+      ]) : el("div", { className: "timer-controls mask-timer-controls" }, [
         el("button", {
           className: "button secondary",
           text: "התחל מחדש",
-          onClick: () => resetCoupleTimer(state.coupleSelectedTimerMinutes || firstOption.minutes)  // ← הזמן שנבחר!
+          onClick: () => resetCoupleTimer(state.coupleSelectedTimerMinutes || firstOption.minutes)
         }),
-        
         el("button", {
-          className: "button secondary",
+          className: "button soft",
           text: "החלף טיימר",
           onClick: () => {
             if (state.coupleTimerInterval) clearInterval(state.coupleTimerInterval);
@@ -2613,33 +2644,54 @@ function renderCoupleMaskTimerScene(maskProduct) {
             });
           }
         })
-      ])
-    ]) : null,
+      ]),
+    ]),
+
+    el("section", { className: "mask-steps-section", "aria-label": "איך עושים את זה" }, [
+      el("h3", {}, [iconLabel("sparkle", "איך עושים את זה", "heading-icon-label")]),
+      el("div", { className: "mask-step-list" }, prepSteps.map((step, index) =>
+        el("div", { className: "mask-step-row" }, [
+          el("div", { className: "mask-step-number", text: (index + 1).toString() }),
+          el("div", { className: "mask-step-copy" }, [
+            el("strong", { text: step.title }),
+            el("p", { text: step.text }),
+          ]),
+          el("div", { className: "mask-step-icon" }, [vectorIcon(step.icon)]),
+        ])
+      ))
+    ]),
     
-    // הצעות רומנטיות
     renderCoupleSuggestions()
   ]);
 }
 
 function renderCoupleProductScene(title, product, text, notes = [], options = {}) {
   const { replaceButton, productType } = options;
+  const icon = getCoupleProductSceneIcon(productType, product);
   
-  return el("div", { className: "couple-scene" }, [
-    el("p", { className: "eyebrow", text: "מוצר מהמלאי" }),
-    el("h2", { text: title }),
+  return el("div", { className: "couple-scene couple-product-scene" }, [
+    el("div", { className: "couple-scene-hero" }, [
+      el("p", { className: "eyebrow", text: "מוצר מהמלאי" }),
+      el("h2", {}, [iconLabel(icon, title, "heading-icon-label")]),
+    ]),
     renderCoupleProductCard(product, replaceButton, productType),
-    el("p", { text }),
-    notes.length ? el("div", { className: "couple-action-list" }, notes.map((note) => el("span", { text: note }))) : null,
+    el("section", { className: "couple-guidance-card couple-product-note-card" }, [
+      el("div", { className: "couple-guidance-icon" }, [vectorIcon(icon)]),
+      el("div", { className: "couple-guidance-copy" }, [
+        el("p", { className: "couple-guidance-text", text }),
+        notes.length ? el("div", { className: "couple-action-list" }, notes.map((note) => el("span", { text: note }))) : null,
+      ]),
+    ]),
   ]);
 }
 
 function renderCoupleProductCard(product, showReplaceButton = false, productType = null) {
   if (!product) return el("div", { className: "empty", text: "לא מצאתי מוצר מתאים במלאי, אז ממשיכים כהנחיה כללית ועדינה." });
   
-  return el("div", {}, [
+  return el("div", { className: "couple-product-shell" }, [
     el("article", { className: "couple-product-card" }, [
       renderProductImage(product, "couple-product-image"),
-      el("div", {}, [
+      el("div", { className: "couple-product-copy" }, [
         el("strong", { text: product.name }),
         el("span", { text: `${product.brand} · ${friendlyType(product.type)}` }),
         renderTagPills(product),
@@ -2648,8 +2700,7 @@ function renderCoupleProductCard(product, showReplaceButton = false, productType
     
     // כפתור החלף מוצר
     showReplaceButton ? el("button", {
-      className: "button secondary",
-      style: "margin-top: 1rem;",
+      className: "button secondary couple-replace-button",
       text: "החלף מוצר",
       onClick: () => openCoupleProductReplacement(productType, product)
     }) : null
@@ -2935,7 +2986,8 @@ function renderCoupleNav(step, total, plan) {
       coupleStep: nextStep,
       coupleTimerActive: false,
       coupleTimerSeconds: 0,
-      coupleTimerInterval: null
+      coupleTimerInterval: null,
+      coupleSelectedTimerMinutes: null
     });
   };
   
@@ -2953,7 +3005,9 @@ function renderCoupleNav(step, total, plan) {
   
   if (step === 0) {
     return el("div", { className: "row-actions couple-actions" }, [
-      el("button", { className: "button primary-hero", text: "מתחילים ✨", onClick: () => stopTimerAndAdvance(1) }),
+      el("button", { className: "button primary-hero", onClick: () => stopTimerAndAdvance(1) }, [
+        iconLabel("sparkle", "מתחילים"),
+      ]),
       el("button", { className: "button secondary", text: "חזרה לבית", onClick: () => {
         if (state.coupleTimerInterval) clearInterval(state.coupleTimerInterval);
         navigate("home");
@@ -2962,10 +3016,10 @@ function renderCoupleNav(step, total, plan) {
   }
   if (step === total - 1) {
     return el("div", { className: "row-actions couple-actions" }, [
-      el("button", { className: "button", text: "סיימנו 💕", onClick: () => {
+      el("button", { className: "button", onClick: () => {
         if (state.coupleTimerInterval) clearInterval(state.coupleTimerInterval);
         navigate("home");
-      } }),
+      } }, [iconLabel("heart", "סיימנו")]),
       el("button", { className: "button secondary", text: "בנה לנו שגרה זוגית חדשה", onClick: () => startCoupleFlow(true) }),
       el("button", { className: "button secondary", text: "חזרה לבית", onClick: () => {
         if (state.coupleTimerInterval) clearInterval(state.coupleTimerInterval);
@@ -2978,9 +3032,8 @@ function renderCoupleNav(step, total, plan) {
       className: "button", 
       style: "width: 100%;",
       // ✅ טקסט מסיכה גם ל-Biodance (step 9) וגם ל-Clay (step 6)
-      text: step === maskStep ? "המסיכה ירדה, ממשיכים ✨" : "המשך", 
       onClick: () => stopTimerAndAdvance(Math.min(total - 1, step + 1)) 
-    }),
+    }, step === maskStep ? [iconLabel("sparkle", "המסיכה ירדה, ממשיכים")] : [document.createTextNode("המשך")]),
     // ✅ כפתור "דלג" ב-Eye + רגע של פינוק (step 4)
     (step === eyeStep || step === 4) ? el("button", { 
       className: "button secondary", 
@@ -3416,7 +3469,7 @@ function toggleFavorite(id, trigger = null) {
   if (trigger) {
     trigger.classList.toggle("active", isFavorite);
     trigger.classList.add("pulse");
-    trigger.textContent = isFavorite ? "♥" : "♡";
+    updateFavoriteIconNode(trigger, isFavorite);
     trigger.setAttribute("aria-pressed", String(isFavorite));
     
     // הסרת pulse אחרי אנימציה
@@ -3515,7 +3568,7 @@ function toggleSavedRoutine(routineDataOrSaved, trigger = null) {
     const heartSpan = trigger.querySelector('.save-routine-heart');
     if (heartSpan) {
       // יש span - עדכן את ה-span
-      heartSpan.textContent = isSaved ? "♥" : "♡";
+      updateFavoriteIconNode(heartSpan, isSaved);
       heartSpan.classList.add("pulse");
       window.setTimeout(() => {
         heartSpan.classList.remove("pulse");
@@ -3534,7 +3587,7 @@ function toggleSavedRoutine(routineDataOrSaved, trigger = null) {
       }
     } else {
       // אין span - עדכן את הכפתור ישירות (כרטיסייה)
-      trigger.textContent = isSaved ? "♥" : "♡";
+      updateFavoriteIconNode(trigger, isSaved);
       trigger.classList.add("pulse");
       window.setTimeout(() => {
         trigger.classList.remove("pulse");
@@ -3892,9 +3945,35 @@ function el(tag, options = {}, children = []) {
   return node;
 }
 
-function icon(name) {
-  const icons = { home: "⌂", routine: "✦", products: "☰", heart: "♥", filter: "≡", back: "<", moon: "☾", sun: "☼", water: "≋", warn: "!", search: "⌕" };
-  return icons[name] || name;
+function vectorIcon(name, className = "", options = {}) {
+  const iconName = ICON_SVGS[name] ? name : "sparkle";
+  const node = document.createElement("span");
+  node.className = ["vector-icon", `icon-${iconName}`, className].filter(Boolean).join(" ");
+  if (options.label) {
+    node.setAttribute("role", "img");
+    node.setAttribute("aria-label", options.label);
+  } else {
+    node.setAttribute("aria-hidden", "true");
+  }
+  node.innerHTML = `<svg viewBox="0 0 24 24" focusable="false">${ICON_SVGS[iconName]}</svg>`;
+  return node;
+}
+
+function iconLabel(iconName, text, className = "") {
+  return el("span", { className: ["icon-label", className].filter(Boolean).join(" ") }, [
+    vectorIcon(iconName),
+    el("span", { text }),
+  ]);
+}
+
+function favoriteIcon(isActive, className = "") {
+  return vectorIcon("heart", ["favorite-vector", isActive ? "is-active" : "is-muted", className].filter(Boolean).join(" "));
+}
+
+function updateFavoriteIconNode(target, isActive) {
+  if (!target) return;
+  target.textContent = "";
+  target.appendChild(favoriteIcon(isActive));
 }
 
 function render() {
@@ -3949,7 +4028,9 @@ function renderTopbar() {
   return el("div", { className: "topbar-shell" }, [
     el("header", { className: "topbar" }, [
       el("div", { className: "top-left-cluster" }, [
-        el("button", { className: "icon-button favorite-top", "aria-label": "מועדפים", onClick: () => navigate("favorites"), text: icon("heart") }),
+        el("button", { className: "icon-button favorite-top", "aria-label": "מועדפים", onClick: () => navigate("favorites") }, [
+          favoriteIcon(true),
+        ]),
         el("button", { className: "top-weather-trigger", "aria-label": "שעה ומזג אוויר", onClick: () => {
           state.showWeatherPopover = !state.showWeatherPopover;
           // Toggle visibility with CSS only, no render
@@ -3997,16 +4078,28 @@ function renderHomeScreen() {
   const greeting = getGreetingLines();
   const homeTimeOfDay = getCurrentRoutineTimeOfDay();
   const homeSlot = getRoutineSlot(homeTimeOfDay);
+  const [beforeMami, ...afterMamiParts] = greeting[0].split("מאמי");
+  const afterMami = afterMamiParts.join("מאמי");
   return el("section", { className: "screen active" }, [
     el("div", { className: "hero-card home-focus" }, [
       el("div", { className: "hero-inner" }, [
-        el("h2", { className: "hero-title split-greeting" }, [
-          el("span", { text: greeting[0] }),
-          el("span", { text: greeting[1] }),
+        el("div", { className: "hero-main" }, [
+          el("img", { className: "home-character", src: getHomeCharacter(), alt: "מאמי טיפוח" }),
+          el("div", { className: "hero-copy" }, [
+            el("h2", { className: "hero-title split-greeting" }, [
+              el("span", { className: "hero-greeting-primary" }, [
+                beforeMami,
+                el("span", { className: "hero-mami-word", text: "מאמי" }),
+                afterMami,
+              ]),
+              el("span", { text: greeting[1] }),
+            ]),
+          ]),
         ]),
-        el("img", { className: "home-character", src: getHomeCharacter(), alt: "מאמי טיפוח" }),
         el("div", { className: "hero-actions" }, [
-          el("button", { className: "button primary-hero", html: `<span>${homeSlot.icon}</span>${homeSlot.action}`, onClick: () => startRoutine({ timeOfDay: homeTimeOfDay, route: "regular", flow: "direct" }) }),
+          el("button", { className: "button primary-hero", onClick: () => startRoutine({ timeOfDay: homeTimeOfDay, route: "regular", flow: "direct" }) }, [
+            iconLabel(homeSlot.icon, homeSlot.action),
+          ]),
           el("button", { className: "button secondary", text: state.showRoutineChoices ? "סגור אפשרויות" : "אני מעדיף שגרה אחרת", onClick: () => setState({ showRoutineChoices: !state.showRoutineChoices }) }),
         ]),
         state.showRoutineChoices ? renderHomeRoutineChoices(homeTimeOfDay) : null,
@@ -4224,7 +4317,6 @@ function renderRecommendationsSection() {
           className: `favorite-button ${isRecommendedFavorite ? "active" : ""} ${state.favoritePulseId === currentRecommendation.id ? "pulse" : ""}`,
           "aria-label": isRecommendedFavorite ? "הסר מהמועדפים" : "הוסף למועדפים",
           "aria-pressed": String(isRecommendedFavorite),
-          text: isRecommendedFavorite ? "♥" : "♡",
           style: "flex-shrink: 0;",
           onClick: (event) => {
             event.preventDefault();
@@ -4232,7 +4324,7 @@ function renderRecommendationsSection() {
             event.stopImmediatePropagation();
             toggleFavorite(currentRecommendation.id, event.currentTarget);
           }
-        }),
+        }, [favoriteIcon(isRecommendedFavorite)]),
       ]),
       el("p", { className: "section-desc", style: "color: #9075D7; margin: -2px 0 0.5rem 0; line-height: 1.25;", text: `מוצר מומלץ ל${currentTime}` }),
       
@@ -4293,16 +4385,18 @@ function renderCoupleHomeCard() {
     el("div", { className: "card-inner couple-home-inner" }, [
       el("div", {}, [
         el("p", { className: "eyebrow", style: "color: #9075D7;", text: "ספא קטן לשניים" }),
-        el("h2", { text: "זמן טיפוח זוגי 💕" }),
+        el("h2", {}, [iconLabel("couple-love", "זמן טיפוח זוגי", "heading-icon-label")]),
         el("p", { text: "הפכו את הבית לספא הפרטי שלכם, ותנו לעצמכם רגע להתנתק, להירגע ולהתפנק יחד." }),
         // ✅ Tags with proper styling like product tags
         el("div", { className: "tag-pills" }, [
-          el("span", { text: "✨ רומנטי" }),
-          el("span", { text: "🫶 מקרב" }),
-          el("span", { text: "🧖 מפנק" }),
+          el("span", {}, [iconLabel("compliment", "רומנטי", "pill-icon-label")]),
+          el("span", {}, [iconLabel("couple-love", "מקרב", "pill-icon-label")]),
+          el("span", {}, [iconLabel("mask", "מפנק", "pill-icon-label")]),
         ]),
       ]),
-      el("button", { className: "button primary-hero", text: "יאללה, מתחילים ✨", onClick: () => startCoupleFlow(true) }),
+      el("button", { className: "button primary-hero", onClick: () => startCoupleFlow(true) }, [
+        iconLabel("sparkle", "יאללה, מתחילים"),
+      ]),
     ]),
   ]);
 }
@@ -4311,7 +4405,9 @@ function renderHomeRoutineChoices(timeOfDay = getCurrentRoutineTimeOfDay()) {
   const futureSlots = getFutureRoutineSlots(timeOfDay);
   return el("div", { className: "alternative-panel" }, [
     futureSlots.length ? el("div", { className: "alternative-grid" }, futureSlots.map((slot) =>
-      el("button", { className: "choice-card compact", text: `${slot.icon} ${slot.alternative}`, onClick: () => startRoutine({ timeOfDay: slot.id, route: "regular", flow: "direct" }) }),
+      el("button", { className: "choice-card compact", onClick: () => startRoutine({ timeOfDay: slot.id, route: "regular", flow: "direct" }) }, [
+        iconLabel(slot.icon, slot.alternative),
+      ]),
     )) : el("div", { className: "empty", text: "זה כבר לילה, מאמי. מכאן נשאר לבחור מוצר או לעשות טיפוח זוגי." }),
     el("button", { className: "choice-card selected compact", text: "שגרה לפי מוצר", onClick: () => setState({ view: "products", showRoutineChoices: false }) }),
   ]);
@@ -4321,7 +4417,13 @@ function renderWeatherCard(extraClass = "") {
   const uv = Math.max(0, Math.min(11, Number(state.weather.uv || 0)));
   return el("aside", { className: `weather-card ${extraClass}`.trim() }, [
     el("div", { className: "weather-top" }, [
-      el("div", {}, [el("p", { className: "eyebrow", text: state.weather.location }), el("strong", { className: "weather-temp", text: `${Math.round(state.weather.temp)}°` })]),
+      el("div", { className: "weather-temp-wrap" }, [
+        vectorIcon(getWeatherIcon(), "weather-main-icon"),
+        el("div", {}, [
+          el("p", { className: "eyebrow", text: state.weather.location }),
+          el("strong", { className: "weather-temp", text: `${Math.round(state.weather.temp)}°` }),
+        ]),
+      ]),
       el("span", { className: "status-pill", text: getWeatherMood() }),
     ]),
     el("div", {}, [
@@ -4334,7 +4436,13 @@ function renderWeatherCard(extraClass = "") {
 
 function renderTipCard(tip) {
   return el("article", { className: "card tip-card" }, [
-    el("div", { className: "card-inner" }, [el("p", { className: "eyebrow", style: "color: #9075D7;", text: "טיפ קטן למאמי" }), el("p", { text: tip })]),
+    el("div", { className: "card-inner tip-card-inner" }, [
+      vectorIcon(tip.icon, "tip-icon"),
+      el("div", {}, [
+        el("p", { className: "eyebrow", style: "color: #9075D7;", text: "טיפ קטן למאמי" }),
+        el("p", { text: tip.text }),
+      ]),
+    ]),
   ]);
 }
 
@@ -4347,7 +4455,7 @@ function renderFeelingSection() {
       style: "scrollbar-width: none; -ms-overflow-style: none;"
     }, feelings.map((feeling) =>
       el("button", { className: "choice-card feeling-card", onClick: () => startRoutine({ feeling: feeling.id, timeOfDay: homeTimeOfDay, direct: true, route: "rubric" }) }, [
-        el("span", { className: "choice-title", text: `${feeling.icon} ${feeling.label}` }),
+        el("span", { className: "choice-title" }, [iconLabel(feeling.icon, feeling.label)]),
         el("span", { className: "choice-copy", text: feeling.desc }),
       ]),
     )),
@@ -4476,9 +4584,8 @@ function renderRoutineScreen() {
           }, [
             el("span", { 
               className: "save-routine-heart",
-              style: "font-size: 1.5rem; line-height: 1; flex-shrink: 0; display: inline-block; color: #9075D7; background: none; border: none; padding: 0; margin: 0; transition: transform 0.1s ease;",
-              text: isSavedRoute || isRoutineSaved(buildRoutine()) ? "♥" : "♡"
-            }),
+              style: "line-height: 1; flex-shrink: 0; display: inline-flex; color: #9075D7; background: none; border: none; padding: 0; margin: 0; transition: transform 0.1s ease;"
+            }, [favoriteIcon(isSavedRoute || isRoutineSaved(buildRoutine()))]),
             el("span", { 
               className: "save-routine-text",
               style: "font-size: 0.9rem; font-weight: 700; color: #9075D7; white-space: nowrap; flex-shrink: 0;", 
@@ -4490,7 +4597,7 @@ function renderRoutineScreen() {
             })
           ]) : el("div", { style: "flex-shrink: 0; visibility: hidden; width: 1px;" })
         ]),
-        el("p", { className: "eyebrow", text: `${getRoutineSlot().icon} שגרת ${state.timeOfDay}` }),
+        el("p", { className: "eyebrow" }, [iconLabel(getRoutineSlot().icon, `שגרת ${state.timeOfDay}`)]),
         el("h2", { text: isProductRoute ? "שגרה סביב מוצר" : current.title }),
         isProductRoute ? renderProductRoutineHeader(selectedProduct) : null,
         showSliders ? renderProductRoutineControls() : null,
@@ -4527,8 +4634,7 @@ function renderRoutineScreen() {
                       "background: white; color: #9CA3AF; border: 2px solid #E5E7EB;"
                   }
                 `,
-                text: index < state.wizardStep ? "✓" : (index + 1).toString()
-              }),
+              }, index < state.wizardStep ? [vectorIcon("check", "step-check-icon")] : [document.createTextNode((index + 1).toString())]),
               // כותרת השלב - responsive
               el("span", {
                 style: `
@@ -4770,13 +4876,17 @@ function renderRoutineLoadingScreen() {
 
 function renderTimeSegmented() {
   return el("div", { className: "segmented" }, routineSlots.map((slot) =>
-    el("button", { className: state.timeOfDay === slot.id ? "active" : "", text: `${slot.icon} ${slot.id}`, onClick: () => setState({ timeOfDay: slot.id }) }),
+    el("button", { className: state.timeOfDay === slot.id ? "active" : "", onClick: () => setState({ timeOfDay: slot.id }) }, [
+      iconLabel(slot.icon, slot.id),
+    ]),
   ));
 }
 
 function renderLockedRoutineTime() {
   const slot = getRoutineSlot();
-  return el("div", { className: "success-note routine-time-locked", text: `${slot.icon} הזמן שבחרת: שגרת ${state.timeOfDay}` });
+  return el("div", { className: "success-note routine-time-locked" }, [
+    iconLabel(slot.icon, `הזמן שבחרת: שגרת ${state.timeOfDay}`),
+  ]);
 }
 
 function renderRoutineTimeStep() {
@@ -4789,7 +4899,7 @@ function renderRoutineTimeStep() {
     el("p", { text: locked ? "הזמן כבר נבחר לשגרה הזאת, מאמי. ממשיכים עם אותה בחירה." : "בחר את הזמן שעליו נבנה את השגרה. אחרי ההמשך הבחירה ננעלת כדי שהמוצרים יישארו מדויקים." }),
     el("div", { className: "preference-grid time-choice-grid" }, routineSlots.map((slot) =>
       el("button", { className: `choice-card ${state.timeOfDay === slot.id ? "selected" : ""}`, disabled: locked, onClick: () => setState({ timeOfDay: slot.id, routineTimeLocked: true, wizardStep: nextStep, routineNonce: Date.now() }) }, [
-        el("span", { className: "choice-title", text: `${slot.icon} ${slot.id}` }),
+        el("span", { className: "choice-title" }, [iconLabel(slot.icon, slot.id)]),
         el("span", { className: "choice-copy", text: slot.action }),
       ]),
     )),
@@ -4864,7 +4974,7 @@ function renderFeelingWizardStep() {
   return el("div", { className: "wizard-screen active" }, [
     el("div", { className: "feeling-grid" }, feelings.map((feeling) =>
       el("button", { className: `choice-card ${state.feeling === feeling.id ? "selected" : ""}`, onClick: () => setState({ feeling: feeling.id, wizardStep: nextStep }) }, [
-        el("span", { className: "choice-title", text: `${feeling.icon} ${feeling.label}` }),
+        el("span", { className: "choice-title" }, [iconLabel(feeling.icon, feeling.label)]),
         el("span", { className: "choice-copy", text: feeling.desc }),
       ]),
     )),
@@ -5377,7 +5487,6 @@ function renderRoutinePreview(routine) {
             className: `check-button ${isCompleted ? "done" : ""} ${!canCheck ? "disabled" : ""}`, 
             "aria-label": `סמן ${step.name}`,
             disabled: !canCheck,
-            text: isCompleted ? "✓" : "", 
             onClick: () => { 
               if (!canCheck) return;
               if (state.completedSteps.has(step.id)) {
@@ -5388,7 +5497,7 @@ function renderRoutinePreview(routine) {
               render();
               checkRoutineCompletion(routine);
             } 
-          }),
+          }, isCompleted ? [vectorIcon("check", "check-button-icon")] : []),
         ]);
   }));
 }
@@ -5487,13 +5596,13 @@ function renderProductReplacementOverlay() {
                   el("p", { className: "replacement-option-desc", text: product.simpleDesc }),
                 ]),
                 state.selectedReplacement?.id === product.id 
-                  ? el("div", { className: "replacement-selected-icon", text: "✓" })
+                  ? el("div", { className: "replacement-selected-icon" }, [vectorIcon("check")])
                   : null,
               ])
             )),
           ])
         : el("div", { className: "no-replacements" }, [
-            el("p", { className: "no-replacements-emoji", text: "✨" }),
+            el("div", { className: "no-replacements-icon" }, [vectorIcon("sparkle")]),
             el("p", { className: "no-replacements-text", text: "מאמי, לא מצאתי מוצר מתאים שיכול להחליף את זה בלי לפגוע בשגרה" }),
             el("p", { className: "no-replacements-hint", text: "המוצר הזה חשוב לשלב הנוכחי ואין כרגע מוצר דומה שמתאים לשאר הרכיבים בשגרה." }),
           ]),
@@ -5568,7 +5677,7 @@ function renderProductReplacementOverlay() {
                 }
                 
                 // הגדר הודעה
-                state.replacementMessage = "המוצר הוחלף בהצלחה ✨";
+                state.replacementMessage = "המוצר הוחלף בהצלחה";
                 
                 // ✅ לא לעדכן routineNonce - זה יגרום ל-buildRoutine להרוץ שוב!
                 // ✅ לא לאפס completedSteps - השגרה לא השתנתה!
@@ -5995,7 +6104,12 @@ function renderProductStepNote(step) {
 }
 
 function renderWarnings(warnings) {
-  return el("div", { className: "warning-list" }, [...new Set(warnings)].map((warning) => el("div", { className: "warning", text: `${icon("warn")} ${warning}` })));
+  return el("div", { className: "warning-list" }, [...new Set(warnings)].map((warning) =>
+    el("div", { className: "warning" }, [
+      vectorIcon("warn", "warning-icon"),
+      el("span", { text: warning }),
+    ])
+  ));
 }
 
 function renderProductsScreen(onlyFavorites) {
@@ -6051,7 +6165,7 @@ function renderProductsScreen(onlyFavorites) {
       ]) : el("div", { 
         className: "empty", 
         style: "text-align: center; padding: 3rem 1rem;",
-        text: "אין שגרות שמורות כרגע. אפשר לשמור שגרות בלחיצה על ♡ במסך השגרה." 
+        text: "אין שגרות שמורות כרגע. אפשר לשמור שגרות בלחיצה על כפתור הלב במסך השגרה." 
       })
     ]) : null,
     
@@ -6060,7 +6174,7 @@ function renderProductsScreen(onlyFavorites) {
       renderSearchAndFilters(),
       visibleProducts.length ? el("div", { className: "product-grid" }, visibleProducts.map(renderProductCard)) : el("div", { 
         className: "empty", 
-        text: "אין מוצרים מועדפים כרגע. אפשר להוסיף מוצרים בלחיצה על ♡" 
+        text: "אין מוצרים מועדפים כרגע. אפשר להוסיף מוצרים בלחיצה על כפתור הלב" 
       })
     ]) : null,
     
@@ -6127,14 +6241,13 @@ function renderSavedRoutineCard(saved) {
     el("button", { 
       className: "favorite-button card-favorite active",
       "aria-label": "הסר שגרה",
-      text: "♥",
       onClick: (event) => { 
         event.preventDefault(); 
         event.stopPropagation(); 
         event.stopImmediatePropagation();
         toggleSavedRoutine(saved, event.currentTarget);  // ✅ saved במקום routine!
       }
-    }),
+    }, [favoriteIcon(true)]),
     // אין תמונה - ישר לתוכן
     el("div", { className: "product-card-main", style: "padding-top: 1.5rem;" }, [
       el("p", { className: "product-title", text: routineTitle }),
@@ -6160,8 +6273,13 @@ function renderSearchAndFilters() {
   const typeOptions = [...new Set(products.map((product) => product.type))];
   const brandOptions = [...new Set(products.map((product) => product.brand))].sort();
   return el("div", { className: "products-toolbar" }, [
-    el("label", { className: "search-box" }, [el("span", { text: icon("search") }), el("input", { type: "search", value: state.searchQuery, placeholder: "חפש מוצר, רכיב או מטרה", onInput: handleProductSearchInput })]),
-    el("button", { className: "button secondary filter-toggle", text: `${icon("filter")} סינון`, onClick: () => setState({ showFilters: !state.showFilters }) }),
+    el("label", { className: "search-box" }, [
+      vectorIcon("search", "search-icon"),
+      el("input", { type: "search", value: state.searchQuery, placeholder: "חפש מוצר, רכיב או מטרה", onInput: handleProductSearchInput }),
+    ]),
+    el("button", { className: "button secondary filter-toggle", onClick: () => setState({ showFilters: !state.showFilters }) }, [
+      iconLabel("filter", "סינון"),
+    ]),
     state.showFilters ? el("div", { className: "filter-panel" }, [
       el("p", { className: "eyebrow", text: "מותג" }),
       el("div", { className: "chip-row" }, brandOptions.map((brand) => renderFilterChip(brand, brand, "brand"))),
@@ -6219,7 +6337,7 @@ function renderProductCard(product, options = {}) {
     onKeydown: (event) => { if (event.key === "Enter") openProduct(product.id); } 
   }, [
     // ✅ Only show favorite button if not hidden
-    hideFavorite ? null : el("button", { className: `favorite-button card-favorite ${isFavorite ? "active" : ""} ${isFavoritePulsing ? "pulse" : ""}`, "aria-label": "מועדפים", "aria-pressed": String(isFavorite), text: isFavorite ? "♥" : "♡", onClick: (event) => { event.preventDefault(); event.stopPropagation(); event.stopImmediatePropagation(); toggleFavorite(product.id, event.currentTarget); } }),
+    hideFavorite ? null : el("button", { className: `favorite-button card-favorite ${isFavorite ? "active" : ""} ${isFavoritePulsing ? "pulse" : ""}`, "aria-label": "מועדפים", "aria-pressed": String(isFavorite), onClick: (event) => { event.preventDefault(); event.stopPropagation(); event.stopImmediatePropagation(); toggleFavorite(product.id, event.currentTarget); } }, [favoriteIcon(isFavorite)]),
     renderProductImage(product, largerImage ? "product-thumb product-thumb-large" : "product-thumb"),
     el("div", { className: "product-card-main" }, [
       el("p", { className: "product-title", text: product.name }),
@@ -6305,9 +6423,8 @@ function renderProductPage() {
           style: "margin-right: 8px;",
           "aria-label": "מועדפים", 
           "aria-pressed": String(isFavorite), 
-          text: isFavorite ? "♥" : "♡", 
           onClick: (event) => { event.preventDefault(); event.stopPropagation(); toggleFavorite(product.id, event.currentTarget); } 
-        }),
+        }, [favoriteIcon(isFavorite)]),
         renderProductImage(product, "product-hero-image"),
         el("p", { className: "eyebrow", text: `${product.brand} · ${friendlyType(product.type)}` }),
         el("h2", { text: product.name }),
@@ -6387,13 +6504,13 @@ function renderProductCarousel(title, items, tone = "good") {
 
 function renderNav() {
   const nav = [
-    { id: "products", label: "מוצרים", icon: icon("products") },
-    { id: "routine", label: "בנה שגרה", icon: icon("routine"), center: true },
-    { id: "home", label: "בית", icon: icon("home") },
+    { id: "products", label: "מוצרים", icon: "products" },
+    { id: "routine", label: "בנה שגרה", icon: "routine", center: true },
+    { id: "home", label: "בית", icon: "home" },
   ];
   return el("nav", { className: "bottom-nav", "aria-label": "ניווט ראשי" }, nav.map((item) =>
     el("button", { className: `nav-button ${item.center ? "center" : ""} ${state.view === item.id ? "active" : ""}`, onClick: () => item.id === "routine" ? startRoutine({ timeOfDay: getCurrentRoutineTimeOfDay(), route: "regular", flow: "wizard" }) : navigate(item.id) }, [
-      el("span", { className: "nav-icon", text: item.icon }),
+      el("span", { className: "nav-icon" }, [vectorIcon(item.icon)]),
       el("span", { text: item.label }),
     ]),
   ));
